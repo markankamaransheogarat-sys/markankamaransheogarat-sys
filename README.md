@@ -2,14 +2,15 @@
 
 <p align="left">
   <img src="https://komarev.com/ghpvc/?username=markankamaransheogarat-sys&label=Profile%20Views&color=0e7569&style=flat-square" alt="Profile Views" />
-  <img src="https://img.shields.io/badge/Architecture-Distributed%20Systems%20%7C%20Quant%20%7C%20Solana-14F195?style=flat-square&logo=solana&logoColor=white" alt="Focus" />
-  <img src="https://img.shields.io/badge/Mindset-Solve%20Any%20Complex%20Problem-blue?style=flat-square" alt="Mindset" />
+  <img src="https://img.shields.io/badge/Status-Available%20for%20High--Stakes%20Architecture-success?style=flat-square&logo=target" alt="Status" />
+  <img src="https://img.shields.io/badge/Focus-Solana%20%7C%20Quant%20%7C%20Distributed%20Systems-14F195?style=flat-square&logo=solana&logoColor=white" alt="Focus" />
   <img src="https://img.shields.io/badge/Core-Rust%20%7C%20TypeScript%20%7C%20Python%20%7C%20C%2FC%2B%2B-blueviolet?style=flat-square" alt="Core" />
 </p>
 
-> **Polyglot Systems Architect & Quant Engineer.**  
+> 🎯 **LIVE STATUS:** **`ACTIVELY TAKING ON HIGH-IMPACT PROTOCOL ARCHITECTURE, QUANT SYSTEMS & CRITICAL AUDITS`**  
 > *"If it computes, I can profile, debug, optimize, and ship it."*  
-> Deep experience across low-level distributed runtimes, high-throughput Solana smart contract internals, algorithmic orderbook execution, and autonomous AI infrastructure. Give me an undocumented legacy codebase, a broken distributed system, or an impossible deadline — and I'll deliver clean, verified architecture.
+> Got an "impossible" bug, a high-throughput Solana protocol to ship under relentless deadlines, or an algorithmic orderbook engine to build?  
+> **Let’s cut the noise and execute.** [Jump to Collaboration & Direct Outreach ↓](#-direct-collaboration--work-with-me)
 
 ---
 
@@ -50,6 +51,23 @@
 
 ---
 
+## 🤝 Direct Collaboration / Work With Me
+
+Looking for someone who doesn't need handholding and can immediately take architectural ownership?
+
+### 🛠 What I Solve:
+1. **Solana Smart Contract Engineering:** Custom Anchor programs, tokenomics launch mechanics, PDA vaults, and gas/compute unit optimization.
+2. **Quantitative Trading & Execution Bots:** Arbitrage bots, automated market-making algorithms, and real-time orderbook telemetry pipelines.
+3. **Hardcore Debugging & Performance Profiling:** Sub-second latency bottlenecks, zero-copy serialization, and container optimization.
+4. **Fast Prototyping & Turnkey Delivery:** 24–48 hour turnaround from concept to live, verified on-chain deployment.
+
+### 💼 Engagement Models:
+- **Lead Protocol / Systems Architecture** (Fractional / Full-Scope)
+- **High-Stakes Technical Advisory & Code Auditing**
+- **Sprint-Based Contract Delivery & Critical Bug Bounties**
+
+---
+
 ## ☕ Support the Development / Поддержать разработку
 
 > **English:**  
@@ -78,8 +96,8 @@
 
 ---
 
-## 📬 Connect & Collaborate
+## 📬 Outreach & Inquiries
 
-- **GitHub:** [@markankamaransheogarat-sys](https://github.com/markankamaransheogarat-sys)
+- **GitHub Issues / Discussions:** Open an issue on any repository for public collaboration.
 - **Superteam Profile:** `jarvis-quant-agent`
-- **Availability:** Open for high-complexity protocol engineering, quant architecture, and critical security/performance audits.
+- **Preferred Contact:** Direct messages via Twitter / Telegram / Email.
