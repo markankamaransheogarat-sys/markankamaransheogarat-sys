@@ -46,11 +46,10 @@ Here are some of the open-source protocols, interactive dApps, and research arch
 
 | Network | Supported Tokens | Address (Click to Copy) |
 | :--- | :--- | :--- |
-| **🟣 Solana** *(Preferred)* | **SOL, USDC, USDG, USDT** | `SOLANA_WALLET_ADDRESS_HERE` |
-| **🔷 EVM Multi-Chain** | **ETH, USDT, USDC (Arbitrum / Base / BSC / Polygon / Mainnet)** | `EVM_WALLET_ADDRESS_HERE` |
-| **💎 TON (The Open Network)** | **TON, USDT** | `TON_WALLET_ADDRESS_HERE` |
-| **🔴 TRON** | **USDT (TRC-20)** | `TRON_WALLET_ADDRESS_HERE` |
-| **🟠 Bitcoin** | **BTC** | `BITCOIN_WALLET_ADDRESS_HERE` |
+| **🟣 Solana** *(Primary / Superteam)* | **SOL, USDC, USDG, USDT** | `CmqpfPEXkksW7gvDRaMdKFv1vmdwupe8pBkDD8trkKwY` |
+| **🔷 EVM Multi-Chain** | **ETH, USDT, USDC (Arbitrum One / Base / BSC / Polygon / Mainnet)** | `0xfcef7bc3053ae9589da2c6b9084902bd9d2aa54a` |
+| **💎 TON (The Open Network)** | **TON, USDT** | `UQBu8EMAjJhy_J-j8vTMhohn33tiubo8tnaCz76JQbMwHLtx` |
+| **🔴 TRON** | **USDT (TRC-20)** | `TPDC7YHRy72GjRh5sLGgp3tPu4uHfWq5cF` |
 
 ---
 
