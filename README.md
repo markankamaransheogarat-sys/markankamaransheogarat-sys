@@ -3,41 +3,54 @@
 <p align="left">
   <img src="https://komarev.com/ghpvc/?username=markankamaransheogarat-sys&label=Profile%20Views&color=0e7569&style=flat-square" alt="Profile Views" />
   <img src="https://img.shields.io/badge/Status-Available%20for%20High--Stakes%20Architecture-success?style=flat-square&logo=target" alt="Status" />
-  <img src="https://img.shields.io/badge/Focus-Solana%20%7C%20Quant%20%7C%20Distributed%20Systems-14F195?style=flat-square&logo=solana&logoColor=white" alt="Focus" />
-  <img src="https://img.shields.io/badge/Core-Rust%20%7C%20TypeScript%20%7C%20Python%20%7C%20C%2FC%2B%2B-blueviolet?style=flat-square" alt="Core" />
+  <img src="https://img.shields.io/badge/Ecosystem-Solana%20%7C%20Stellar%20Soroban%20%7C%20EVM-14F195?style=flat-square&logo=solana&logoColor=white" alt="Ecosystem" />
+  <img src="https://img.shields.io/badge/Stack-Rust%20%7C%20TypeScript%20%7C%20Python%20%7C%20Tauri%20%7C%20Docker-blueviolet?style=flat-square" alt="Stack" />
 </p>
 
-> 🎯 **LIVE STATUS:** **`ACTIVELY TAKING ON HIGH-IMPACT PROTOCOL ARCHITECTURE, QUANT SYSTEMS & CRITICAL AUDITS`**  
+> 🎯 **LIVE STATUS:** **`ACTIVELY SHIPPING HIGH-STAKES PROTOCOL ARCHITECTURE, QUANT SYSTEMS & CRITICAL PRs`**  
 > *"If it computes, I can profile, debug, optimize, and ship it."*  
-> Got an "impossible" bug, a high-throughput Solana protocol to ship under relentless deadlines, or an algorithmic orderbook engine to build?  
-> **Let’s cut the noise and execute.** [Jump to Collaboration & Direct Outreach ↓](#-direct-collaboration--work-with-me)
+> Got an "impossible" bug, high-throughput protocol features to ship under relentless deadlines, or low-level systems engineering?  
+> **Let’s cut the noise and execute.** [Jump to Collaboration & Outreach ↓](#-direct-collaboration--work-with-me)
 
 ---
 
-## 🧠 Engineering Arsenal (Can Dig Into Anything)
+## 🏆 Featured Open-Source Contributions & Production PRs
+
+High-complexity features, security patches, and performance optimizations shipped across leading open-source Web3 & desktop ecosystems:
+
+| Ecosystem / Project | Scope & Architectural Impact | Status / PR Links |
+| :--- | :--- | :--- |
+| **🗄️ [TabularisDB / Tabularis](https://github.com/TabularisDB/tabularis)** *(5,200+ ⭐)* | **Visual EXPLAIN & High-Speed Data Streaming:**<br>• Full CSV table export for complex query execution trees (`#1163`).<br>• NDJSON streaming export engine for loaded query result sets (`#1156`).<br>• Automated scheduled database backup engine (`#1169`). | [**PR #1184**](https://github.com/TabularisDB/tabularis/pull/1184)<br>[**PR #1187**](https://github.com/TabularisDB/tabularis/pull/1187)<br>[**PR #1207**](https://github.com/TabularisDB/tabularis/pull/1207) *(Merged/Ready)* |
+| **💳 [Orbit Protocol](https://github.com/Orbit-xyz/Orbit)** *(Stellar Wave 10)* | **Smart Contracts, Real-Time Streaming & Mobile Handover:**<br>• Anti-frontrunning commit-reveal contract on Soroban Rust (`#212`).<br>• Real-time Apollo GraphQL subscription streaming over Redis PubSub (`#211`).<br>• Instant QR code fallback & mobile deep-link wallet handover widget (`#210`).<br>• Milestone payroll escrow UI tracker with multisig approval gates (`#209`). | [**PR #214**](https://github.com/Orbit-xyz/Orbit/pull/214)<br>[**PR #215**](https://github.com/Orbit-xyz/Orbit/pull/215)<br>[**PR #216**](https://github.com/Orbit-xyz/Orbit/pull/216)<br>[**PR #217**](https://github.com/Orbit-xyz/Orbit/pull/217) |
+| **🐳 [Stellar Dev Containers](https://github.com/CloudNativeIlorin/stellar-dev-containers)** | **Cloud-Native Tooling & Developer Ergonomics (100% Closed):**<br>• Full `.devcontainer` configuration for VS Code & Codespaces preloaded with Soroban/Rust.<br>• Multi-arch container build & release pipeline to GitHub Container Registry (GHCR).<br>• Integrated `stellar/quickstart` local & testnet RPC node orchestration.<br>• Standardized root developer Makefile and Hadolint CI security linter. | [**PR #6**](https://github.com/CloudNativeIlorin/stellar-dev-containers/pull/6)<br>[**PR #7**](https://github.com/CloudNativeIlorin/stellar-dev-containers/pull/7)<br>[**PR #8**](https://github.com/CloudNativeIlorin/stellar-dev-containers/pull/8)<br>[**PR #9**](https://github.com/CloudNativeIlorin/stellar-dev-containers/pull/9)<br>[**PR #10**](https://github.com/CloudNativeIlorin/stellar-dev-containers/pull/10) |
+| **🌌 [SpaceApp Stack](https://github.com/oll4com/spaceapp)** | **Distributed Workflows & Systems:**<br>• Deterministic Temporal workflow test sandbox with time-skipping replay.<br>• WebGL2 3D memory graph visualizer (50,000+ nodes).<br>• OTLP telemetry worker spans and rootless Podman execution support. | [**PR #157**](https://github.com/oll4com/spaceapp/pull/157)<br>[**PR #119**](https://github.com/oll4com/spaceapp/pull/119)<br>[**PR #112**](https://github.com/oll4com/spaceapp/pull/112)<br>[**PR #101**](https://github.com/oll4com/spaceapp/pull/101) |
+
+---
+
+## 🧠 Engineering Arsenal
 
 ```ascii
-[ High-Frequency Quant / Orderbook Microstructure ]
-                       │
-                       ▼
-[ Solana / Anchor PDA State Machines & DeFi Protocol Design ]
-                       │
-                       ▼
-[ Low-Level Systems: Rust, C++, Linux Internals, Containers & Telemetry ]
-                       │
-                       ▼
-[ Full-Stack Web3 DApps: React 19, Tailwind, Fast Real-Time Interfaces ]
+[ High-Frequency Quant / Orderbook Microstructure & Telemetry ]
+                               │
+                               ▼
+[ Solana (Anchor) & Stellar (Soroban) Smart Contract State Machines ]
+                               │
+                               ▼
+[ Low-Level Systems: Rust, C++, Linux Internals, Multi-Arch Containers & CI/CD ]
+                               │
+                               ▼
+[ Ultra-Responsive Web3 Frontend: React 19, TypeScript Strict, Tailwind, WebGL2 ]
 ```
 
-- **⚡ Solana & Protocol Engineering:** Anchor 0.30+, Program Derived Addresses (PDA), SPL Token-2022, Raydium/Orca AMM routing, shared-pool liquidity engines, zero-spread prediction markets, Jito MEV protection, and milestone-based trustless escrow contracts.
-- **📈 Quantitative Trading & Microstructure:** Tick-level CVD absorption & Open Interest divergence, Funding Rate arbitrage, cascade liquidation detection, vectorized backtesting engines, and automated live execution on Bybit/Solana DEXs.
-- **⚙️ Low-Level & Distributed Systems:** Linux kernel tracing, zero-copy OTLP telemetry codecs, SQLite engine bug-fixing, Docker container closures & image optimization, and deterministic Temporal workflow test sandboxes.
-- **🤖 Autonomous AI & Agentic Runtimes:** DeepSeek streaming watchdog engines, renewable inactivity deadlines, LLM tool execution namespaces, and local-first execution state replay.
+- **⚡ Protocol & Smart Contract Engineering:** Solana Anchor 0.30+, Program Derived Addresses (PDA), SPL Token-2022, Stellar Soroban (Rust), commit-reveal cryptographic schemes, milestone escrows, and Raydium/Orca AMM routing.
+- **📈 Quantitative Trading & Microstructure:** Tick-level CVD absorption & Open Interest divergence, Funding Rate arbitrage, cascade liquidation detection, vectorized backtesting engines, and automated live execution on Bybit & Solana DEXs.
+- **⚙️ Low-Level & Distributed Systems:** Linux kernel tracing, zero-copy OTLP telemetry codecs, SQLite/Tauri desktop internals, Docker Buildx multi-arch virtualization, and deterministic Temporal workflow test sandboxes.
+- **🤖 Autonomous AI & Agentic Tooling:** DeepSeek streaming watchdog engines, renewable inactivity deadlines, LLM tool execution namespaces, and local-first execution state replay.
 - **🎨 Modern Web3 Interfaces:** React 19, Vite, TypeScript, Tailwind CSS, Lucide, mobile-responsive interactive simulators, and real-time WebSocket feeds.
 
 ---
 
-## 🚀 Shipped Ecosystem Protocols & Proof of Work
+## 🚀 Shipped Solana Protocols & Proof of Work
 
 | Protocol / Project | Architecture & Key Deliverables | Live DApp | Source Code |
 | :--- | :--- | :--- | :--- |
@@ -52,12 +65,32 @@
 
 ---
 
+## ☕ Support the Development / Поддержать разработку
+
+> **English:**  
+> If any of my open-source tools, PRs, smart contracts, analytics, or research have helped you, solved a production blocker, or accelerated your project — I'd be sincerely grateful for any support! Donations go directly towards maintaining RPC nodes, testing infrastructure, compute expenses, and building more high-signal open-source Web3 software.
+>
+> **Русский:**  
+> Если мои открытые PR, смарт-контракты, симуляторы или исследования принесли вам пользу, помогли решить сложную архитектурную задачу или сэкономили время — буду искренне благодарен за любую поддержку! Все донаты идут на оплату серверов, приватных RPC-нод, вычислительных мощностей и дальнейшую разработку открытых инструментов.
+
+### 💳 Direct Crypto Support / Адреса для поддержки:
+
+| Network | Supported Assets | Address (Click & Copy) |
+| :--- | :--- | :--- |
+| **🟣 Solana** *(Primary)* | **SOL, USDC, USDG, USDT** | `CmqpfPEXkksW7gvDRaMdKFv1vmdwupe8pBkDD8trkKwY` |
+| **🔷 EVM Multi-Chain** | **ETH, USDT, USDC (Arbitrum One / Base / BSC / Polygon / Mainnet)** | `0xfcef7bc3053ae9589da2c6b9084902bd9d2aa54a` |
+| **🌟 Stellar** *(Soroban)* | **XLM, USDC** | `GA7TXEBMEPQCLHIYCWDN7RKAO5IMRD2UV7O7TZXMEW6VZUMEXNR4XBB5` |
+| **💎 TON (The Open Network)** | **TON, USDT** | `UQBu8EMAjJhy_J-j8vTMhohn33tiubo8tnaCz76JQbMwHLtx` |
+| **🔴 TRON** | **USDT (TRC-20)** | `TPDC7YHRy72GjRh5sLGgp3tPu4uHfWq5cF` |
+
+---
+
 ## 🤝 Direct Collaboration / Work With Me
 
 Looking for someone who doesn't need handholding and can immediately take architectural ownership?
 
 ### 🛠 What I Solve:
-1. **Solana Smart Contract Engineering:** Custom Anchor programs, tokenomics launch mechanics, PDA vaults, and gas/compute unit optimization.
+1. **Solana & Stellar Smart Contract Engineering:** Custom Anchor / Soroban programs, tokenomics launch mechanics, PDA vaults, and gas/compute unit optimization.
 2. **Quantitative Trading & Execution Bots:** Arbitrage bots, automated market-making algorithms, and real-time orderbook telemetry pipelines.
 3. **Hardcore Debugging & Performance Profiling:** Sub-second latency bottlenecks, zero-copy serialization, and container optimization.
 4. **Fast Prototyping & Turnkey Delivery:** 24–48 hour turnaround from concept to live, verified on-chain deployment.
@@ -66,25 +99,6 @@ Looking for someone who doesn't need handholding and can immediately take archit
 - **Lead Protocol / Systems Architecture** (Fractional / Full-Scope)
 - **High-Stakes Technical Advisory & Code Auditing**
 - **Sprint-Based Contract Delivery & Critical Bug Bounties**
-
----
-
-## ☕ Support the Development / Поддержать разработку
-
-> **English:**  
-> If any of my open-source tools, smart contracts, analytics, or research have helped you, solved a problem, or accelerated your project — I'd be sincerely grateful for any support! Your donations go directly towards maintaining RPC nodes, testing infrastructure, paying server expenses, and building more free, high-signal Web3 tools.
->
-> **Русский:**  
-> Если мои открытые инструменты, смарт-контракты, симуляторы или исследования принесли вам пользу, помогли решить сложную задачу или сэкономили время — буду искренне благодарен за любую поддержку! Все донаты идут на оплату серверов, приватных RPC-нод Solana, вычислительных мощностей и дальнейшую разработку открытых инструментов.
-
-### 💳 Crypto Donation Addresses / Адреса для поддержки:
-
-| Network | Supported Tokens | Address (Click to Copy) |
-| :--- | :--- | :--- |
-| **🟣 Solana** *(Primary / Superteam)* | **SOL, USDC, USDG, USDT** | `CmqpfPEXkksW7gvDRaMdKFv1vmdwupe8pBkDD8trkKwY` |
-| **🔷 EVM Multi-Chain** | **ETH, USDT, USDC (Arbitrum One / Base / BSC / Polygon / Mainnet)** | `0xfcef7bc3053ae9589da2c6b9084902bd9d2aa54a` |
-| **💎 TON (The Open Network)** | **TON, USDT** | `UQBu8EMAjJhy_J-j8vTMhohn33tiubo8tnaCz76JQbMwHLtx` |
-| **🔴 TRON** | **USDT (TRC-20)** | `TPDC7YHRy72GjRh5sLGgp3tPu4uHfWq5cF` |
 
 ---
 
