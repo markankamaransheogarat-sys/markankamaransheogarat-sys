@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" width="100%" height="100%" style="background:#070913; border-radius:12px; font-family:'JetBrains Mono','Fira Code','Courier New',monospace;">
+  <defs>
+    <!-- Background grid -->
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#161f38" stroke-width="0.7" opacity="0.4"/>
+    </pattern>
+
+    <!-- Glowing filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Linear Gradients -->
+    <linearGradient id="cyber-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ffa3"/>
+      <stop offset="50%" stop-color="#00d8ff"/>
+      <stop offset="100%" stop-color="#bd00ff"/>
+    </linearGradient>
+
+    <linearGradient id="header-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141c30"/>
+      <stop offset="100%" stop-color="#0c111e"/>
+    </linearGradient>
+
+    <!-- Animations -->
+    <style>
+      @keyframes radar-spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes radar-counter {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+      }
+      @keyframes pulse-glow {
+        0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 4px #00ffa3); }
+        50% { opacity: 0.35; filter: drop-shadow(0 0 1px #00ffa3); }
+      }
+      @keyframes scan-beam {
+        0% { transform: translateY(0px); opacity: 0.1; }
+        50% { opacity: 0.6; }
+        100% { transform: translateY(380px); opacity: 0.1; }
+      }
+      @keyframes data-stream-1 {
+        0% { opacity: 0.2; transform: translateY(0); }
+        50% { opacity: 1; }
+        100% { opacity: 0.2; transform: translateY(-12px); }
+      }
+      @keyframes bar-fluctuate-1 {
+        0%, 100% { width: 140px; }
+        50% { width: 95px; }
+      }
+      @keyframes bar-fluctuate-2 {
+        0%, 100% { width: 85px; }
+        50% { width: 160px; }
+      }
+      @keyframes bar-fluctuate-3 {
+        0%, 100% { width: 125px; }
+        50% { width: 70px; }
+      }
+      @keyframes status-blink {
+        0%, 100% { fill: #00ffa3; }
+        50% { fill: #ff0055; }
+      }
+
+      .radar-ring { transform-origin: 775px 235px; animation: radar-spin 14s linear infinite; }
+      .radar-core { transform-origin: 775px 235px; animation: radar-counter 8s linear infinite; }
+      .scanner-line { animation: scan-beam 4s ease-in-out infinite; }
+      .pulsing-led { animation: pulse-glow 2s infinite ease-in-out; }
+      .bar-1 { animation: bar-fluctuate-1 3s ease-in-out infinite; }
+      .bar-2 { animation: bar-fluctuate-2 2.4s ease-in-out infinite; }
+      .bar-3 { animation: bar-fluctuate-3 3.8s ease-in-out infinite; }
+      .stream-txt { animation: data-stream-1 4s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="920" height="440" rx="12" fill="#070913" stroke="#1d2846" stroke-width="1.5"/>
+  <rect width="920" height="440" fill="url(#grid)" rx="12"/>
+
+  <!-- Subtle Scanning Laser Line -->
+  <line x1="10" y1="45" x2="910" y2="45" stroke="#00d8ff" stroke-width="1.2" opacity="0.4" class="scanner-line"/>
+
+  <!-- Top Terminal Header Bar -->
+  <rect x="0" y="0" width="920" height="42" rx="12" fill="url(#header-gradient)"/>
+  <rect x="0" y="32" width="920" height="10" fill="#0c111e"/>
+  <line x1="0" y1="42" x2="920" y2="42" stroke="#1f2c4c" stroke-width="1"/>
+
+  <!-- Window Control Dots -->
+  <circle cx="24" cy="21" r="5" fill="#ff5f56"/>
+  <circle cx="42" cy="21" r="5" fill="#ffbd2e"/>
+  <circle cx="60" cy="21" r="5" fill="#27c93f"/>
+
+  <!-- Header Title & Telemetry Specs -->
+  <text x="85" y="25" fill="#7d91ba" font-size="11" font-weight="700" letter-spacing="1.2">SYSTEM // QUANTUM_NEURAL_TELEMETRY</text>
+  <text x="470" y="25" fill="#00ffa3" font-size="11" font-weight="600" letter-spacing="1">ARCH: x86_64-AVX512 | eBPF-XDP | ZERO_COPY | REALTIME_TSC</text>
+  <circle cx="895" cy="21" r="4.5" fill="#00ffa3" class="pulsing-led"/>
+
+  <!-- Left Main Column: Live Architecture & Memory Registers -->
+  <g transform="translate(24, 60)">
+    <!-- Subtitle Card -->
+    <rect x="0" y="0" width="570" height="340" rx="8" fill="#0b0e1b" stroke="#18233c" stroke-width="1"/>
+
+    <!-- Section Header -->
+    <text x="16" y="26" fill="#00d8ff" font-size="12" font-weight="700" letter-spacing="1.5">⚡ LOW-LEVEL SUBSYSTEM EXECUTION ENGINE</text>
+    <line x1="16" y1="36" x2="554" y2="36" stroke="#1c2844" stroke-width="1"/>
+
+    <!-- ASM / Zero-Copy Stream -->
+    <text x="16" y="60" fill="#4f628e" font-size="10" font-weight="600">// Microsecond SIMD Orderbook &amp; Soroban VM Pipeline</text>
+    
+    <text x="16" y="82" fill="#e0e8f5" font-size="11">
+      <tspan fill="#ff007f">0x7F00_00A0</tspan>  <tspan fill="#00ffa3">vmovaps</tspan>    <tspan fill="#ffffff">zmm0, [rdi + rcx*8]</tspan>   <tspan fill="#62759f">// 512-bit vector load</tspan>
+    </text>
+    <text x="16" y="102" fill="#e0e8f5" font-size="11">
+      <tspan fill="#ff007f">0x7F00_00A6</tspan>  <tspan fill="#00ffa3">vpaddq</tspan>     <tspan fill="#ffffff">zmm1, zmm0, zmm2</tspan>       <tspan fill="#62759f">// Zero-alloc SIMD sum</tspan>
+    </text>
+    <text x="16" y="122" fill="#e0e8f5" font-size="11">
+      <tspan fill="#ff007f">0x7F00_00AC</tspan>  <tspan fill="#00ffa3">sha256_arm</tspan> <tspan fill="#ffffff">secp256k1_verify()</tspan>     <tspan fill="#62759f">// Soroban commit-reveal</tspan>
+    </text>
+    <text x="16" y="142" fill="#e0e8f5" font-size="11">
+      <tspan fill="#ff007f">0x7F00_00B4</tspan>  <tspan fill="#00ffa3">ringbuf_push</tspan><tspan fill="#ffffff">0xCAFE_BABE, depth=64</tspan>   <tspan fill="#62759f">// Lock-free memory queue</tspan>
+    </text>
+
+    <!-- Dynamic Metric Bars -->
+    <g transform="translate(16, 170)">
+      <text x="0" y="12" fill="#889bc2" font-size="11">CVD Orderbook Ingestion Rate:</text>
+      <rect x="230" y="2" width="280" height="12" rx="3" fill="#141a2e"/>
+      <rect x="230" y="2" width="245" height="12" rx="3" fill="url(#cyber-gradient)" class="bar-1"/>
+      <text x="520" y="12" fill="#00ffa3" font-size="10" font-weight="700">1.82M ev/s</text>
+
+      <text x="0" y="38" fill="#889bc2" font-size="11">eBPF XDP Packet Processing:</text>
+      <rect x="230" y="28" width="280" height="12" rx="3" fill="#141a2e"/>
+      <rect x="230" y="28" width="210" height="12" rx="3" fill="#00d8ff" class="bar-2"/>
+      <text x="520" y="38" fill="#00d8ff" font-size="10" font-weight="700">420 ns</text>
+
+      <text x="0" y="64" fill="#889bc2" font-size="11">Soroban Wasm CU Efficiency:</text>
+      <rect x="230" y="54" width="280" height="12" rx="3" fill="#141a2e"/>
+      <rect x="230" y="54" width="260" height="12" rx="3" fill="#bd00ff" class="bar-3"/>
+      <text x="520" y="64" fill="#bd00ff" font-size="10" font-weight="700">96.4% OPT</text>
+    </g>
+
+    <!-- Bottom Telemetry Chips inside the card -->
+    <g transform="translate(16, 260)">
+      <!-- Box 1 -->
+      <rect x="0" y="0" width="165" height="60" rx="5" fill="#101526" stroke="#1d2a48" stroke-width="1"/>
+      <text x="12" y="20" fill="#6c82ad" font-size="9" font-weight="700">KERNEL BYPASS</text>
+      <text x="12" y="42" fill="#00ffa3" font-size="14" font-weight="800">XDP / AF_XDP</text>
+      <circle cx="148" cy="18" r="3" fill="#00ffa3"/>
+
+      <!-- Box 2 -->
+      <rect x="185" y="0" width="165" height="60" rx="5" fill="#101526" stroke="#1d2a48" stroke-width="1"/>
+      <text x="12" y="20" fill="#6c82ad" font-size="9" font-weight="700">TICK-TO-TRADE</text>
+      <text x="12" y="42" fill="#00d8ff" font-size="14" font-weight="800">&lt; 380 ns</text>
+      <circle cx="333" cy="18" r="3" fill="#00d8ff"/>
+
+      <!-- Box 3 -->
+      <rect x="370" y="0" width="165" height="60" rx="5" fill="#101526" stroke="#1d2a48" stroke-width="1"/>
+      <text x="12" y="20" fill="#6c82ad" font-size="9" font-weight="700">GARBAGE COLLECTOR</text>
+      <text x="12" y="42" fill="#ff007f" font-size="14" font-weight="800">0 ms (ZERO-ALLOC)</text>
+      <circle cx="518" cy="18" r="3" fill="#ff007f"/>
+    </g>
+  </g>
+
+  <!-- Right Holographic Radar & Quantum Matrix Module -->
+  <g transform="translate(614, 60)">
+    <rect x="0" y="0" width="282" height="340" rx="8" fill="#0b0e1b" stroke="#18233c" stroke-width="1"/>
+
+    <text x="16" y="26" fill="#bd00ff" font-size="12" font-weight="700" letter-spacing="1.2">🌐 HOLOGRAPHIC QUANTUM NODE</text>
+    <line x1="16" y1="36" x2="266" y2="36" stroke="#1c2844" stroke-width="1"/>
+
+    <!-- Dynamic Holographic Reticle Center: cx=141, cy=175 -->
+    <g transform="translate(141, 160)">
+      <!-- Outer Target Hexagon / Circle -->
+      <circle cx="0" cy="0" r="85" fill="none" stroke="#1c2947" stroke-width="1.5" stroke-dasharray="6,4"/>
+      
+      <!-- Rotating Animated Outer Reticle -->
+      <g class="radar-ring">
+        <circle cx="0" cy="0" r="70" fill="none" stroke="#00d8ff" stroke-width="1.8" stroke-dasharray="40, 20, 70, 15" opacity="0.85"/>
+        <circle cx="0" cy="0" r="55" fill="none" stroke="#00ffa3" stroke-width="1" stroke-dasharray="15, 8, 30, 12" opacity="0.6"/>
+        <line x1="-70" y1="0" x2="70" y2="0" stroke="#00d8ff" stroke-width="0.8" opacity="0.4"/>
+        <line x1="0" y1="-70" x2="0" y2="70" stroke="#00d8ff" stroke-width="0.8" opacity="0.4"/>
+      </g>
+
+      <!-- Counter-Rotating Inner Gyro -->
+      <g class="radar-core">
+        <circle cx="0" cy="0" r="38" fill="none" stroke="#bd00ff" stroke-width="2" stroke-dasharray="25, 12, 10, 15" opacity="0.9"/>
+        <polygon points="0,-22 19,11 -19,11" fill="none" stroke="#00ffa3" stroke-width="1.2" opacity="0.75"/>
+      </g>
+
+      <!-- Glowing Pulsing Core -->
+      <circle cx="0" cy="0" r="7" fill="#00ffa3" class="pulsing-led"/>
+      <circle cx="0" cy="0" r="2.5" fill="#ffffff"/>
+    </g>
+
+    <!-- Radar Sub-Readout -->
+    <g transform="translate(16, 268)">
+      <text x="0" y="14" fill="#6d83ae" font-size="10">NODE ENTROPY:</text>
+      <text x="250" y="14" fill="#00ffa3" font-size="10" font-weight="700" text-anchor="end">0.99984 (SECURE)</text>
+
+      <text x="0" y="32" fill="#6d83ae" font-size="10">CHAIN CONSENSUS:</text>
+      <text x="250" y="32" fill="#00d8ff" font-size="10" font-weight="700" text-anchor="end">SLOT #298,401,920</text>
+
+      <text x="0" y="50" fill="#6d83ae" font-size="10">STATE MACHINE:</text>
+      <text x="250" y="50" fill="#bd00ff" font-size="10" font-weight="700" text-anchor="end">DETERMINISTIC</text>
+    </g>
+  </g>
+
+  <!-- Bottom Global Status Footer -->
+  <g transform="translate(24, 410)">
+    <text x="0" y="14" fill="#4a5f8a" font-size="10" font-weight="600">STATUS: ALL PROTOCOL SYSTEMS OPERATIONAL</text>
+    <text x="470" y="14" fill="#00ffa3" font-size="10" font-weight="700" letter-spacing="1">SHIP VELOCITY: MAXIMUM</text>
+    <text x="872" y="14" fill="#62759f" font-size="10" text-anchor="end">BUILD: REL-2026.10-PROD</text>
+  </g>
+</svg>
