@@ -1,185 +1,60 @@
-# ⚡ Konstantin ([@markankamaransheogarat-sys](https://github.com/markankamaransheogarat-sys))
+# Hi, I'm Konstantin 👋
 
-<p align="left">
-  <img src="https://komarev.com/ghpvc/?username=markankamaransheogarat-sys&label=Profile%20Views&color=0e7569&style=flat-square" alt="Profile Views" />
-  <img src="https://img.shields.io/badge/Status-Available%20for%20High--Stakes%20Architecture-success?style=flat-square&logo=target" alt="Status" />
-  <img src="https://img.shields.io/badge/Ecosystem-Solana%20%7C%20Stellar%20Soroban%20%7C%20EVM-14F195?style=flat-square&logo=solana&logoColor=white" alt="Ecosystem" />
-  <img src="https://img.shields.io/badge/Stack-Rust%20%7C%20TypeScript%20%7C%20Python%20%7C%20Tauri%20%7C%20Docker-blueviolet?style=flat-square" alt="Stack" />
-</p>
+Software engineer working in **Rust, TypeScript and Python**. I contribute to open source (desktop apps, networking, blockchain SDKs and dev tooling) and build Solana and Stellar prototypes. I also run my own trading and analytics systems.
 
-> 🎯 **LIVE STATUS:** **`ACTIVELY SHIPPING HIGH-STAKES PROTOCOL ARCHITECTURE, QUANT SYSTEMS & CRITICAL PRs`**  
-> *"If it computes, I can profile, debug, optimize, and ship it."*  
-> Got an "impossible" bug, high-throughput protocol features to ship under relentless deadlines, or low-level systems engineering?  
-> **Let’s cut the noise and execute.** [Jump to Collaboration & Outreach ↓](#-direct-collaboration--work-with-me)
+Most of my public work is fixes and features in other people's projects. A PR from me comes with tests, follows the project's own conventions, and says exactly what was checked.
+
+**Stack:** Rust · TypeScript / React · Python · Node.js · Tauri · Soroban (Stellar) · Anchor (Solana) · Docker / CI
 
 ---
 
-## 🏆 Open-Source Contributions
+## Open-source contributions
 
-**Merged** (9) — high-traffic repos, reviewed by their maintainers:
+**Merged**
 
-| Project | What shipped | PRs |
-| :--- | :--- | :--- |
-| **🗄️ [TabularisDB / Tabularis](https://github.com/TabularisDB/tabularis)** *(5,200+ ⭐, Tauri + Rust + React)* | Export the full EXPLAIN table as CSV · NDJSON export of loaded query results · save raw EXPLAIN plan to file · undo/redo for pending grid edits · copy column names as a quoted SQL list · pause editor query-history capture · first-contribution guide | [#1184](https://github.com/TabularisDB/tabularis/pull/1184) · [#1187](https://github.com/TabularisDB/tabularis/pull/1187) · [#1178](https://github.com/TabularisDB/tabularis/pull/1178) · [#1206](https://github.com/TabularisDB/tabularis/pull/1206) · [#1185](https://github.com/TabularisDB/tabularis/pull/1185) · [#1186](https://github.com/TabularisDB/tabularis/pull/1186) · [#1171](https://github.com/TabularisDB/tabularis/pull/1171) |
-| **🪙 [MergeMint contracts](https://github.com/mergemint-mint/mergemint-contracts)** *(Stellar Wave)* | i18n key-completeness check across catalogs + JSX string lint rule | [#1135](https://github.com/mergemint-mint/mergemint-contracts/pull/1135) |
-| **📡 [neatlogs / neatroots](https://github.com/neatlogs/neatroots)** | Normalize non-string span `status.message` in the OTLP codec | [#264](https://github.com/neatlogs/neatroots/pull/264) |
+| Project | What I shipped |
+| :--- | :--- |
+| [**TabularisDB / Tabularis**](https://github.com/TabularisDB/tabularis) · 5k★ desktop SQL client (Tauri, Rust, React) | Export the full EXPLAIN table as CSV ([#1184](https://github.com/TabularisDB/tabularis/pull/1184)) · NDJSON export of query results ([#1187](https://github.com/TabularisDB/tabularis/pull/1187)) · save raw EXPLAIN plans to file ([#1178](https://github.com/TabularisDB/tabularis/pull/1178)) · undo/redo for pending grid edits ([#1206](https://github.com/TabularisDB/tabularis/pull/1206)) · copy column names as a quoted SQL list ([#1185](https://github.com/TabularisDB/tabularis/pull/1185)) · pause query-history capture ([#1186](https://github.com/TabularisDB/tabularis/pull/1186)) · first-contribution guide ([#1171](https://github.com/TabularisDB/tabularis/pull/1171)) |
+| [**MergeMint contracts**](https://github.com/mergemint-mint/mergemint-contracts) · Stellar | i18n key-completeness check across catalogs + JSX string lint rule ([#1135](https://github.com/mergemint-mint/mergemint-contracts/pull/1135)) |
+| [**neatlogs / neatroots**](https://github.com/neatlogs/neatroots) | Normalize non-string span `status.message` in the OTLP codec ([#264](https://github.com/neatlogs/neatroots/pull/264)) |
 
-**In review:**
+**In review**
 
-| Project | What | PR |
-| :--- | :--- | :--- |
-| Tabularis | Scheduled database content backups: timezone/DST-aware scheduler, retention, cancellation | [#1207](https://github.com/TabularisDB/tabularis/pull/1207) |
-| [OpsiMate](https://github.com/OpsiMate/OpsiMate) | Retention settings: surface failed toggle saves + component tests | [#1280](https://github.com/OpsiMate/OpsiMate/pull/1280) |
-| [Stellar Dev Containers](https://github.com/CloudNativeIlorin/stellar-dev-containers) | Devcontainer, multi-arch GHCR CI, Makefile, quickstart compose, hadolint | [#6](https://github.com/CloudNativeIlorin/stellar-dev-containers/pull/6)–[#10](https://github.com/CloudNativeIlorin/stellar-dev-containers/pull/10) |
-| [SpaceApp](https://github.com/oll4com/spaceapp) | WebGL2 3D memory graph, OTLP worker spans, rootless Podman, per-service images, Temporal test sandbox | [#119](https://github.com/oll4com/spaceapp/pull/119) · [#112](https://github.com/oll4com/spaceapp/pull/112) · [#101](https://github.com/oll4com/spaceapp/pull/101) · [#123](https://github.com/oll4com/spaceapp/pull/123) · [#157](https://github.com/oll4com/spaceapp/pull/157) |
-
----
-
-## 🧠 Engineering Arsenal
-
-```ascii
-[ High-Frequency Quant / Orderbook Microstructure & Telemetry ]
-                               │
-                               ▼
-[ Solana (Anchor) & Stellar (Soroban) Smart Contract State Machines ]
-                               │
-                               ▼
-[ Low-Level Systems: Rust, C++, Linux Internals, Multi-Arch Containers & CI/CD ]
-                               │
-                               ▼
-[ Ultra-Responsive Web3 Frontend: React 19, TypeScript Strict, Tailwind, WebGL2 ]
-```
-
-- **⚡ Protocol & Smart Contract Engineering:** Solana Anchor 0.30+, Program Derived Addresses (PDA), SPL Token-2022, Stellar Soroban (Rust), commit-reveal cryptographic schemes, milestone escrows, and Raydium/Orca AMM routing.
-- **📈 Quantitative Trading & Microstructure:** Tick-level CVD absorption & Open Interest divergence, Funding Rate arbitrage, cascade liquidation detection, vectorized backtesting engines, and automated live execution on Bybit & Solana DEXs.
-- **⚙️ Low-Level & Distributed Systems:** Linux kernel tracing, zero-copy OTLP telemetry codecs, SQLite/Tauri desktop internals, Docker Buildx multi-arch virtualization, and deterministic Temporal workflow test sandboxes.
-- **🤖 Autonomous AI & Agentic Tooling:** DeepSeek streaming watchdog engines, renewable inactivity deadlines, LLM tool execution namespaces, and local-first execution state replay.
-- **🎨 Modern Web3 Interfaces:** React 19, Vite, TypeScript, Tailwind CSS, Lucide, mobile-responsive interactive simulators, and real-time WebSocket feeds.
+| Project | What |
+| :--- | :--- |
+| [**Mozilla neqo**](https://github.com/mozilla/neqo) · Firefox's QUIC / HTTP/3 stack (Rust) | Named constant for the PATH_CHALLENGE/PATH_RESPONSE data length ([#4116](https://github.com/mozilla/neqo/pull/4116)) |
+| [**Hiero JS SDK**](https://github.com/hiero-ledger/hiero-sdk-js) · Linux Foundation Decentralized Trust | Fix copy-pasted JSDoc in the network, token and transaction APIs ([#4562](https://github.com/hiero-ledger/hiero-sdk-js/pull/4562)) |
+| [**OpenRig**](https://github.com/mvschwarz/openrig) · 8k★ multi-agent CLI | `rig config get --with-source` ([#1628](https://github.com/mvschwarz/openrig/pull/1628)) |
+| [**Tabularis**](https://github.com/TabularisDB/tabularis) | Scheduled database backups: timezone- and DST-aware scheduler, retention, cancellation ([#1207](https://github.com/TabularisDB/tabularis/pull/1207)) |
+| [**OpsiMate**](https://github.com/OpsiMate/OpsiMate) | Show failed retention-toggle saves to the user + component tests ([#1280](https://github.com/OpsiMate/OpsiMate/pull/1280)) |
 
 ---
 
-## ⚡ Next-Gen Autonomous Systems Architecture & Live HUD
+## Own projects
 
-<p align="center">
-  <img src="assets/quantum_cyber_engine.svg" alt="Autonomous Quantum Telemetry & Low-Level Subsystem Engine" width="100%" />
-</p>
+| Project | What it is |
+| :--- | :--- |
+| [solana-trustless-escrow](https://github.com/markankamaransheogarat-sys/solana-trustless-escrow) | Anchor milestone-escrow program with a timeout path, plus a web client |
+| [daejin-prediction-market-engine](https://github.com/markankamaransheogarat-sys/daejin-prediction-market-engine) · [panta-prediction-market-hub](https://github.com/markankamaransheogarat-sys/panta-prediction-market-hub) · [worm-premier-league-predictor](https://github.com/markankamaransheogarat-sys/worm-premier-league-predictor) | Prediction-market prototypes and simulators (shared-pool odds, bonding curves) |
+| [chimp-fair-launch-portal](https://github.com/markankamaransheogarat-sys/chimp-fair-launch-portal) · [jupiter-2.0-redesign](https://github.com/markankamaransheogarat-sys/jupiter-2.0-redesign) | Front-end concepts: a fair-launch portal and a perpetuals trading UI |
+| [solana-founder-user-research](https://github.com/markankamaransheogarat-sys/solana-founder-user-research) | User-research report for a Colosseum submission |
 
-### 🔬 Core Innovation: Zero-Copy AVX-512 Orderbook & eBPF Telemetry Pipeline
+---
 
-When sub-microsecond latency and deterministic on-chain execution matter, every CPU cycle and memory allocation counts. Below is the production pattern used across high-frequency crypto microstructure and Soroban/Anchor engines:
+## Contact
 
-```rust
-// ⚡ Cache-Line Aligned (64-byte) Zero-Copy Orderbook Memory Ring
-#[repr(C, align(64))]
-pub struct L1OrderbookCache<const DEPTH: usize> {
-    pub bids_px: [f64; DEPTH],       // 64-byte aligned for AVX-512 SIMD vectorization
-    pub bids_qty: [f64; DEPTH],      // Loaded via vmovapd into ZMM registers
-    pub asks_px: [f64; DEPTH],
-    pub asks_qty: [f64; DEPTH],
-    pub ring_seq: AtomicU64,         // Lock-free single-producer single-consumer ring
-}
-
-impl<const DEPTH: usize> L1OrderbookCache<DEPTH> {
-    /// Vectorized sub-cycle VWAP & Microstructure Imbalance via AVX-512 Intrinsics
-    /// Zero heap allocations | 0.012% L1 cache miss | 380ns tick-to-trade
-    #[inline(always)]
-    pub unsafe fn compute_vwap_simd(&self) -> (f64, f64) {
-        #[cfg(target_arch = "x86_64")]
-        {
-            use std::arch::x86_64::*;
-            let mut sum_vol = _mm512_setzero_pd();
-            let mut sum_pv  = _mm512_setzero_pd();
-
-            for i in (0..DEPTH).step_by(8) {
-                let px  = _mm512_load_pd(self.bids_px.as_ptr().add(i));
-                let qty = _mm512_load_pd(self.bids_qty.as_ptr().add(i));
-                sum_vol = _mm512_add_pd(sum_vol, qty);
-                sum_pv  = _mm512_fmadd_pd(px, qty, sum_pv); // Fused Multiply-Add
-            }
-            (_mm512_reduce_add_pd(sum_pv), _mm512_reduce_add_pd(sum_vol))
-        }
-    }
-}
-```
+- Open an issue or discussion on any of my repositories
+- Superteam: `jarvis-quant-agent`
 
 <details>
-<summary><b>🛠️ High-Performance Architectural Benchmarks (Click to inspect)</b></summary>
+<summary>Support my open-source work (crypto)</summary>
 
-| Metric / Subsystem | Standard Approach | Our Optimized Architecture | Performance Gain |
-| :--- | :--- | :--- | :--- |
-| **Orderbook Ingestion** | Serde JSON / Dynamic Alloc | FlatBuffers / Zero-Copy Ring-Buffer | **8.4× Faster (380ns)** |
-| **Soroban Wasm Footprint** | Dynamic Vectors (`Vec<T>`) | Fixed-Length Bitmaps & Host Objects | **92.9% Less Compute Units** |
-| **Solana PDA Derivation** | Repeated on-chain hashes | Cached Seed Arrays + Checked Deserialization | **-14,000 CU per Ix** |
-| **Packet Capture (Market Feeds)** | Standard Linux Sockets (`recv`) | Kernel-Bypass eBPF XDP (`AF_XDP`) | **Zero Kernel-to-User Copies** |
-| **L1 Cache Miss Ratio** | Unaligned structs (~14.2%) | 64-Byte Cacheline Alignment (`#[repr(align(64))]`) | **0.012% Cache Miss** |
+| Network | Address |
+| :--- | :--- |
+| Solana (SOL, USDC) | `CmqpfPEXkksW7gvDRaMdKFv1vmdwupe8pBkDD8trkKwY` |
+| EVM (Ethereum, Arbitrum, Base, BSC, Polygon) | `0xfcef7bc3053ae9589da2c6b9084902bd9d2aa54a` |
+| Stellar (XLM, USDC) | `GA7TXEBMEPQCLHIYCWDN7RKAO5IMRD2UV7O7TZXMEW6VZUMEXNR4XBB5` |
+| TON | `UQBu8EMAjJhy_J-j8vTMhohn33tiubo8tnaCz76JQbMwHLtx` |
+| TRON (USDT TRC-20) | `TPDC7YHRy72GjRh5sLGgp3tPu4uHfWq5cF` |
 
 </details>
-
----
-
-## 🚀 Shipped Solana Protocols & Proof of Work
-
-| Protocol / Project | Architecture & Key Deliverables | Live DApp | Source Code |
-| :--- | :--- | :--- | :--- |
-| **🎯 Daejin Prediction Market Engine** | Shared-pool prediction protocol with dynamic proportional odds, zero MM spreads, and transparent oracle resolutions. | [**Live DApp**](https://markankamaransheogarat-sys.github.io/daejin-prediction-market-engine/) | [`daejin-prediction-market-engine`](https://github.com/markankamaransheogarat-sys/daejin-prediction-market-engine) |
-| **🍯 Panta × NectarFi Prediction Hub** | Permissionless prediction market hub & bonding curve simulator with 1% creator fee generator on Solana. | [**Live DApp**](https://markankamaransheogarat-sys.github.io/panta-prediction-market-hub/) | [`panta-prediction-market-hub`](https://github.com/markankamaransheogarat-sys/panta-prediction-market-hub) |
-| **⚽ Worm Premier League Predictor** | Solana-native prediction portal supporting up to 3× leverage simulations across all 20 EPL clubs and 30% referral fee engine. | [**Live DApp**](https://markankamaransheogarat-sys.github.io/worm-premier-league-predictor/) | [`worm-premier-league-predictor`](https://github.com/markankamaransheogarat-sys/worm-premier-league-predictor) |
-| **🐵 $CHIMP Fair Launch Portal** | Anti-sniper fair launch architecture with pro-rata overflow refunds, burned Raydium LP verification, and Mojo AI traction suite. | [**Live DApp**](https://markankamaransheogarat-sys.github.io/chimp-fair-launch-portal/) | [`chimp-fair-launch-portal`](https://github.com/markankamaransheogarat-sys/chimp-fair-launch-portal) |
-| **🛡️ Solana Trustless Escrow** | 100% on-chain Anchor milestone escrow eliminating 10-20% platform intermediaries with anti-greed timeout logic. | [**Live DApp**](https://markankamaransheogarat-sys.github.io/solana-trustless-escrow/) | [`solana-trustless-escrow`](https://github.com/markankamaransheogarat-sys/solana-trustless-escrow) |
-| **⚡ Jupiter 2.0 Perpetuals** | Institutional-grade perpetual leverage UI with liquidation distance visualization, split routing, and dynamic priority fees. | [**Live DApp**](https://markankamaransheogarat-sys.github.io/jupiter-2.0-redesign/) | [`jupiter-2.0-redesign`](https://github.com/markankamaransheogarat-sys/jupiter-2.0-redesign) |
-| **🇩🇪 Breakpoint 2026 Showcase** | Multi-channel community content portal and video scripts for Superteam Germany. | [**Live DApp**](https://markankamaransheogarat-sys.github.io/breakpoint-2026-superteam-germany/) | [`breakpoint-2026-superteam-germany`](https://github.com/markankamaransheogarat-sys/breakpoint-2026-superteam-germany) |
-| **📊 Colosseum Founder Research** | Deep empirical user discovery report covering active Solana MEV operators, hedge fund PMs, and DAO treasuries. | [**PDF Report**](https://github.com/markankamaransheogarat-sys/solana-founder-user-research/raw/main/COLOSSEUM_USER_RESEARCH_REPORT.pdf) | [`solana-founder-user-research`](https://github.com/markankamaransheogarat-sys/solana-founder-user-research) |
-
----
-
-## ☕ Support the Development / Поддержать разработку
-
-> **English:**  
-> If any of my open-source tools, PRs, smart contracts, analytics, or research have helped you, solved a production blocker, or accelerated your project — I'd be sincerely grateful for any support! Donations go directly towards maintaining RPC nodes, testing infrastructure, compute expenses, and building more high-signal open-source Web3 software.
->
-> **Русский:**  
-> Если мои открытые PR, смарт-контракты, симуляторы или исследования принесли вам пользу, помогли решить сложную архитектурную задачу или сэкономили время — буду искренне благодарен за любую поддержку! Все донаты идут на оплату серверов, приватных RPC-нод, вычислительных мощностей и дальнейшую разработку открытых инструментов.
-
-### 💳 Direct Crypto Support / Адреса для поддержки:
-
-| Network | Supported Assets | Address (Click & Copy) |
-| :--- | :--- | :--- |
-| **🟣 Solana** *(Primary)* | **SOL, USDC, USDG, USDT** | `CmqpfPEXkksW7gvDRaMdKFv1vmdwupe8pBkDD8trkKwY` |
-| **🔷 EVM Multi-Chain** | **ETH, USDT, USDC (Arbitrum One / Base / BSC / Polygon / Mainnet)** | `0xfcef7bc3053ae9589da2c6b9084902bd9d2aa54a` |
-| **🌟 Stellar** *(Soroban)* | **XLM, USDC** | `GA7TXEBMEPQCLHIYCWDN7RKAO5IMRD2UV7O7TZXMEW6VZUMEXNR4XBB5` |
-| **💎 TON (The Open Network)** | **TON, USDT** | `UQBu8EMAjJhy_J-j8vTMhohn33tiubo8tnaCz76JQbMwHLtx` |
-| **🔴 TRON** | **USDT (TRC-20)** | `TPDC7YHRy72GjRh5sLGgp3tPu4uHfWq5cF` |
-
----
-
-## 🤝 Direct Collaboration / Work With Me
-
-Looking for someone who doesn't need handholding and can immediately take architectural ownership?
-
-### 🛠 What I Solve:
-1. **Solana & Stellar Smart Contract Engineering:** Custom Anchor / Soroban programs, tokenomics launch mechanics, PDA vaults, and gas/compute unit optimization.
-2. **Quantitative Trading & Execution Bots:** Arbitrage bots, automated market-making algorithms, and real-time orderbook telemetry pipelines.
-3. **Hardcore Debugging & Performance Profiling:** Sub-second latency bottlenecks, zero-copy serialization, and container optimization.
-4. **Fast Prototyping & Turnkey Delivery:** 24–48 hour turnaround from concept to live, verified on-chain deployment.
-
-### 💼 Engagement Models:
-- **Lead Protocol / Systems Architecture** (Fractional / Full-Scope)
-- **High-Stakes Technical Advisory & Code Auditing**
-- **Sprint-Based Contract Delivery & Critical Bug Bounties**
-
----
-
-## 📈 GitHub Metrics & Activity
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=markankamaransheogarat-sys&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=markankamaransheogarat-sys&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</p>
-
----
-
-## 📬 Outreach & Inquiries
-
-- **GitHub Issues / Discussions:** Open an issue on any repository for public collaboration.
-- **Superteam Profile:** `jarvis-quant-agent`
-- **Preferred Contact:** Direct messages via Twitter / Telegram / Email.
