@@ -47,7 +47,13 @@ Most of my public work is fixes and features in other people's projects. A PR fr
 - Superteam: `jarvis-quant-agent`
 
 <details>
-<summary>Support my open-source work (crypto)</summary>
+<summary>☕ Support the development / Поддержать разработку</summary>
+
+**English:**
+If any of my open-source tools, PRs, smart contracts, analytics, or research have helped you, solved a production blocker, or accelerated your project — I'd be sincerely grateful for any support! Donations go directly towards maintaining RPC nodes, testing infrastructure, compute expenses, and building more high-signal open-source Web3 software.
+
+**Русский:**
+Если мои открытые PR, смарт-контракты, симуляторы или исследования принесли вам пользу, помогли решить сложную архитектурную задачу или сэкономили время — буду искренне благодарен за любую поддержку! Все донаты идут на оплату серверов, приватных RPC-нод, вычислительных мощностей и дальнейшую разработку открытых инструментов.
 
 | Network | Address |
 | :--- | :--- |
