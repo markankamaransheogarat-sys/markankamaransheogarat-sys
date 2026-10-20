@@ -14,16 +14,24 @@
 
 ---
 
-## 🏆 Featured Open-Source Contributions & Production PRs
+## 🏆 Open-Source Contributions
 
-High-complexity features, security patches, and performance optimizations shipped across leading open-source Web3 & desktop ecosystems:
+**Merged** (9) — high-traffic repos, reviewed by their maintainers:
 
-| Ecosystem / Project | Scope & Architectural Impact | Status / PR Links |
+| Project | What shipped | PRs |
 | :--- | :--- | :--- |
-| **🗄️ [TabularisDB / Tabularis](https://github.com/TabularisDB/tabularis)** *(5,200+ ⭐)* | **Visual EXPLAIN & High-Speed Data Streaming:**<br>• Full CSV table export for complex query execution trees (`#1163`).<br>• NDJSON streaming export engine for loaded query result sets (`#1156`).<br>• Automated scheduled database backup engine (`#1169`). | [**PR #1184**](https://github.com/TabularisDB/tabularis/pull/1184)<br>[**PR #1187**](https://github.com/TabularisDB/tabularis/pull/1187)<br>[**PR #1207**](https://github.com/TabularisDB/tabularis/pull/1207) *(Merged/Ready)* |
-| **💳 [Orbit Protocol](https://github.com/Orbit-xyz/Orbit)** *(Stellar Wave 10)* | **Smart Contracts, Real-Time Streaming & Mobile Handover:**<br>• Anti-frontrunning commit-reveal contract on Soroban Rust (`#212`).<br>• Real-time Apollo GraphQL subscription streaming over Redis PubSub (`#211`).<br>• Instant QR code fallback & mobile deep-link wallet handover widget (`#210`).<br>• Milestone payroll escrow UI tracker with multisig approval gates (`#209`). | [**PR #214**](https://github.com/Orbit-xyz/Orbit/pull/214)<br>[**PR #215**](https://github.com/Orbit-xyz/Orbit/pull/215)<br>[**PR #216**](https://github.com/Orbit-xyz/Orbit/pull/216)<br>[**PR #217**](https://github.com/Orbit-xyz/Orbit/pull/217) |
-| **🐳 [Stellar Dev Containers](https://github.com/CloudNativeIlorin/stellar-dev-containers)** | **Cloud-Native Tooling & Developer Ergonomics (100% Closed):**<br>• Full `.devcontainer` configuration for VS Code & Codespaces preloaded with Soroban/Rust.<br>• Multi-arch container build & release pipeline to GitHub Container Registry (GHCR).<br>• Integrated `stellar/quickstart` local & testnet RPC node orchestration.<br>• Standardized root developer Makefile and Hadolint CI security linter. | [**PR #6**](https://github.com/CloudNativeIlorin/stellar-dev-containers/pull/6)<br>[**PR #7**](https://github.com/CloudNativeIlorin/stellar-dev-containers/pull/7)<br>[**PR #8**](https://github.com/CloudNativeIlorin/stellar-dev-containers/pull/8)<br>[**PR #9**](https://github.com/CloudNativeIlorin/stellar-dev-containers/pull/9)<br>[**PR #10**](https://github.com/CloudNativeIlorin/stellar-dev-containers/pull/10) |
-| **🌌 [SpaceApp Stack](https://github.com/oll4com/spaceapp)** | **Distributed Workflows & Systems:**<br>• Deterministic Temporal workflow test sandbox with time-skipping replay.<br>• WebGL2 3D memory graph visualizer (50,000+ nodes).<br>• OTLP telemetry worker spans and rootless Podman execution support. | [**PR #157**](https://github.com/oll4com/spaceapp/pull/157)<br>[**PR #119**](https://github.com/oll4com/spaceapp/pull/119)<br>[**PR #112**](https://github.com/oll4com/spaceapp/pull/112)<br>[**PR #101**](https://github.com/oll4com/spaceapp/pull/101) |
+| **🗄️ [TabularisDB / Tabularis](https://github.com/TabularisDB/tabularis)** *(5,200+ ⭐, Tauri + Rust + React)* | Export the full EXPLAIN table as CSV · NDJSON export of loaded query results · save raw EXPLAIN plan to file · undo/redo for pending grid edits · copy column names as a quoted SQL list · pause editor query-history capture · first-contribution guide | [#1184](https://github.com/TabularisDB/tabularis/pull/1184) · [#1187](https://github.com/TabularisDB/tabularis/pull/1187) · [#1178](https://github.com/TabularisDB/tabularis/pull/1178) · [#1206](https://github.com/TabularisDB/tabularis/pull/1206) · [#1185](https://github.com/TabularisDB/tabularis/pull/1185) · [#1186](https://github.com/TabularisDB/tabularis/pull/1186) · [#1171](https://github.com/TabularisDB/tabularis/pull/1171) |
+| **🪙 [MergeMint contracts](https://github.com/mergemint-mint/mergemint-contracts)** *(Stellar Wave)* | i18n key-completeness check across catalogs + JSX string lint rule | [#1135](https://github.com/mergemint-mint/mergemint-contracts/pull/1135) |
+| **📡 [neatlogs / neatroots](https://github.com/neatlogs/neatroots)** | Normalize non-string span `status.message` in the OTLP codec | [#264](https://github.com/neatlogs/neatroots/pull/264) |
+
+**In review:**
+
+| Project | What | PR |
+| :--- | :--- | :--- |
+| Tabularis | Scheduled database content backups: timezone/DST-aware scheduler, retention, cancellation | [#1207](https://github.com/TabularisDB/tabularis/pull/1207) |
+| [OpsiMate](https://github.com/OpsiMate/OpsiMate) | Retention settings: surface failed toggle saves + component tests | [#1280](https://github.com/OpsiMate/OpsiMate/pull/1280) |
+| [Stellar Dev Containers](https://github.com/CloudNativeIlorin/stellar-dev-containers) | Devcontainer, multi-arch GHCR CI, Makefile, quickstart compose, hadolint | [#6](https://github.com/CloudNativeIlorin/stellar-dev-containers/pull/6)–[#10](https://github.com/CloudNativeIlorin/stellar-dev-containers/pull/10) |
+| [SpaceApp](https://github.com/oll4com/spaceapp) | WebGL2 3D memory graph, OTLP worker spans, rootless Podman, per-service images, Temporal test sandbox | [#119](https://github.com/oll4com/spaceapp/pull/119) · [#112](https://github.com/oll4com/spaceapp/pull/112) · [#101](https://github.com/oll4com/spaceapp/pull/101) · [#123](https://github.com/oll4com/spaceapp/pull/123) · [#157](https://github.com/oll4com/spaceapp/pull/157) |
 
 ---
 
