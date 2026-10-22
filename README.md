@@ -66,6 +66,7 @@ I take fixed-scope jobs where the result is something you can run and review:
 
 | Project | What it is |
 | :--- | :--- |
+| [crypto-pulse-mcp](https://github.com/markankamaransheogarat-sys/crypto-pulse-mcp) | MCP server that gives Claude live crypto data: prices across Bybit/Binance, funding and open interest, DeFi TVL (incl. Stellar), stablecoin flows. TypeScript, tested, no API keys |
 | [daejin-prediction-market-engine](https://github.com/markankamaransheogarat-sys/daejin-prediction-market-engine) | Interactive explainer of Daejin prediction markets: share pricing and payout calculator ([live](https://markankamaransheogarat-sys.github.io/daejin-prediction-market-engine/)) |
 | [solana-trustless-escrow](https://github.com/markankamaransheogarat-sys/solana-trustless-escrow) | Anchor milestone-escrow program with a timeout path, plus a web client |
 | [panta-prediction-market-hub](https://github.com/markankamaransheogarat-sys/panta-prediction-market-hub) · [worm-premier-league-predictor](https://github.com/markankamaransheogarat-sys/worm-premier-league-predictor) | Prediction-market prototypes (shared-pool odds, bonding curves) |
