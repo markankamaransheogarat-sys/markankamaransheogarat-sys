@@ -5,7 +5,7 @@
 **I ship features, fixes and tooling into real projects, with tests, and I say exactly what was checked.**
 
 [![Telegram](https://img.shields.io/badge/Telegram-@amadeus1827-26A5E4?logo=telegram&logoColor=white)](https://t.me/amadeus1827)
-[![Merged PRs](https://img.shields.io/badge/merged%20PRs-17-2ea44f)](#merged-open-source-work)
+[![Merged PRs](https://img.shields.io/badge/merged%20PRs-21-2ea44f)](#merged-open-source-work)
 [![Projects](https://img.shields.io/badge/projects-11-blue)](#merged-open-source-work)
 [![Available](https://img.shields.io/badge/available%20for-freelance%20work-orange)](#work-with-me)
 
@@ -15,7 +15,7 @@
 
 ## Proof, not promises
 
-**17 merged pull requests in 8 repositories in the last week**, including maintainers' own review and CI:
+**21 merged pull requests in 11 repositories in the last week**, including maintainers' own review and CI:
 
 | | |
 | :--- | :--- |
@@ -50,6 +50,9 @@ I take fixed-scope jobs where the result is something you can run and review:
 | Project | What I shipped |
 | :--- | :--- |
 | [**TabularisDB / Tabularis**](https://github.com/TabularisDB/tabularis) · 5k★ | Scheduled database backups with a timezone- and DST-aware scheduler ([#1207](https://github.com/TabularisDB/tabularis/pull/1207)) · export the full EXPLAIN table as CSV ([#1184](https://github.com/TabularisDB/tabularis/pull/1184)) · NDJSON export ([#1187](https://github.com/TabularisDB/tabularis/pull/1187)) · save raw EXPLAIN plans ([#1178](https://github.com/TabularisDB/tabularis/pull/1178)) · undo/redo for pending grid edits ([#1206](https://github.com/TabularisDB/tabularis/pull/1206)) · copy column names as a SQL list ([#1185](https://github.com/TabularisDB/tabularis/pull/1185)) · pause query-history capture ([#1186](https://github.com/TabularisDB/tabularis/pull/1186)) · contributor quickstart ([#1171](https://github.com/TabularisDB/tabularis/pull/1171)) |
+| [**OpenSandbox**](https://github.com/opensandbox-group/OpenSandbox) | Send WSCloseTakenOver frame on takeover during initial writes ([#2378](https://github.com/opensandbox-group/OpenSandbox/pull/2378)) |
+| [**dupdap**](https://github.com/dupdab/dupdap-frontend) | Migrate token storage from localStorage to httpOnly cookies ([#633](https://github.com/dupdab/dupdap-frontend/pull/633)) |
+| [**awesome-mcp-servers**](https://github.com/punkpeye/awesome-mcp-servers) | Added stellar-pulse-mcp to curated list ([#17258](https://github.com/punkpeye/awesome-mcp-servers/pull/17258)) |
 | [**Mozilla neqo**](https://github.com/mozilla/neqo) · 2.2k★ | Named constant for the PATH_CHALLENGE/PATH_RESPONSE data length ([#4116](https://github.com/mozilla/neqo/pull/4116)) |
 | [**OpenRig**](https://github.com/mvschwarz/openrig) · 8k★ | Honor `--with-source` in `rig config get` ([#1628](https://github.com/mvschwarz/openrig/pull/1628)) · explain why the startup proof line is held back ([#1630](https://github.com/mvschwarz/openrig/pull/1630)) |
 | [**Hiero JS SDK**](https://github.com/hiero-ledger/hiero-sdk-js) · LF Decentralized Trust | Fix copy-pasted JSDoc across the network, token and transaction APIs ([#4562](https://github.com/hiero-ledger/hiero-sdk-js/pull/4562)) · unit tests for `ContractInfo` + JSDoc fixes ([#4570](https://github.com/hiero-ledger/hiero-sdk-js/pull/4570)) |
@@ -58,7 +61,15 @@ I take fixed-scope jobs where the result is something you can run and review:
 | [**StellarSpend**](https://github.com/stellarspend/stellarspend-app) | TSDoc for budget helpers and `BudgetForm` ([#691](https://github.com/stellarspend/stellarspend-app/pull/691)) |
 | [**Cypher GridPay**](https://github.com/johnephraim949-web/cypher-gridpay-contracts) · Soroban | Typed `ContractError` decoder and diagnostic mapper for the SDK ([#301](https://github.com/johnephraim949-web/cypher-gridpay-contracts/pull/301)) |
 
-**In review right now:** Tabularis Unix-socket connections ([#1250](https://github.com/TabularisDB/tabularis/pull/1250)) and streaming exports ([#1240](https://github.com/TabularisDB/tabularis/pull/1240)) · OpsiMate retention-toggle error handling ([#1280](https://github.com/OpsiMate/OpsiMate/pull/1280)).
+**In review right now (33 active PRs):**
+- **OpenSandbox**: per-call server proxy override ([#2394](https://github.com/opensandbox-group/OpenSandbox/pull/2394)), serialize concurrent env runs ([#2392](https://github.com/opensandbox-group/OpenSandbox/pull/2392)), symlink escape guard ([#2391](https://github.com/opensandbox-group/OpenSandbox/pull/2391))
+- **Scout Platform**: deduplicate CI workflows ([#1758](https://github.com/scout-off/scout-off-backend/pull/1758)), CodeQL timeout & concurrency ([#1757](https://github.com/scout-off/scout-off-backend/pull/1757)), webhook fan-out filter ([#1756](https://github.com/scout-off/scout-off-backend/pull/1756)), route idempotency keys ([#1755](https://github.com/scout-off/scout-off-backend/pull/1755))
+- **FaniLab**: Prisma check & null constraint mapping ([#574](https://github.com/fanilabs/backend/pull/574)), case-insensitive Bearer auth ([#573](https://github.com/fanilabs/backend/pull/573))
+- **Orbit Protocol (Stellar)**: interactive payroll escrow tracker ([#217](https://github.com/Orbit-xyz/Orbit/pull/217)), QR code wallet handover ([#216](https://github.com/Orbit-xyz/Orbit/pull/216)), GraphQL subscriptions ([#215](https://github.com/Orbit-xyz/Orbit/pull/215)), anti-frontrunning commit-reveal ([#214](https://github.com/Orbit-xyz/Orbit/pull/214))
+- **SpaceApp**: gitleaks allowlist ([#291](https://github.com/oll4com/spaceapp/pull/291)), shared-chat dispatch ([#208](https://github.com/oll4com/spaceapp/pull/208)), Temporal workflow testing ([#157](https://github.com/oll4com/spaceapp/pull/157)), WebGL2 3D graph ([#119](https://github.com/oll4com/spaceapp/pull/119))
+- **Tabularis**: Unix-socket connections ([#1250](https://github.com/TabularisDB/tabularis/pull/1250)), streaming backend exports ([#1240](https://github.com/TabularisDB/tabularis/pull/1240))
+- **KubeStellar Console**: prototype pollution guard in card title formatting ([#24600](https://github.com/kubestellar/console/pull/24600))
+- **SlopTotal**: UTF-8 encoding fix ([#176](https://github.com/pablocaeg/sloptotal/pull/176))
 
 ---
 
