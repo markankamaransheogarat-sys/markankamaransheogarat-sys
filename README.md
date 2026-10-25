@@ -77,6 +77,8 @@ I take fixed-scope jobs where the result is something you can run and review:
 
 | Project | What it is |
 | :--- | :--- |
+| [**SubRelay**](https://github.com/markankamaransheogarat-sys/subrelay) | P2P subscription sharing & escrow platform for international services in Russia (Spotify, Steam, Claude, Midjourney). Automated family plan slots, SBP renewal reminders, 24h timelock non-custodial protection |
+| [**DPI-Auto-Desync**](https://github.com/markankamaransheogarat-sys/dpi-auto-desync) | Zero-config standalone TSPU / DPI bypass engine for mobile (Android/iOS) & desktop. Automated provider ISP probing, dynamic TCP fragmentation, TLS fake SNI hop-limit injection, and zero-latency local SOCKS5 proxy |
 | [**Vasyord**](https://github.com/markankamaransheogarat-sys/vasyord) | Open-source Discord alternative. Self-hosted WebRTC P2P voice & chat, Telegram-style audio messages, screen sharing & volume sliders. Low latency (<30ms), bypasses censorship |
 | [**Ping**](https://github.com/markankamaransheogarat-sys/ping) | Money that flies like messages. Telegram Mini App on Stellar: non-custodial link payments (Drop) and group escrow pools (Split) powered by Soroban smart contracts |
 | [**Bybit Smart Piggybank**](https://github.com/markankamaransheogarat-sys/bybit-smart-piggybank) | Autonomous AI-native DCA & profit-harvester engine for Bybit Spot (BTC, ETH, SOL) with Bollinger dip-buying, risk guard, FastAPI dashboard & MCP operator |
