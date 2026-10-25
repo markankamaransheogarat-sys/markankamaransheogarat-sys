@@ -6,7 +6,7 @@
 
 [![Telegram](https://img.shields.io/badge/Telegram-@amadeus1827-26A5E4?logo=telegram&logoColor=white)](https://t.me/amadeus1827)
 [![Merged PRs](https://img.shields.io/badge/merged%20PRs-17-2ea44f)](#merged-open-source-work)
-[![Projects](https://img.shields.io/badge/projects-8-blue)](#merged-open-source-work)
+[![Projects](https://img.shields.io/badge/projects-11-blue)](#merged-open-source-work)
 [![Available](https://img.shields.io/badge/available%20for-freelance%20work-orange)](#work-with-me)
 
 </div>
@@ -66,6 +66,9 @@ I take fixed-scope jobs where the result is something you can run and review:
 
 | Project | What it is |
 | :--- | :--- |
+| [**Vasyord**](https://github.com/markankamaransheogarat-sys/vasyord) | Open-source Discord alternative. Self-hosted WebRTC P2P voice & chat, Telegram-style audio messages, screen sharing & volume sliders. Low latency (<30ms), bypasses censorship |
+| [**Ping**](https://github.com/markankamaransheogarat-sys/ping) | Money that flies like messages. Telegram Mini App on Stellar: non-custodial link payments (Drop) and group escrow pools (Split) powered by Soroban smart contracts |
+| [**Bybit Smart Piggybank**](https://github.com/markankamaransheogarat-sys/bybit-smart-piggybank) | Autonomous AI-native DCA & profit-harvester engine for Bybit Spot (BTC, ETH, SOL) with Bollinger dip-buying, risk guard, FastAPI dashboard & MCP operator |
 | [crypto-pulse-mcp](https://github.com/markankamaransheogarat-sys/crypto-pulse-mcp) | MCP server that gives Claude live crypto data: prices across Bybit/Binance, funding and open interest, DeFi TVL (incl. Stellar), stablecoin flows. TypeScript, tested, no API keys |
 | [daejin-prediction-market-engine](https://github.com/markankamaransheogarat-sys/daejin-prediction-market-engine) | Interactive explainer of Daejin prediction markets: share pricing and payout calculator ([live](https://markankamaransheogarat-sys.github.io/daejin-prediction-market-engine/)) |
 | [solana-trustless-escrow](https://github.com/markankamaransheogarat-sys/solana-trustless-escrow) | Anchor milestone-escrow program with a timeout path, plus a web client |
