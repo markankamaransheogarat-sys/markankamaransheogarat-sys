@@ -77,6 +77,7 @@ I take fixed-scope jobs where the result is something you can run and review:
 
 | Project | What it is |
 | :--- | :--- |
+| [**UltraDPI Android**](https://github.com/markankamaransheogarat-sys/ultradpi-android) | 1-click zero-config Android app for TSPU bypass. Replaces complex ByeDPI setups with a single toggle button using Android VpnService & local TLS desync |
 | [**UltraDPI**](https://github.com/markankamaransheogarat-sys/ultradpi) | Next-Gen TSPU / DPI bypass engine in pure Rust (5x faster & more versatile than GoodbyeDPI). Zero-copy SOCKS5 & transparent tunnel, mid-SNI TLS fragmentation, low-TTL fake SNI injection, automated ISP benchmark, Discord UDP voice and Battlefield bypass |
 | [**SubRelay**](https://github.com/markankamaransheogarat-sys/subrelay) | P2P subscription sharing & escrow platform for international services in Russia (Spotify, Steam, Claude, Midjourney). Automated family plan slots, SBP renewal reminders, 24h timelock non-custodial protection |
 | [**DPI-Auto-Desync**](https://github.com/markankamaransheogarat-sys/dpi-auto-desync) | Zero-config standalone TSPU / DPI bypass engine for mobile (Android/iOS) & desktop. Automated provider ISP probing, dynamic TCP fragmentation, TLS fake SNI hop-limit injection, and zero-latency local SOCKS5 proxy |
