@@ -8,7 +8,7 @@
 [![Merged PRs](https://img.shields.io/badge/merged%20PRs-25+-2ea44f)](#merged-open-source-work)
 [![Verified Codebases](https://img.shields.io/badge/shipped%20crates-Rust%20%7C%20WASM-orange)](#-flagship-open-source-projects)
 [![Live Demos](https://img.shields.io/badge/live%20demos-WASM%20Canvas-4fd1c5)](#-live-interactive-playgrounds)
-[![Live Platform](https://img.shields.io/badge/Live%20Platform-subtext24.com-E02424)](https://subtext24.com)
+[![Live Platform](https://img.shields.io/badge/Live%20Platform-subtext24.com%20%7C%20sybtext24.com-E02424)](https://subtext24.com)
 
 </div>
 
@@ -78,9 +78,9 @@ Run these mathematical and physics engines directly in your browser without inst
   Anti-procrastination commitment contracts with TON staking.
 
 ### 5. Autonomous Media Intelligence & News Forensics
-- **[THE SUBTEXT // Forensic Narrative Terminal](https://subtext24.com/)** (`subtext24.com`) `[Python · FastAPI/Node · DeepSeek AI · Autonomous 24/7 Engine]`  
+- **[THE SUBTEXT // Forensic Narrative Terminal](https://subtext24.com/)** (`subtext24.com` · `sybtext24.com`) `[Python · FastAPI/Node · DeepSeek AI · Autonomous 24/7 Engine]`  
   Autonomous institutional news agency and real-time narrative autopsy terminal.
-  - **Live Platform**: [subtext24.com](https://subtext24.com/)
+  - **Live Platform**: [subtext24.com](https://subtext24.com/) · [sybtext24.com](https://sybtext24.com/)
   - **Forensic Engine**: Multi-wire automated ingestion (Reuters, Bloomberg, AP), deep narrative deconstruction uncovering PR spin vs. underlying reality, hidden financial beneficiaries, and real-time Hypocrisy Index calculation.
   - **Automated Multi-Modal Synthesis**: Generative pipeline creating dynamic OG cards, investigative infographics, automated video briefs for YouTube distribution, and instant breaking news dispatches to Telegram.
   - **Production Architecture**: Zero-human-intervention editorial pipeline operating 24/7 with strict rate limiting, SQLite/FastAPI indexing, triage queues, and sub-second edge web delivery via Cloudflare.
