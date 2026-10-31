@@ -8,6 +8,7 @@
 [![Merged PRs](https://img.shields.io/badge/merged%20PRs-25+-2ea44f)](#merged-open-source-work)
 [![Verified Codebases](https://img.shields.io/badge/shipped%20crates-Rust%20%7C%20WASM-orange)](#-flagship-open-source-projects)
 [![Live Demos](https://img.shields.io/badge/live%20demos-WASM%20Canvas-4fd1c5)](#-live-interactive-playgrounds)
+[![Live Platform](https://img.shields.io/badge/Live%20Platform-subtext24.com-E02424)](https://subtext24.com)
 
 </div>
 
@@ -76,6 +77,14 @@ Run these mathematical and physics engines directly in your browser without inst
 - **[`shamestake`](https://github.com/markankamaransheogarat-sys/shamestake)** `[TON · TMA · FunC]`  
   Anti-procrastination commitment contracts with TON staking.
 
+### 5. Autonomous Media Intelligence & News Forensics
+- **[THE SUBTEXT // Forensic Narrative Terminal](https://subtext24.com/)** (`subtext24.com`) `[Python · FastAPI/Node · DeepSeek AI · Autonomous 24/7 Engine]`  
+  Autonomous institutional news agency and real-time narrative autopsy terminal.
+  - **Live Platform**: [subtext24.com](https://subtext24.com/)
+  - **Forensic Engine**: Multi-wire automated ingestion (Reuters, Bloomberg, AP), deep narrative deconstruction uncovering PR spin vs. underlying reality, hidden financial beneficiaries, and real-time Hypocrisy Index calculation.
+  - **Automated Multi-Modal Synthesis**: Generative pipeline creating dynamic OG cards, investigative infographics, automated video briefs for YouTube distribution, and instant breaking news dispatches to Telegram.
+  - **Production Architecture**: Zero-human-intervention editorial pipeline operating 24/7 with strict rate limiting, SQLite/FastAPI indexing, triage queues, and sub-second edge web delivery via Cloudflare.
+
 ---
 
 ## 🛠️ Core Engineering Stack
@@ -83,6 +92,7 @@ Run these mathematical and physics engines directly in your browser without inst
 ```
 Languages:        Rust (Core/Systems/WASM), TypeScript, Python, C/C++, Go, SQL
 Platforms:        Linux (eBPF, RAW sockets, systemd), Android (NDK, VpnService), WebAssembly
+AI & Automation:  DeepSeek AI, Autonomous Harvesters, Multi-Modal Media Synthesis, NLP Forensics
 Architectures:    Distributed Systems, High-Frequency Trading (HFT), Concurrency (Tokio, Rayon)
 Ecosystems:       Tauri v2, Stellar (Soroban), Solana (Anchor), TON, Docker, GitHub Actions CI/CD
 ```
@@ -97,6 +107,7 @@ I take fixed-scope engineering contracts where the output is deterministic, robu
 | :--- | :--- |
 | **High-Performance Rust** | Network proxies, parsers, mathematical algorithms, zero-copy engines, WASM modules |
 | **Systems & Reverse Engineering** | Protocol analysis, packet manipulation, DPI bypass, custom transport drivers |
+| **Autonomous AI & News Systems** | End-to-end ingestion pipelines, LLM-based narrative forensics, automated media synthesis & publishing |
 | **Smart Contracts & Web3** | Stellar (Soroban) & Solana (Anchor) contracts, audit remediations, off-chain indexers |
 | **HFT & Quant Automation** | Low-latency market recorders, exchange connectors (Bybit, Binance), Telegram alerting |
 
