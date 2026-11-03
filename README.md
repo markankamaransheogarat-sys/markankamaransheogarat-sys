@@ -5,10 +5,15 @@
 **Specializing in high-throughput distributed systems, low-latency Rust/Python platforms, LLM inference architectures, and zero-overhead networking.**
 
 [![Telegram](https://img.shields.io/badge/Telegram-@amadeus1827-26A5E4?logo=telegram&logoColor=white)](https://t.me/amadeus1827)
-[![Merged PRs](https://img.shields.io/badge/merged%20PRs-25+-2ea44f)](#-selected-upstream-contributions)
-[![Verified Codebases](https://img.shields.io/badge/production%20repos-Rust%20%7C%20Python%20%7C%20Kotlin-orange)](#-flagship-systems--distributed-platforms)
-[![Live Demos](https://img.shields.io/badge/live%20demos-WASM%20Canvas-4fd1c5)](#-live-interactive-playgrounds-webassembly)
-[![Live Platform](https://img.shields.io/badge/Live%20Platform-subtext24.com-E02424)](https://subtext24.com)
+[![Audited by](https://img.shields.io/badge/Audited%20by-Mozilla%20%7C%20Linux%20Foundation-black?logo=linux&logoColor=white)](#-selected-upstream-contributions)
+[![Merged PRs](https://img.shields.io/badge/Merged%20PRs-25+-2ea44f?logo=git&logoColor=white)](#-selected-upstream-contributions)
+[![Live Platform](https://img.shields.io/badge/Live%20Terminal-subtext24.com-E02424?logo=statuspage&logoColor=white)](https://subtext24.com)
+[![Live Demos](https://img.shields.io/badge/Live%20Demos-WASM%20Canvas-4fd1c5?logo=webassembly&logoColor=white)](#-live-interactive-playgrounds-webassembly)
+<br>
+[![LLM Inference](https://img.shields.io/badge/LLM%20Inference-9.4k%20tok%2Fs%20%7C%20Orca%20Batcher-blueviolet?logo=rust&logoColor=white)](#-high-performance-ai-platform--inference-infrastructure)
+[![Broker Routing](https://img.shields.io/badge/Broker%20Routing-145k%20msg%2Fs%20%7C%206.8%C2%B5s-orange?logo=apachekafka&logoColor=white)](#-high-load-distributed-brokers--offline-first-state-engines)
+[![Columnar Engine](https://img.shields.io/badge/Columnar%20Ingestion-1.5M%20ord%2Fs-008080?logo=clickhouse&logoColor=white)](#-high-load-distributed-brokers--offline-first-state-engines)
+[![Safety Standard](https://img.shields.io/badge/Zero--Unsafe-100%25-brightgreen)](#-algorithmic-reincarnations--physics-webassembly)
 
 </div>
 
