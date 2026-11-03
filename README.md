@@ -132,13 +132,15 @@ Networks & Protocols:  QUIC / HTTP/3, WebSocket, TCP Mid-SNI Segmentation, Ultra
 
 I take fixed-scope engineering contracts and senior/staff roles where the output is deterministic, robust, and fully covered by tests:
 
-| Domain | Deliverables |
-| :--- | :--- |
-| **High-Performance Rust** | Network proxies, parsers, mathematical algorithms, zero-copy engines, WASM modules |
-| **Distributed & AI Platform Infrastructure** | Continuous batchers, PagedAttention memory managers, hybrid RAG systems, CRDT state sync |
-| **High-Load Database & Data Pipelines** | Columnar ingestion engines (ClickHouse, PostgreSQL raw asyncpg), materialized views, high-TPS pipelines |
-| **Systems & Reverse Engineering** | Protocol analysis, packet manipulation, DPI bypass, custom transport drivers |
-| **HFT & Quant Automation** | Low-latency market recorders, exchange connectors (Bybit, Binance), Telegram alerting |
+| Domain | Deliverables | Verified Proof / Production Repos |
+| :--- | :--- | :--- |
+| **Distributed & AI Platform Infrastructure** | Continuous dynamic batchers (Orca), PagedAttention KV-cache, hybrid RAG systems, sub-ms semantic caching | [`tensor-gateway-rs`](https://github.com/markankamaransheogarat-sys/tensor-gateway-rs) · [`cortex-agent-rag`](https://github.com/markankamaransheogarat-sys/cortex-agent-rag) |
+| **High-Concurrency Messaging & Offline Sync** | Custom binary wire protocols (RFC specs), Tokio event routers (145k+ msg/s), multiplatform CRDTs | [`synapse-chat-core`](https://github.com/markankamaransheogarat-sys/synapse-chat-core) |
+| **High-Load Columnar Ingestion & Analytics** | ClickHouse materialized views, zero-ORM raw asyncpg, range partitioning, 1.5M+ ord/s ingestion | [`market-columnar-engine`](https://github.com/markankamaransheogarat-sys/market-columnar-engine) · [`tabularis`](https://github.com/TabularisDB/tabularis) |
+| **MEV & High-Frequency Quant Solvers** | Cross-DEX cyclic arbitrage, Bellman-Ford negative cycles, mempool simulation, market recorders | [`aevum-intent-solver`](https://github.com/markankamaransheogarat-sys/aevum-intent-solver) · [`bounty-sniper-rs`](https://github.com/markankamaransheogarat-sys/bounty-sniper-rs) |
+| **Air-Gapped Mesh & Zero-Trust P2P** | Ultrasonic FSK audio transport, offline BLE mesh routing, encrypted P2P clipboard, zero-cloud sync | [`cyberdeck-mesh`](https://github.com/markankamaransheogarat-sys/cyberdeck-mesh) · [`ghostclip`](https://github.com/markankamaransheogarat-sys/ghostclip) |
+| **Systems & DPI Circumvention** | Mid-SNI TCP segmentation, fake SNI injection, eBPF, raw sockets, 1-click Android VpnService | [`ultradpi`](https://github.com/markankamaransheogarat-sys/ultradpi) · [`ultradpi-android`](https://github.com/markankamaransheogarat-sys/ultradpi-android) |
+| **Autonomous 24/7 AI Media & Forensics** | Multi-wire ingestion pipelines, narrative autopsy terminals, dynamic multi-modal synthesis | [subtext24.com](https://subtext24.com) · [sybtext24.com](https://sybtext24.com) |
 
 📩 **Direct Telegram: [@amadeus1827](https://t.me/amadeus1827)** · Superteam Earn: `jarvis-quant-agent`
 
