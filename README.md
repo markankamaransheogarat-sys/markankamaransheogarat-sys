@@ -6,7 +6,7 @@
 
 [![Telegram](https://img.shields.io/badge/Telegram-@amadeus1827-26A5E4?logo=telegram&logoColor=white)](https://t.me/amadeus1827)
 [![Audited by](https://img.shields.io/badge/Audited%20by-Mozilla%20%7C%20Linux%20Foundation-black?logo=linux&logoColor=white)](#-selected-upstream-contributions)
-[![Merged PRs](https://img.shields.io/badge/Merged%20PRs-25+-2ea44f?logo=git&logoColor=white)](#-selected-upstream-contributions)
+[![Merged PRs](https://img.shields.io/badge/Merged%20PRs-30+-2ea44f?logo=git&logoColor=white)](#-selected-upstream-contributions)
 [![Live Platform](https://img.shields.io/badge/Live%20Terminal-subtext24.com-E02424?logo=statuspage&logoColor=white)](https://subtext24.com)
 [![Live Demos](https://img.shields.io/badge/Live%20Demos-WASM%20Canvas-4fd1c5?logo=webassembly&logoColor=white)](#-live-interactive-playgrounds-webassembly)
 <br>
@@ -21,14 +21,16 @@
 
 ## ⚡ Proof, not promises
 
-**25+ merged pull requests into Tier-1 open-source repositories**, audited and accepted by upstream maintainers:
+**30+ merged pull requests into Tier-1 open-source repositories**, audited and accepted by upstream maintainers:
 
 | Ecosystem / Organization | Domain & Track Record |
 | :--- | :--- |
-| **[Mozilla neqo](https://github.com/mozilla/neqo)** · 2.2k★ | Firefox's QUIC / HTTP/3 stack in Rust |
+| **[Mozilla neqo](https://github.com/mozilla/neqo)** · 2.2k★ | Firefox's QUIC / HTTP/3 transport stack in Rust |
 | **[OpenRig](https://github.com/mvschwarz/openrig)** · 8k★ | Multi-agent autonomous orchestrator CLI |
 | **[Tabularis](https://github.com/TabularisDB/tabularis)** · 5k★ | Desktop SQL workspace (Tauri v2, Rust, React): **8+ merged features & scheduler** |
 | **[Hiero JS SDK](https://github.com/hiero-ledger/hiero-sdk-js)** · LF Decentralized Trust | Linux Foundation Decentralized Trust SDK: test harnesses & API fixes |
+| **[OpsiMate](https://github.com/OpsiMate/OpsiMate)** · 300★ | NOC/DevOps alert & incident manager: **2 merged PRs** (AI settings validation & retention saves) |
+| **[SlopTotal](https://github.com/pablocaeg/sloptotal)** | Open-source AI text detector (23 engines): UTF-8 benchmark IO integrity fix |
 | **[OpenSandbox](https://github.com/opensandbox-group/OpenSandbox)** | High-density secure agent sandboxing: WebSocket lifecycle takeover fixes |
 
 ---
@@ -151,6 +153,9 @@ I take fixed-scope engineering contracts and senior/staff roles where the output
 | Repository | What I shipped |
 | :--- | :--- |
 | [**TabularisDB / Tabularis**](https://github.com/TabularisDB/tabularis) · 5k★ | Scheduled database backups with DST-aware cron ([#1207](https://github.com/TabularisDB/tabularis/pull/1207)) · EXPLAIN CSV/NDJSON export ([#1184](https://github.com/TabularisDB/tabularis/pull/1184), [#1187](https://github.com/TabularisDB/tabularis/pull/1187)) · Grid undo/redo ([#1206](https://github.com/TabularisDB/tabularis/pull/1206)) · Query history pause ([#1186](https://github.com/TabularisDB/tabularis/pull/1186)) · Unix socket transport ([#1250](https://github.com/TabularisDB/tabularis/pull/1250)) |
+| [**SlopTotal**](https://github.com/pablocaeg/sloptotal) | Multi-engine AI text detection benchmark: UTF-8 file read/write encoding fix ([#176](https://github.com/pablocaeg/sloptotal/pull/176)) |
+| [**OpsiMate**](https://github.com/OpsiMate/OpsiMate) · 300★ | AI settings form rules test coverage ([#1360](https://github.com/OpsiMate/OpsiMate/pull/1360)) · Retention policy toggle failure reporting ([#1280](https://github.com/OpsiMate/OpsiMate/pull/1280)) |
+| [**FaniLabs Backend**](https://github.com/fanilabs/backend) | Soroban contract indexer: Prisma check constraint (P2004) & null violation (P2011) to 400 bad request mapping ([#574](https://github.com/fanilabs/backend/pull/574)) |
 | [**OpenSandbox**](https://github.com/opensandbox-group/OpenSandbox) | WebSocket frame collision prevention on runtime takeover ([#2378](https://github.com/opensandbox-group/OpenSandbox/pull/2378)) |
 | [**Mozilla neqo**](https://github.com/mozilla/neqo) · 2.2k★ | Strict constant for PATH_CHALLENGE / PATH_RESPONSE frames ([#4116](https://github.com/mozilla/neqo/pull/4116)) |
 | [**OpenRig**](https://github.com/mvschwarz/openrig) · 8k★ | Source-aware configuration parsing ([#1628](https://github.com/mvschwarz/openrig/pull/1628)) |
