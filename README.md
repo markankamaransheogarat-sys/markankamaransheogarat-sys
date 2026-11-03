@@ -82,6 +82,8 @@
   Zero-dependency Linux server sentinel & mobile Telegram HUD with authenticated command execution, disk guard, and real-time push alerts.
 - **[`nodevortex`](https://github.com/markankamaransheogarat-sys/nodevortex)** `[Python · Asyncio · VLESS / Clash]`  
   High-performance proxy aggregator, TCP/TLS handshake latency benchmarker, and auto-subscription distributor.
+- **[`net-autopsy`](https://github.com/markankamaransheogarat-sys/net-autopsy)** `[Rust · OSI Layers 3-7 · Zero-Dependency]`  
+  Sub-second forensic network & censorship autopsy engine. 3-way differential TLS SNI prober, Dual-Stack DNS poisoning detector, ECH parameter stripper check, and QUIC/UDP 443 blackhole tracer.
 - **[`ultradpi`](https://github.com/markankamaransheogarat-sys/ultradpi)** `[Rust · WinDivert · eBPF · RAW Sockets]`  
   Next-gen Deep Packet Inspection (DPI/TSPU) circumvention engine. 5x faster than GoodbyeDPI, mid-SNI TCP segmentation, low-TTL fake SNI hop injection, and Discord UDP voice patch.
 - **[`ultradpi-android`](https://github.com/markankamaransheogarat-sys/ultradpi-android)**  
@@ -141,7 +143,7 @@ I take fixed-scope engineering contracts and senior/staff roles where the output
 | **High-Load Columnar Ingestion & Analytics** | ClickHouse materialized views, zero-ORM raw asyncpg, range partitioning, 1.5M+ ord/s ingestion | [`market-columnar-engine`](https://github.com/markankamaransheogarat-sys/market-columnar-engine) · [`tabularis`](https://github.com/TabularisDB/tabularis) |
 | **MEV & High-Frequency Quant Solvers** | Cross-DEX cyclic arbitrage, Bellman-Ford negative cycles, mempool simulation, market recorders | [`aevum-intent-solver`](https://github.com/markankamaransheogarat-sys/aevum-intent-solver) · [`bounty-sniper-rs`](https://github.com/markankamaransheogarat-sys/bounty-sniper-rs) |
 | **Air-Gapped Mesh & Zero-Trust P2P** | Ultrasonic FSK audio transport, offline BLE mesh routing, encrypted P2P clipboard, zero-cloud sync | [`cyberdeck-mesh`](https://github.com/markankamaransheogarat-sys/cyberdeck-mesh) · [`ghostclip`](https://github.com/markankamaransheogarat-sys/ghostclip) |
-| **Systems & DPI Circumvention** | Mid-SNI TCP segmentation, fake SNI injection, eBPF, raw sockets, 1-click Android VpnService | [`ultradpi`](https://github.com/markankamaransheogarat-sys/ultradpi) · [`ultradpi-android`](https://github.com/markankamaransheogarat-sys/ultradpi-android) |
+| **Systems & DPI Circumvention** | Mid-SNI TCP segmentation, fake SNI injection, eBPF, raw sockets, forensic autopsy | [`net-autopsy`](https://github.com/markankamaransheogarat-sys/net-autopsy) · [`ultradpi`](https://github.com/markankamaransheogarat-sys/ultradpi) · [`ultradpi-android`](https://github.com/markankamaransheogarat-sys/ultradpi-android) |
 | **Autonomous 24/7 AI Media & Forensics** | Multi-wire ingestion pipelines, narrative autopsy terminals, dynamic multi-modal synthesis | [subtext24.com](https://subtext24.com) · [sybtext24.com](https://sybtext24.com) |
 
 📩 **Direct Telegram: [@amadeus1827](https://t.me/amadeus1827)** · Superteam Earn: `jarvis-quant-agent`
