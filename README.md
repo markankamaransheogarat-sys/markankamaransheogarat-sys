@@ -96,7 +96,9 @@
 - **[`ultradpi-android`](https://github.com/markankamaransheogarat-sys/ultradpi-android)**  
   Zero-config 1-click Android VpnService engine. Unblocks YouTube 4K, Discord & AI tools locally without remote VPN servers.
 
-### 5. Algorithmic Reincarnations & Physics (WebAssembly)
+### 5. Algorithmic Reincarnations, Physics & 3D WebGL
+- **[`requiem-gothic-slasher`](https://github.com/markankamaransheogarat-sys/requiem-gothic-slasher)** `[WebGL · Three.js · Web Audio API · Mobile PWA]` · [Play Live on Mobile / Desktop](https://markankamaransheogarat-sys.github.io/requiem-gothic-slasher/)  
+  Mobile-first 3rd-person gothic zombie action slasher. Floating dynamic multi-touch joystick, 3-hit claymore combo, dodge roll i-frames, holy wrath AoE, zombie flocking horde AI, and real-time procedural audio synthesis with zero external assets.
 - **[`rebirth-box2d`](https://github.com/markankamaransheogarat-sys/rebirth-box2d)** `[Rust · WASM · MIT]` · [Live Demo](https://markankamaransheogarat-sys.github.io/rebirth-box2d/)  
   Pure safe Rust reincarnation of Erin Catto's legendary Box2D-Lite. Sequential Impulses, SAT collision clipping, Baumgarte bias stabilization, zero allocations in solver loops.
 - **[`rebirth-ik`](https://github.com/markankamaransheogarat-sys/rebirth-ik)** `[Rust · WASM · MIT]` · [Live Demo](https://markankamaransheogarat-sys.github.io/rebirth-ik/)  
@@ -114,10 +116,12 @@
 
 ---
 
-## 🎮 Live Interactive Playgrounds (WebAssembly)
+## 🎮 Live Interactive Playgrounds (WebAssembly & WebGL)
 
-Run these mathematical and physics engines directly in your browser without installation:
+Run these mathematical, physics, and 3D action engines directly in your browser without installation:
 
+- ⚔️ **[REQUIEM: Mobile Gothic Zombie Slasher](https://markankamaransheogarat-sys.github.io/requiem-gothic-slasher/)**  
+  Mobile 3rd-person gothic zombie slasher in Three.js with virtual floating joystick, 3-hit combo combat, dodge roll, and procedural Web Audio API SFX.
 - 🕹️ **[rebirth-box2d Interactive Physics Simulator](https://markankamaransheogarat-sys.github.io/rebirth-box2d/)**  
   8 live physics testbeds (Pyramids, Suspension Bridges, Dominos, Teeter-Totter, Pendulums). Zero-dependency Sequential Impulses & Warm Starting in 100% `#![forbid(unsafe_code)]` Rust.
 - 🦾 **[rebirth-ik Inverse Kinematics Canvas](https://markankamaransheogarat-sys.github.io/rebirth-ik/)**  
