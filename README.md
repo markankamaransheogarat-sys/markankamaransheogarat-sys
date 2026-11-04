@@ -79,6 +79,8 @@
   Automated quant risk-harvesting engines with Bollinger dip-buying guards, live order book feeds, and MCP plugins for Claude.
 
 ### 4. Zero-Trust Security, Tactical Mesh & DPI Circumvention
+- **[`dev-scrub`](https://github.com/markankamaransheogarat-sys/dev-scrub)** `[Rust · 100k+ files/s · Zero-Dep]`  
+  Surgical developer disk hygiene, artifact cleaner & Git cache vacuum. Parallel subtree pruning, Git recency classification (active/stale/dormant), and safe multi-GB reclamation of `target/`, `node_modules/`, and `.venv/`.
 - **[`cyberdeck-mesh`](https://github.com/markankamaransheogarat-sys/cyberdeck-mesh)** `[Rust · BLE / Acoustic · Zero-Infra]`  
   Air-gapped acoustic & BLE mesh network for off-grid tactical operations. Ultrasonic FSK audio transport, AES-256-GCM encryption, distance-vector multi-hop routing, and terminal Cyberpunk HUD.
 - **[`ghostclip`](https://github.com/markankamaransheogarat-sys/ghostclip)** `[Python · Rust · P2P · Zero-Cloud]`  
@@ -147,7 +149,7 @@ I take fixed-scope engineering contracts and senior/staff roles where the output
 | **High-Concurrency Messaging & Offline Sync** | Custom binary wire protocols (RFC specs), Tokio event routers (145k+ msg/s), multiplatform CRDTs | [`synapse-chat-core`](https://github.com/markankamaransheogarat-sys/synapse-chat-core) |
 | **High-Load Columnar Ingestion & Analytics** | ClickHouse materialized views, zero-ORM raw asyncpg, range partitioning, 1.5M+ ord/s ingestion | [`market-columnar-engine`](https://github.com/markankamaransheogarat-sys/market-columnar-engine) · [`tabularis`](https://github.com/TabularisDB/tabularis) |
 | **MEV & High-Frequency Quant Solvers** | Cross-DEX cyclic arbitrage, Bellman-Ford negative cycles, mempool simulation, market recorders | [`aevum-intent-solver`](https://github.com/markankamaransheogarat-sys/aevum-intent-solver) · [`bounty-sniper-rs`](https://github.com/markankamaransheogarat-sys/bounty-sniper-rs) |
-| **Air-Gapped Mesh & Zero-Trust P2P** | Ultrasonic FSK audio transport, offline BLE mesh routing, encrypted P2P clipboard, zero-cloud sync | [`cyberdeck-mesh`](https://github.com/markankamaransheogarat-sys/cyberdeck-mesh) · [`ghostclip`](https://github.com/markankamaransheogarat-sys/ghostclip) |
+| **Air-Gapped Mesh & Zero-Trust P2P** | Ultrasonic FSK audio transport, offline BLE mesh routing, encrypted P2P clipboard, developer disk vacuum | [`dev-scrub`](https://github.com/markankamaransheogarat-sys/dev-scrub) · [`cyberdeck-mesh`](https://github.com/markankamaransheogarat-sys/cyberdeck-mesh) · [`ghostclip`](https://github.com/markankamaransheogarat-sys/ghostclip) |
 | **Systems & DPI Circumvention** | Mid-SNI TCP segmentation, fake SNI injection, eBPF, raw sockets, forensic autopsy | [`net-autopsy`](https://github.com/markankamaransheogarat-sys/net-autopsy) · [`ultradpi`](https://github.com/markankamaransheogarat-sys/ultradpi) · [`ultradpi-android`](https://github.com/markankamaransheogarat-sys/ultradpi-android) |
 | **Autonomous 24/7 AI Media & Forensics** | Multi-wire ingestion pipelines, narrative autopsy terminals, dynamic multi-modal synthesis | [subtext24.com](https://subtext24.com) · [sybtext24.com](https://sybtext24.com) |
 
