@@ -97,6 +97,8 @@
   Zero-config 1-click Android VpnService engine. Unblocks YouTube 4K, Discord & AI tools locally without remote VPN servers.
 
 ### 5. Algorithmic Reincarnations, Physics & 3D WebGL
+- **[`neon-void-eater`](https://github.com/markankamaransheogarat-sys/neon-void-eater)** `[WebGL · Three.js · Physics · Mobile PWA]` · [Play Live on Mobile / Desktop](https://markankamaransheogarat-sys.github.io/neon-void-eater/)  
+  Hypercasual 3D neon black hole city devourer. 1-finger ground raycasting, real-time gravitational suction physics, 4-tier scalable city props (cones, cyber-cars, kiosks, skyscrapers), combo cascades, and Web Audio API synthesis.
 - **[`requiem-gothic-slasher`](https://github.com/markankamaransheogarat-sys/requiem-gothic-slasher)** `[WebGL · Three.js · Web Audio API · Mobile PWA]` · [Play Live on Mobile / Desktop](https://markankamaransheogarat-sys.github.io/requiem-gothic-slasher/)  
   Mobile-first 3rd-person gothic zombie action slasher. Floating dynamic multi-touch joystick, 3-hit claymore combo, dodge roll i-frames, holy wrath AoE, zombie flocking horde AI, and real-time procedural audio synthesis with zero external assets.
 - **[`rebirth-box2d`](https://github.com/markankamaransheogarat-sys/rebirth-box2d)** `[Rust · WASM · MIT]` · [Live Demo](https://markankamaransheogarat-sys.github.io/rebirth-box2d/)  
@@ -120,6 +122,8 @@
 
 Run these mathematical, physics, and 3D action engines directly in your browser without installation:
 
+- 🕳️ **[VOID EATER: Neon City Devourer](https://markankamaransheogarat-sys.github.io/neon-void-eater/)**  
+  Hypercasual neon black hole 3D simulator. 1-finger drag, gravity ingestion physics, 4 tiers of scalable city props, and frenzy combo cascades.
 - ⚔️ **[REQUIEM: Mobile Gothic Zombie Slasher](https://markankamaransheogarat-sys.github.io/requiem-gothic-slasher/)**  
   Mobile 3rd-person gothic zombie slasher in Three.js with virtual floating joystick, 3-hit combo combat, dodge roll, and procedural Web Audio API SFX.
 - 🕹️ **[rebirth-box2d Interactive Physics Simulator](https://markankamaransheogarat-sys.github.io/rebirth-box2d/)**  
