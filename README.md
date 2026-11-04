@@ -44,6 +44,11 @@
   - **PagedAttention Virtual Memory**: 16-token physical block allocator, Copy-on-Write (CoW) page sharing, and GPU↔Host RAM swapping.
   - **Radix Prefix Caching**: Instant zero-compute reuse of shared prompt blocks via Trie hash matching.
   - **Production Guardrails**: Token Bucket rate limiter, Memory Circuit Breaker (95% high watermark), sub-millisecond SSE streaming (`P50 TTFT: 2.24ms`, `P50 ITL: 1.00ms`).
+- **[`token-sentinel`](https://github.com/markankamaransheogarat-sys/token-sentinel)** `[Rust · Zero-Dep · Proxy · 30-50% Savings]`  
+  Local context budget guardian & hallucination firewall for AI coding agents (Cursor, Claude Code, Cline, Aider).
+  - **Context Deduplication**: Rolling multi-turn hash cache pruning repeated file snapshots, cutting token drain by 30–50%.
+  - **Phantom Package Scanner**: AST-level detector flagging hallucinated Python, Rust, and npm imports before disk writes.
+  - **Budget Sentinel**: Hard session spend limits and live terminal burn HUD tracking exact USD spent vs saved.
 - **[`cortex-agent-rag`](https://github.com/markankamaransheogarat-sys/cortex-agent-rag)** `[Python 3.10+ · Zero-Dep · 0.01ms Cache]`  
   Production Multi-Agent Hybrid RAG engine with sub-millisecond semantic caching and self-correcting guardrails.
   - **Hybrid Sparse/Dense Search**: Exact BM25Okapi inverted index fused with normalized cosine vector search via Reciprocal Rank Fusion (RRF $k=60$).
@@ -138,7 +143,7 @@ I take fixed-scope engineering contracts and senior/staff roles where the output
 
 | Domain | Deliverables | Verified Proof / Production Repos |
 | :--- | :--- | :--- |
-| **Distributed & AI Platform Infrastructure** | Continuous dynamic batchers (Orca), PagedAttention KV-cache, hybrid RAG systems, sub-ms semantic caching | [`tensor-gateway-rs`](https://github.com/markankamaransheogarat-sys/tensor-gateway-rs) · [`cortex-agent-rag`](https://github.com/markankamaransheogarat-sys/cortex-agent-rag) |
+| **Distributed & AI Platform Infrastructure** | Continuous dynamic batchers (Orca), PagedAttention KV-cache, hybrid RAG systems, token cost firewalls | [`tensor-gateway-rs`](https://github.com/markankamaransheogarat-sys/tensor-gateway-rs) · [`token-sentinel`](https://github.com/markankamaransheogarat-sys/token-sentinel) · [`cortex-agent-rag`](https://github.com/markankamaransheogarat-sys/cortex-agent-rag) |
 | **High-Concurrency Messaging & Offline Sync** | Custom binary wire protocols (RFC specs), Tokio event routers (145k+ msg/s), multiplatform CRDTs | [`synapse-chat-core`](https://github.com/markankamaransheogarat-sys/synapse-chat-core) |
 | **High-Load Columnar Ingestion & Analytics** | ClickHouse materialized views, zero-ORM raw asyncpg, range partitioning, 1.5M+ ord/s ingestion | [`market-columnar-engine`](https://github.com/markankamaransheogarat-sys/market-columnar-engine) · [`tabularis`](https://github.com/TabularisDB/tabularis) |
 | **MEV & High-Frequency Quant Solvers** | Cross-DEX cyclic arbitrage, Bellman-Ford negative cycles, mempool simulation, market recorders | [`aevum-intent-solver`](https://github.com/markankamaransheogarat-sys/aevum-intent-solver) · [`bounty-sniper-rs`](https://github.com/markankamaransheogarat-sys/bounty-sniper-rs) |
