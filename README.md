@@ -74,6 +74,11 @@
   - **Ingestion Velocity**: **1,563,986 orders/sec** batch ingestion with sub-second analytical window rollups.
 
 ### 3. Quantitative Finance & High-Frequency Radars
+- **[`money-radar`](https://github.com/markankamaransheogarat-sys/money-radar)** `[TypeScript · Bun · Procedural Web Audio API · PWA]` · [Launch Live Web App](https://markankamaransheogarat-sys.github.io/money-radar/)  
+  Tactile local-first daily personal finance radar & subscription watchdog with procedural Web Audio synthesis.
+  - **Safe-to-Spend Daily Formula**: Quarantines monthly target savings and upcoming recurring commitments to calculate the exact safe daily spending limit in real time.
+  - **Renewal Radar Watchdog**: Automated visual timeline tracking upcoming subscriptions (Netflix, Spotify, GitHub, AWS, gym) with days-until-renewal countdowns and monthly recurring burn (MRB) meters.
+  - **Zero-Cloud & 100% Private**: Runs entirely in the browser (`localStorage`), zero telemetry, PWA offline installable with 1-click JSON and CSV export.
 - **[`aevum-intent-solver`](https://github.com/markankamaransheogarat-sys/aevum-intent-solver)** `[Rust · Tokio · 1.2M cycles/s]`  
   Sub-microsecond cross-DEX cyclic arbitrage & MEV intent solver engine. Constant-product & concentrated liquidity AMMs (Uniswap v2/v3, Curve), negative log-cycle Bellman-Ford solver, in-memory mempool simulation.
 - **[`bounty-sniper-rs`](https://github.com/markankamaransheogarat-sys/bounty-sniper-rs)** `[Rust · Tokio · 24/7 Engine]`  
@@ -125,10 +130,12 @@
 
 ---
 
-## 🎮 Live Interactive Playgrounds (WebAssembly & WebGL)
+## 🎮 Live Interactive Playgrounds (WebAssembly, WebGL & Local-First)
 
-Run these mathematical, physics, and 3D action engines directly in your browser without installation:
+Run these mathematical, physics, 3D action engines and financial radars directly in your browser without installation:
 
+- ⚡ **[MONEY RADAR: Daily Safe-to-Spend & Subscription Watchdog](https://markankamaransheogarat-sys.github.io/money-radar/)**  
+  Tactile local-first personal finance radar & subscription watchdog with procedural Web Audio synthesis, 1-tap logging, and PWA offline capability.
 - 💎 **[PRISM ECHO: Glass & Light](https://markankamaransheogarat-sys.github.io/prism-echo/)**  
   Synesthetic optical laser refraction & crystal resonance game. Touch-rotatable flint quartz prism, Cauchy dispersion fan, modal crystal bowls, and glass fractures.
 - 🕳️ **[VOID EATER: Neon City Devourer](https://markankamaransheogarat-sys.github.io/neon-void-eater/)**  
