@@ -74,6 +74,11 @@
   - **Ingestion Velocity**: **1,563,986 orders/sec** batch ingestion with sub-second analytical window rollups.
 
 ### 3. Quantitative Finance & High-Frequency Radars
+- **[`apex-terminal`](https://github.com/markankamaransheogarat-sys/apex-terminal)** `[TypeScript · Bloomberg CRT · BlackRock Aladdin · Public WebSockets · Web Audio]` · [Launch Live Terminal](https://markankamaransheogarat-sys.github.io/apex-terminal/)  
+  Institutional Bloomberg Terminal & BlackRock Aladdin Risk Engine for digital assets.
+  - **BlackRock Aladdin Risk Engine**: Parametric Value-at-Risk (1-day $\text{VaR}_{95\%}$ & $\text{VaR}_{99\%}$), portfolio beta relative to Bitcoin, diversification matrix ($0$–$100$), and non-linear liquidation stress scenario simulator.
+  - **Zero-Key Public Feeds**: Multi-stream Binance & Bybit WebSockets with sub-30ms tick latency, live flashing cells, and perpetual futures funding rate heatmap (APR/APY regime detection).
+  - **Bloomberg Lexer & Command Bar**: Keyboard-driven grammar (`BTC <GO>`, `RISK <GO>`, `FUND <GO>`, `PORT <GO>`), hotkeys F1–F8, and procedural Web Audio acoustic mechanical switches and alerts.
 - **[`money-radar`](https://github.com/markankamaransheogarat-sys/money-radar)** `[TypeScript · Bun · Procedural Web Audio API · PWA]` · [Launch Live Web App](https://markankamaransheogarat-sys.github.io/money-radar/)  
   Tactile local-first daily personal finance radar & subscription watchdog with procedural Web Audio synthesis.
   - **Safe-to-Spend Daily Formula**: Quarantines monthly target savings and upcoming recurring commitments to calculate the exact safe daily spending limit in real time.
@@ -134,6 +139,8 @@
 
 Run these mathematical, physics, 3D action engines and financial radars directly in your browser without installation:
 
+- 🏛️ **[APEX TERMINAL: Bloomberg × BlackRock Aladdin for Crypto](https://markankamaransheogarat-sys.github.io/apex-terminal/)**  
+  Institutional digital asset execution terminal & risk cockpit: real-time public WebSockets, parametric VaR (95%/99%), BTC benchmark beta, funding rate heatmap, and procedural Bloomberg CRT sound design.
 - ⚡ **[MONEY RADAR: Daily Safe-to-Spend & Subscription Watchdog](https://markankamaransheogarat-sys.github.io/money-radar/)**  
   Tactile local-first personal finance radar & subscription watchdog with procedural Web Audio synthesis, 1-tap logging, and PWA offline capability.
 - 💎 **[PRISM ECHO: Glass & Light](https://markankamaransheogarat-sys.github.io/prism-echo/)**  
