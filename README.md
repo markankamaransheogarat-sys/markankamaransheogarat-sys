@@ -38,6 +38,11 @@
 ## 🚀 Flagship Systems & Distributed Platforms
 
 ### 1. High-Performance AI Platform & Inference Infrastructure
+- **[`llm-cache-edge`](https://github.com/markankamaransheogarat-sys/llm-cache-edge)** `[Rust · Tokio · 178ns L1 · 1.7µs L2 · SSE Tap]`  
+  Sub-millisecond local semantic vector cache and reverse proxy for OpenAI, Ollama, Anthropic & vLLM.
+  - **Two-Tier Cache Hierarchy**: L1 exact SHA-256 match in **178 ns** and L2 64-bit SimHash semantic scan in **1.72 µs** (1k) / **17.0 µs** (10k), operating at **4.64M tokens/s**.
+  - **Dynamic SSE Streaming Tap**: Live real-time stream passthrough while concurrently assembling completion buffers, with token-by-token cached stream replay.
+  - **Zero-Unsafe & Hardened**: 100% `#![forbid(unsafe_code)]`, SSRF defense against cloud metadata, 10MB body bounds, and 26 passing verification tests.
 - **[`tensor-gateway-rs`](https://github.com/markankamaransheogarat-sys/tensor-gateway-rs)** `[Rust · Tokio · 9,400+ tok/s · PagedAttention]`  
   High-throughput distributed LLM streaming inference gateway & continuous dynamic batcher.
   - **Orca-Style Iteration Batching**: Dynamic token-level scheduling merging prefill and decode phases in microsecond steps.
