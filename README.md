@@ -74,11 +74,11 @@
   - **Ingestion Velocity**: **1,563,986 orders/sec** batch ingestion with sub-second analytical window rollups.
 
 ### 3. Quantitative Finance & High-Frequency Radars
-- **[`apex-terminal`](https://github.com/markankamaransheogarat-sys/apex-terminal)** `[TypeScript · Bloomberg CRT · BlackRock Aladdin · Public WebSockets · Web Audio]` · [Launch Live Terminal](https://markankamaransheogarat-sys.github.io/apex-terminal/)  
-  Institutional Bloomberg Terminal & BlackRock Aladdin Risk Engine for digital assets.
-  - **BlackRock Aladdin Risk Engine**: Parametric Value-at-Risk (1-day $\text{VaR}_{95\%}$ & $\text{VaR}_{99\%}$), portfolio beta relative to Bitcoin, diversification matrix ($0$–$100$), and non-linear liquidation stress scenario simulator.
-  - **Zero-Key Public Feeds**: Multi-stream Binance & Bybit WebSockets with sub-30ms tick latency, live flashing cells, and perpetual futures funding rate heatmap (APR/APY regime detection).
-  - **Bloomberg Lexer & Command Bar**: Keyboard-driven grammar (`BTC <GO>`, `RISK <GO>`, `FUND <GO>`, `PORT <GO>`), hotkeys F1–F8, and procedural Web Audio acoustic mechanical switches and alerts.
+- **[`apex-terminal`](https://github.com/markankamaransheogarat-sys/apex-terminal)** `[TypeScript · L2 Stoikov Micro-Price · Deribit Options Gamma · BlackRock Aladdin · 5 Direct WS]` · [Launch Live Terminal](https://markankamaransheogarat-sys.github.io/apex-terminal/)  
+  Institutional Quant Execution Cockpit, 24h Multi-Venue Whale Tranche Clustering Engine & BlackRock Aladdin Risk Terminal (14 `<GO>` screens).
+  - **24h Whale Tranche Clustering & Hybrid Alpha (`WHALE <GO>`)**: Persistent `IndexedDB` 24h orderflow store linking fragmented iceberg clips, TWAP campaigns, and cross-venue sweeps across 5 live streams (`Binance Spot aggTrade` with `l - f + 1` swept orders, `Bybit V5`, `OKX V5`, `Binance !forceOrder`, `mempool.space`) + live MTM attribution (`bps`, `MFE`, `Win Rate %`, `Profit Factor`).
+  - **100ms L2 Orderbook & Quant Execution (`BOOK <GO>` · `EXEC <GO>`)**: Stoikov (2018) Micro-Price & micro-alpha skew (`bps`), 20-level OBI, Liquidity Wall detector ($\ge 2.2\times$ mean depth), Wall-Protected Stop-Loss (`L2 Wall + 0.45×ATR`), Half-Kelly position sizer, and 25x–100x Liquidation Magnet cluster heatmap.
+  - **Deribit Options Gamma & BlackRock Aladdin (`DERIV <GO>` · `RISK <GO>`)**: Live Deribit `BTC`/`ETH` Option Max Pain strike, Call/Put Gamma Walls, 4-Quadrant OI Regime Matrix (`LONG_BUILDUP`, `SHORT_COVERING`, `SHORT_BUILDUP`, `LONG_CAPITULATION`), Whale CVD divergence scanner, and 1-day Parametric $\text{VaR}_{95\%}$ / $\text{VaR}_{99\%}$ from 60-day return covariance.
 - **[`money-radar`](https://github.com/markankamaransheogarat-sys/money-radar)** `[TypeScript · Bun · Procedural Web Audio API · PWA]` · [Launch Live Web App](https://markankamaransheogarat-sys.github.io/money-radar/)  
   Tactile local-first daily personal finance radar & subscription watchdog with procedural Web Audio synthesis.
   - **Safe-to-Spend Daily Formula**: Quarantines monthly target savings and upcoming recurring commitments to calculate the exact safe daily spending limit in real time.
@@ -139,8 +139,8 @@
 
 Run these mathematical, physics, 3D action engines and financial radars directly in your browser without installation:
 
-- 🏛️ **[APEX TERMINAL: Bloomberg × BlackRock Aladdin for Crypto](https://markankamaransheogarat-sys.github.io/apex-terminal/)**  
-  Institutional digital asset execution terminal & risk cockpit: real-time public WebSockets, parametric VaR (95%/99%), BTC benchmark beta, funding rate heatmap, and procedural Bloomberg CRT sound design.
+- 🏛️ **[APEX TERMINAL: Institutional Quant Execution, Orderflow & BlackRock Aladdin](https://markankamaransheogarat-sys.github.io/apex-terminal/)**  
+  14-screen digital asset execution cockpit: 24h multi-venue whale tranche clustering (`WHALE <GO>`), 100ms L2 Stoikov micro-price & liquidity walls (`BOOK <GO>`), Wall-Protected Stop-Loss & Half-Kelly sizer (`EXEC <GO>`), live Deribit Options Max Pain & 4-Quadrant OI scanner (`DERIV <GO>`), and BlackRock Aladdin parametric VaR (`RISK <GO>`).
 - ⚡ **[MONEY RADAR: Daily Safe-to-Spend & Subscription Watchdog](https://markankamaransheogarat-sys.github.io/money-radar/)**  
   Tactile local-first personal finance radar & subscription watchdog with procedural Web Audio synthesis, 1-tap logging, and PWA offline capability.
 - 💎 **[PRISM ECHO: Glass & Light](https://markankamaransheogarat-sys.github.io/prism-echo/)**  
@@ -179,7 +179,7 @@ I take fixed-scope engineering contracts and senior/staff roles where the output
 | **Distributed & AI Platform Infrastructure** | Continuous dynamic batchers (Orca), PagedAttention KV-cache, hybrid RAG systems, token cost firewalls | [`tensor-gateway-rs`](https://github.com/markankamaransheogarat-sys/tensor-gateway-rs) · [`token-sentinel`](https://github.com/markankamaransheogarat-sys/token-sentinel) · [`cortex-agent-rag`](https://github.com/markankamaransheogarat-sys/cortex-agent-rag) |
 | **High-Concurrency Messaging & Offline Sync** | Custom binary wire protocols (RFC specs), Tokio event routers (145k+ msg/s), multiplatform CRDTs | [`synapse-chat-core`](https://github.com/markankamaransheogarat-sys/synapse-chat-core) |
 | **High-Load Columnar Ingestion & Analytics** | ClickHouse materialized views, zero-ORM raw asyncpg, range partitioning, 1.5M+ ord/s ingestion | [`market-columnar-engine`](https://github.com/markankamaransheogarat-sys/market-columnar-engine) · [`tabularis`](https://github.com/TabularisDB/tabularis) |
-| **MEV & High-Frequency Quant Solvers** | Cross-DEX cyclic arbitrage, Bellman-Ford negative cycles, mempool simulation, market recorders | [`aevum-intent-solver`](https://github.com/markankamaransheogarat-sys/aevum-intent-solver) · [`bounty-sniper-rs`](https://github.com/markankamaransheogarat-sys/bounty-sniper-rs) |
+| **MEV & High-Frequency Quant Solvers** | Cross-DEX cyclic arbitrage, L2 Stoikov orderbook microstructure, whale tranche clustering, Deribit options gamma, Aladdin VaR | [`apex-terminal`](https://github.com/markankamaransheogarat-sys/apex-terminal) · [`aevum-intent-solver`](https://github.com/markankamaransheogarat-sys/aevum-intent-solver) · [`bounty-sniper-rs`](https://github.com/markankamaransheogarat-sys/bounty-sniper-rs) |
 | **Air-Gapped Mesh & Zero-Trust P2P** | Ultrasonic FSK audio transport, offline BLE mesh routing, encrypted P2P clipboard, developer disk vacuum | [`dev-scrub`](https://github.com/markankamaransheogarat-sys/dev-scrub) · [`cyberdeck-mesh`](https://github.com/markankamaransheogarat-sys/cyberdeck-mesh) · [`ghostclip`](https://github.com/markankamaransheogarat-sys/ghostclip) |
 | **Systems & DPI Circumvention** | Mid-SNI TCP segmentation, fake SNI injection, eBPF, raw sockets, forensic autopsy | [`net-autopsy`](https://github.com/markankamaransheogarat-sys/net-autopsy) · [`ultradpi`](https://github.com/markankamaransheogarat-sys/ultradpi) · [`ultradpi-android`](https://github.com/markankamaransheogarat-sys/ultradpi-android) |
 | **Autonomous 24/7 AI Media & Forensics** | Multi-wire ingestion pipelines, narrative autopsy terminals, dynamic multi-modal synthesis | [subtext24.com](https://subtext24.com) · [sybtext24.com](https://sybtext24.com) |
