@@ -4,6 +4,7 @@
 ### Staff Systems, High-Load Infrastructure & AI Platform Architect
 **Specializing in high-throughput distributed systems, low-latency Rust/Python platforms, LLM inference architectures, and zero-overhead networking.**
 
+[![Email](https://img.shields.io/badge/Email-markankamaransheogarat%40gmail.com-D14836?logo=gmail&logoColor=white)](mailto:markankamaransheogarat@gmail.com)
 [![Telegram](https://img.shields.io/badge/Telegram-@amadeus1827-26A5E4?logo=telegram&logoColor=white)](https://t.me/amadeus1827)
 [![Contributor](https://img.shields.io/badge/Contributor-Mozilla%20%7C%20Linux%20Foundation-black?logo=linux&logoColor=white)](#-selected-upstream-contributions)
 [![Merged PRs](https://img.shields.io/badge/Merged%20PRs-30+-2ea44f?logo=git&logoColor=white)](#-selected-upstream-contributions)
@@ -178,7 +179,7 @@ I take fixed-scope engineering contracts and senior/staff roles where the output
 | **Systems & DPI Circumvention** | Mid-SNI TCP segmentation, fake SNI injection, eBPF, raw sockets, forensic autopsy | [`net-autopsy`](https://github.com/markankamaransheogarat-sys/net-autopsy) · [`ultradpi`](https://github.com/markankamaransheogarat-sys/ultradpi) · [`ultradpi-android`](https://github.com/markankamaransheogarat-sys/ultradpi-android) |
 | **Autonomous 24/7 AI Media & Forensics** | Multi-wire ingestion pipelines, narrative autopsy terminals, dynamic multi-modal synthesis | [subtext24.com](https://subtext24.com) |
 
-📩 **Direct Telegram: [@amadeus1827](https://t.me/amadeus1827)** · Superteam Earn: `jarvis-quant-agent`
+📩 **Email: [markankamaransheogarat@gmail.com](mailto:markankamaransheogarat@gmail.com)** · **Telegram: [@amadeus1827](https://t.me/amadeus1827)** · Superteam Earn: `jarvis-quant-agent`
 
 ---
 
