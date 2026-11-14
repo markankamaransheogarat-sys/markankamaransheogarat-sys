@@ -5,7 +5,7 @@
 **Specializing in high-throughput distributed systems, low-latency Rust/Python platforms, LLM inference architectures, and zero-overhead networking.**
 
 [![Telegram](https://img.shields.io/badge/Telegram-@amadeus1827-26A5E4?logo=telegram&logoColor=white)](https://t.me/amadeus1827)
-[![Audited by](https://img.shields.io/badge/Audited%20by-Mozilla%20%7C%20Linux%20Foundation-black?logo=linux&logoColor=white)](#-selected-upstream-contributions)
+[![Contributor](https://img.shields.io/badge/Contributor-Mozilla%20%7C%20Linux%20Foundation-black?logo=linux&logoColor=white)](#-selected-upstream-contributions)
 [![Merged PRs](https://img.shields.io/badge/Merged%20PRs-30+-2ea44f?logo=git&logoColor=white)](#-selected-upstream-contributions)
 [![Live Platform](https://img.shields.io/badge/Live%20Terminal-subtext24.com-E02424?logo=statuspage&logoColor=white)](https://subtext24.com)
 [![Live Demos](https://img.shields.io/badge/Live%20Demos-WASM%20Canvas-4fd1c5?logo=webassembly&logoColor=white)](#-live-interactive-playgrounds-webassembly)
@@ -21,7 +21,7 @@
 
 ## ⚡ Proof, not promises
 
-**30+ merged pull requests into Tier-1 open-source repositories**, audited and accepted by upstream maintainers:
+**30+ merged pull requests into Tier-1 open-source repositories**, reviewed and merged by upstream maintainers:
 
 | Ecosystem / Organization | Domain & Track Record |
 | :--- | :--- |
@@ -58,7 +58,7 @@
   Production Multi-Agent Hybrid RAG engine with sub-millisecond semantic caching and self-correcting guardrails.
   - **Hybrid Sparse/Dense Search**: Exact BM25Okapi inverted index fused with normalized cosine vector search via Reciprocal Rank Fusion (RRF $k=60$).
   - **Two-Stage Reranking**: Cross-Encoder relevance scoring with length and exact-term coverage penalties.
-  - **Vectorized Semantic Cache**: Sub-millisecond ($0.01\text{ ms}$) hit response with cosine threshold gating ($> 0.92$).
+  - **Vectorized Semantic Cache**: Sub-millisecond (`0.01 ms`) hit response with cosine threshold gating (`> 0.92`).
   - **Self-Correcting Multi-Agent Loop**: `HallucinationCriticAgent` verifying numeric claims, dates, and grounding before response emission.
 
 ### 2. High-Load Distributed Brokers & Offline-First State Engines
@@ -77,8 +77,8 @@
 - **[`apex-terminal`](https://github.com/markankamaransheogarat-sys/apex-terminal)** `[TypeScript · L2 Stoikov Micro-Price · Deribit Options Gamma · BlackRock Aladdin · 5 Direct WS]` · [Launch Live Terminal](https://markankamaransheogarat-sys.github.io/apex-terminal/)  
   Institutional Quant Execution Cockpit, 24h Multi-Venue Whale Tranche Clustering Engine & BlackRock Aladdin Risk Terminal (14 `<GO>` screens).
   - **24h Whale Tranche Clustering & Hybrid Alpha (`WHALE <GO>`)**: Persistent `IndexedDB` 24h orderflow store linking fragmented iceberg clips, TWAP campaigns, and cross-venue sweeps across 5 live streams (`Binance Spot aggTrade` with `l - f + 1` swept orders, `Bybit V5`, `OKX V5`, `Binance !forceOrder`, `mempool.space`) + live MTM attribution (`bps`, `MFE`, `Win Rate %`, `Profit Factor`).
-  - **100ms L2 Orderbook & Quant Execution (`BOOK <GO>` · `EXEC <GO>`)**: Stoikov (2018) Micro-Price & micro-alpha skew (`bps`), 20-level OBI, Liquidity Wall detector ($\ge 2.2\times$ mean depth), Wall-Protected Stop-Loss (`L2 Wall + 0.45×ATR`), Half-Kelly position sizer, and 25x–100x Liquidation Magnet cluster heatmap.
-  - **Deribit Options Gamma & BlackRock Aladdin (`DERIV <GO>` · `RISK <GO>`)**: Live Deribit `BTC`/`ETH` Option Max Pain strike, Call/Put Gamma Walls, 4-Quadrant OI Regime Matrix (`LONG_BUILDUP`, `SHORT_COVERING`, `SHORT_BUILDUP`, `LONG_CAPITULATION`), Whale CVD divergence scanner, and 1-day Parametric $\text{VaR}_{95\%}$ / $\text{VaR}_{99\%}$ from 60-day return covariance.
+  - **100ms L2 Orderbook & Quant Execution (`BOOK <GO>` · `EXEC <GO>`)**: Stoikov (2018) Micro-Price & micro-alpha skew (`bps`), 20-level OBI, Liquidity Wall detector (`>= 2.2x` mean depth), Wall-Protected Stop-Loss (`L2 Wall + 0.45×ATR`), Half-Kelly position sizer, and 25x–100x Liquidation Magnet cluster heatmap.
+  - **Deribit Options Gamma & BlackRock Aladdin (`DERIV <GO>` · `RISK <GO>`)**: Live Deribit `BTC`/`ETH` Option Max Pain strike, Call/Put Gamma Walls, 4-Quadrant OI Regime Matrix (`LONG_BUILDUP`, `SHORT_COVERING`, `SHORT_BUILDUP`, `LONG_CAPITULATION`), Whale CVD divergence scanner, and 1-day Parametric VaR 95% / VaR 99% from 60-day return covariance.
 - **[`money-radar`](https://github.com/markankamaransheogarat-sys/money-radar)** `[TypeScript · Bun · Procedural Web Audio API · PWA]` · [Launch Live Web App](https://markankamaransheogarat-sys.github.io/money-radar/)  
   Tactile local-first daily personal finance radar & subscription watchdog with procedural Web Audio synthesis.
   - **Safe-to-Spend Daily Formula**: Quarantines monthly target savings and upcoming recurring commitments to calculate the exact safe daily spending limit in real time.
@@ -126,9 +126,9 @@
   Interactive bonding curve & dynamic share pricing simulator for automated prediction markets.
 
 ### 6. Autonomous Media Intelligence & News Forensics
-- **[THE SUBTEXT // Forensic Narrative Terminal](https://subtext24.com/)** (`subtext24.com` · `sybtext24.com`) `[Python · FastAPI · DeepSeek AI · Autonomous 24/7 Engine]`  
+- **[THE SUBTEXT // Forensic Narrative Terminal](https://subtext24.com/)** (`subtext24.com`) `[Python · FastAPI · DeepSeek AI · Autonomous 24/7 Engine]`  
   Autonomous institutional news agency and real-time narrative autopsy terminal.
-  - **Live Platform**: [subtext24.com](https://subtext24.com/) · [sybtext24.com](https://sybtext24.com/)
+  - **Live Platform**: [subtext24.com](https://subtext24.com/)
   - **Forensic Engine**: Multi-wire automated ingestion (Reuters, Bloomberg, AP), deep narrative deconstruction uncovering PR spin vs. underlying reality, hidden financial beneficiaries, and real-time Hypocrisy Index calculation.
   - **Automated Multi-Modal Synthesis**: Generative pipeline creating dynamic OG cards, investigative infographics, automated video briefs for YouTube distribution, and instant breaking news dispatches to Telegram.
   - **Production Architecture**: Zero-human-intervention editorial pipeline operating 24/7 with strict rate limiting, SQLite/FastAPI indexing, triage queues, and sub-second edge web delivery via Cloudflare.
@@ -137,36 +137,30 @@
 
 ## 🎮 Live Interactive Playgrounds (WebAssembly, WebGL & Local-First)
 
-Run these mathematical, physics, 3D action engines and financial radars directly in your browser without installation:
+Run these engines directly in your browser without installation:
 
-- 🏛️ **[APEX TERMINAL: Institutional Quant Execution, Orderflow & BlackRock Aladdin](https://markankamaransheogarat-sys.github.io/apex-terminal/)**  
-  14-screen digital asset execution cockpit: 24h multi-venue whale tranche clustering (`WHALE <GO>`), 100ms L2 Stoikov micro-price & liquidity walls (`BOOK <GO>`), Wall-Protected Stop-Loss & Half-Kelly sizer (`EXEC <GO>`), live Deribit Options Max Pain & 4-Quadrant OI scanner (`DERIV <GO>`), and BlackRock Aladdin parametric VaR (`RISK <GO>`).
-- ⚡ **[MONEY RADAR: Daily Safe-to-Spend & Subscription Watchdog](https://markankamaransheogarat-sys.github.io/money-radar/)**  
-  Tactile local-first personal finance radar & subscription watchdog with procedural Web Audio synthesis, 1-tap logging, and PWA offline capability.
-- 💎 **[PRISM ECHO: Glass & Light](https://markankamaransheogarat-sys.github.io/prism-echo/)**  
-  Synesthetic optical laser refraction & crystal resonance game. Touch-rotatable flint quartz prism, Cauchy dispersion fan, modal crystal bowls, and glass fractures.
-- 🕳️ **[VOID EATER: Neon City Devourer](https://markankamaransheogarat-sys.github.io/neon-void-eater/)**  
-  Hypercasual neon black hole 3D simulator. 1-finger drag, gravity ingestion physics, 4 tiers of scalable city props, and frenzy combo cascades.
-- ⚔️ **[REQUIEM: Mobile Gothic Zombie Slasher](https://markankamaransheogarat-sys.github.io/requiem-gothic-slasher/)**  
-  Mobile 3rd-person gothic zombie slasher in Three.js with virtual floating joystick, 3-hit combo combat, dodge roll, and procedural Web Audio API SFX.
-- 🕹️ **[rebirth-box2d Interactive Physics Simulator](https://markankamaransheogarat-sys.github.io/rebirth-box2d/)**  
-  8 live physics testbeds (Pyramids, Suspension Bridges, Dominos, Teeter-Totter, Pendulums). Zero-dependency Sequential Impulses & Warm Starting in 100% `#![forbid(unsafe_code)]` Rust.
-- 🦾 **[rebirth-ik Inverse Kinematics Canvas](https://markankamaransheogarat-sys.github.io/rebirth-ik/)**  
-  Multi-effector FABRIK bone-tree solver with joint limits, procedural tentacle/humanoid walkers, and analytic 2-bone solvers.
-- 📈 **[Daejin Prediction Market Simulator](https://markankamaransheogarat-sys.github.io/daejin-prediction-market-engine/)**  
-  Interactive bonding curve & dynamic share pricing simulator.
+| Playground | Stack | Focus |
+| :--- | :--- | :--- |
+| 🏛️ **[APEX TERMINAL](https://markankamaransheogarat-sys.github.io/apex-terminal/)** | TypeScript · 5 WS · IndexedDB | 14-screen quant execution cockpit, L2 Stoikov micro-price, Deribit Gamma & Aladdin VaR |
+| ⚡ **[MONEY RADAR](https://markankamaransheogarat-sys.github.io/money-radar/)** | TypeScript · Bun · PWA | Local-first daily safe-to-spend & subscription watchdog with Web Audio SFX |
+| 💎 **[PRISM ECHO](https://markankamaransheogarat-sys.github.io/prism-echo/)** | WebGL · Web Audio API | Synesthetic laser refraction, Cauchy dispersion & modal crystal resonance |
+| 🕳️ **[VOID EATER](https://markankamaransheogarat-sys.github.io/neon-void-eater/)** | Three.js · Mobile PWA | Hypercasual 3D neon black hole city devourer with gravitational suction physics |
+| ⚔️ **[REQUIEM](https://markankamaransheogarat-sys.github.io/requiem-gothic-slasher/)** | Three.js · Web Audio API | Mobile 3rd-person gothic zombie slasher with procedural audio & zero assets |
+| 🕹️ **[rebirth-box2d](https://markankamaransheogarat-sys.github.io/rebirth-box2d/)** | Rust · WASM (`#![forbid(unsafe_code)]`) | 8 live physics testbeds (Sequential Impulses & Warm Starting) |
+| 🦾 **[rebirth-ik](https://markankamaransheogarat-sys.github.io/rebirth-ik/)** | Rust · WASM | Multi-effector FABRIK bone-tree solver & procedural walkers |
+| 📈 **[Daejin Prediction Market](https://markankamaransheogarat-sys.github.io/daejin-prediction-market-engine/)** | TypeScript · Canvas | Interactive bonding curve & dynamic share pricing simulator |
 
 ---
 
 ## 🛠️ Core Engineering Stack
 
-```
-Systems & High-Load: Rust (Tokio, Actix, Rayon, Serde, bytes), C/C++, WebAssembly, Linux (eBPF, RAW sockets, systemd)
-Distributed & Messaging: Orca Continuous Batching, PagedAttention, CRDT (Vector Clocks, LWW-Set, PN-Counter), SSE, gRPC
-Databases & Storage:   ClickHouse (Replacing/SummingMergeTree, Materialized Views), PostgreSQL (Raw SQL, BRIN, Range Partitions)
-AI & Inference:        BM25Okapi, Dense Embedding Vector Math, Reciprocal Rank Fusion, Cross-Encoder Reranking, Semantic Cache
-Networks & Protocols:  QUIC / HTTP/3, WebSocket, TCP Mid-SNI Segmentation, Ultrasonic FSK Audio, Bluetooth Low Energy (BLE)
-```
+| Area | Technologies & Primitives |
+| :--- | :--- |
+| **Systems & High-Load** | Rust (Tokio, Actix, Rayon, Serde, `bytes`), C/C++, WebAssembly, Linux (`eBPF`, RAW sockets, `systemd`) |
+| **Distributed & Messaging** | Orca Continuous Batching, PagedAttention, CRDT (Vector Clocks, LWW-Set, PN-Counter), SSE, gRPC |
+| **Databases & Storage** | ClickHouse (`ReplacingMergeTree`, `SummingMergeTree`, Materialized Views), PostgreSQL (Raw SQL, BRIN, Range Partitions) |
+| **AI & Inference** | BM25Okapi, Dense Embedding Vector Math, Reciprocal Rank Fusion, Cross-Encoder Reranking, Semantic Cache |
+| **Networks & Protocols** | QUIC / HTTP/3, WebSocket, TCP Mid-SNI Segmentation, Ultrasonic FSK Audio, Bluetooth Low Energy (BLE) |
 
 ---
 
@@ -182,7 +176,7 @@ I take fixed-scope engineering contracts and senior/staff roles where the output
 | **MEV & High-Frequency Quant Solvers** | Cross-DEX cyclic arbitrage, L2 Stoikov orderbook microstructure, whale tranche clustering, Deribit options gamma, Aladdin VaR | [`apex-terminal`](https://github.com/markankamaransheogarat-sys/apex-terminal) · [`aevum-intent-solver`](https://github.com/markankamaransheogarat-sys/aevum-intent-solver) · [`bounty-sniper-rs`](https://github.com/markankamaransheogarat-sys/bounty-sniper-rs) |
 | **Air-Gapped Mesh & Zero-Trust P2P** | Ultrasonic FSK audio transport, offline BLE mesh routing, encrypted P2P clipboard, developer disk vacuum | [`dev-scrub`](https://github.com/markankamaransheogarat-sys/dev-scrub) · [`cyberdeck-mesh`](https://github.com/markankamaransheogarat-sys/cyberdeck-mesh) · [`ghostclip`](https://github.com/markankamaransheogarat-sys/ghostclip) |
 | **Systems & DPI Circumvention** | Mid-SNI TCP segmentation, fake SNI injection, eBPF, raw sockets, forensic autopsy | [`net-autopsy`](https://github.com/markankamaransheogarat-sys/net-autopsy) · [`ultradpi`](https://github.com/markankamaransheogarat-sys/ultradpi) · [`ultradpi-android`](https://github.com/markankamaransheogarat-sys/ultradpi-android) |
-| **Autonomous 24/7 AI Media & Forensics** | Multi-wire ingestion pipelines, narrative autopsy terminals, dynamic multi-modal synthesis | [subtext24.com](https://subtext24.com) · [sybtext24.com](https://sybtext24.com) |
+| **Autonomous 24/7 AI Media & Forensics** | Multi-wire ingestion pipelines, narrative autopsy terminals, dynamic multi-modal synthesis | [subtext24.com](https://subtext24.com) |
 
 📩 **Direct Telegram: [@amadeus1827](https://t.me/amadeus1827)** · Superteam Earn: `jarvis-quant-agent`
 
@@ -192,7 +186,8 @@ I take fixed-scope engineering contracts and senior/staff roles where the output
 
 | Repository | What I shipped |
 | :--- | :--- |
-| [**TabularisDB / Tabularis**](https://github.com/TabularisDB/tabularis) · 5k★ | Scheduled database backups with DST-aware cron ([#1207](https://github.com/TabularisDB/tabularis/pull/1207)) · EXPLAIN CSV/NDJSON export ([#1184](https://github.com/TabularisDB/tabularis/pull/1184), [#1187](https://github.com/TabularisDB/tabularis/pull/1187)) · Grid undo/redo ([#1206](https://github.com/TabularisDB/tabularis/pull/1206)) · Query history pause ([#1186](https://github.com/TabularisDB/tabularis/pull/1186)) · Unix socket transport ([#1250](https://github.com/TabularisDB/tabularis/pull/1250)) |
+| [**TabularisDB / Tabularis**](https://github.com/TabularisDB/tabularis) · 5k★ | Scheduled database backups with DST-aware cron ([#1207](https://github.com/TabularisDB/tabularis/pull/1207)) · EXPLAIN CSV/NDJSON export ([#1184](https://github.com/TabularisDB/tabularis/pull/1184), [#1187](https://github.com/TabularisDB/tabularis/pull/1187)) · Grid undo/redo ([#1206](https://github.com/TabularisDB/tabularis/pull/1206)) · Query history pause ([#1186](https://github.com/TabularisDB/tabularis/pull/1186)) · ER diagram legend ([#1428](https://github.com/TabularisDB/tabularis/pull/1428)) |
+| [**KubeStellar Console**](https://github.com/kubestellar/console) | Prototype property guard in `formatCardTitle` ([#24600](https://github.com/kubestellar/console/pull/24600)) |
 | [**SlopTotal**](https://github.com/pablocaeg/sloptotal) | Multi-engine AI text detection benchmark: UTF-8 file read/write encoding fix ([#176](https://github.com/pablocaeg/sloptotal/pull/176)) |
 | [**OpsiMate**](https://github.com/OpsiMate/OpsiMate) · 300★ | AI settings form rules test coverage ([#1360](https://github.com/OpsiMate/OpsiMate/pull/1360)) · Retention policy toggle failure reporting ([#1280](https://github.com/OpsiMate/OpsiMate/pull/1280)) |
 | [**FaniLabs Backend**](https://github.com/fanilabs/backend) | Soroban contract indexer: Prisma check constraint (P2004) & null violation (P2011) to 400 bad request mapping ([#574](https://github.com/fanilabs/backend/pull/574)) |
