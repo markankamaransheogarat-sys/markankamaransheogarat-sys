@@ -39,6 +39,11 @@
 ## 🚀 Flagship Systems & Distributed Platforms
 
 ### 1. High-Performance AI Platform & Inference Infrastructure
+- **[`mcp-guard`](https://github.com/markankamaransheogarat-sys/mcp-guard)** `[Rust · stdio/SSE/HTTP · #![forbid(unsafe_code)] · JSON-RPC 2.0]`  
+  Local security firewall & capability sandbox proxy for Model Context Protocol (MCP) servers (Claude Code, Cursor, Windsurf, Claude Desktop).
+  - **Deterministic Policy Engine**: Path-jail with ancestor canonicalization & symlink-escape prevention, default bans on `~/.ssh`/`~/.aws`/`.env`, SSRF protection blocking private/metadata IPs, and SHA-256 `(tool, args)` loop breaker.
+  - **Output Sanitizer**: Streaming redaction of secrets (AWS, GitHub, OpenAI, Anthropic, JWT, PEM, high-entropy tokens) and prompt-injection defense (instruction overrides & invisible Unicode tags).
+  - **Zero-Unsafe & Auditable**: Crate-wide `#![forbid(unsafe_code)]`, zero `stdout` pollution in `stdio` proxy mode, and structured JSONL audit logging.
 - **[`llm-cache-edge`](https://github.com/markankamaransheogarat-sys/llm-cache-edge)** `[Rust · Tokio · 178ns L1 · 1.7µs L2 · SSE Tap]`  
   Sub-millisecond local semantic vector cache and reverse proxy for OpenAI, Ollama, Anthropic & vLLM.
   - **Two-Tier Cache Hierarchy**: L1 exact SHA-256 match in **178 ns** and L2 64-bit SimHash semantic scan in **1.72 µs** (1k) / **17.0 µs** (10k), operating at **4.64M tokens/s**.
@@ -61,6 +66,8 @@
   - **Two-Stage Reranking**: Cross-Encoder relevance scoring with length and exact-term coverage penalties.
   - **Vectorized Semantic Cache**: Sub-millisecond (`0.01 ms`) hit response with cosine threshold gating (`> 0.92`).
   - **Self-Correcting Multi-Agent Loop**: `HallucinationCriticAgent` verifying numeric claims, dates, and grounding before response emission.
+- **[`open-elevenlabs-voice-studio`](https://github.com/markankamaransheogarat-sys/open-elevenlabs-voice-studio)** `[Python · CosyVoice 2 · Qwen2.5 · F5-TTS · Whisper ASR]`  
+  Open-source Colab & Gradio studio for zero-shot voice cloning and TTS with Whisper ASR reference transcription, auto-denoising, and Google Drive voice persistence.
 
 ### 2. High-Load Distributed Brokers & Offline-First State Engines
 - **[`synapse-chat-core`](https://github.com/markankamaransheogarat-sys/synapse-chat-core)** `[Rust · Tokio · Kotlin Coroutines · RFC 2026-SYN-01]`  
@@ -75,6 +82,10 @@
   - **Ingestion Velocity**: **1,563,986 orders/sec** batch ingestion with sub-second analytical window rollups.
 
 ### 3. Quantitative Finance & High-Frequency Radars
+- **[`malcrypto-aladdin`](https://github.com/markankamaransheogarat-sys/malcrypto-aladdin)** `[TypeScript · Maltego Causal Graph · BlackRock Aladdin · Live Feeds]` · [Launch Live Terminal](https://markankamaransheogarat-sys.github.io/malcrypto-aladdin/)  
+  Cross-market bi-temporal causal knowledge graph & BlackRock Aladdin contagion/scenario simulation engine (7 `<GO>` modules).
+  - **Causal Discovery & Fragility Radar (`CAUSAL <GO>` · `RADAR <GO>`)**: Online bivariate Granger causality + Benjamini-Hochberg FDR pruning on live Binance klines, Market Fragility ("Tinderbox") radar, and probability-weighted scenario trees.
+  - **Cascade Stress-Testing & Backtest (`CASCADE <GO>` · `BACKTEST <GO>`)**: Interactive shock simulator (`P10 / P50 / P90` quantiles), GDELT 2.0 + Polymarket news-to-graph surprise engine, Brier Score calibration, and historical crash replay.
 - **[`apex-terminal`](https://github.com/markankamaransheogarat-sys/apex-terminal)** `[TypeScript · L2 Stoikov Micro-Price · Deribit Options Gamma · BlackRock Aladdin · 5 Direct WS]` · [Launch Live Terminal](https://markankamaransheogarat-sys.github.io/apex-terminal/)  
   Institutional Quant Execution Cockpit, 24h Multi-Venue Whale Tranche Clustering Engine & BlackRock Aladdin Risk Terminal (14 `<GO>` screens).
   - **24h Whale Tranche Clustering & Hybrid Alpha (`WHALE <GO>`)**: Persistent `IndexedDB` 24h orderflow store linking fragmented iceberg clips, TWAP campaigns, and cross-venue sweeps across 5 live streams (`Binance Spot aggTrade` with `l - f + 1` swept orders, `Bybit V5`, `OKX V5`, `Binance !forceOrder`, `mempool.space`) + live MTM attribution (`bps`, `MFE`, `Win Rate %`, `Profit Factor`).
@@ -95,6 +106,10 @@
   Automated quant risk-harvesting engines with Bollinger dip-buying guards, live order book feeds, and MCP plugins for Claude.
 
 ### 4. Zero-Trust Security, Tactical Mesh & DPI Circumvention
+- **[`dep-xray`](https://github.com/markankamaransheogarat-sys/dep-xray)** `[Rust · Tree-sitter AST · #![forbid(unsafe_code)] · SARIF 2.1.0]`  
+  Behavioral AST diff analyzer for dependency updates (`Cargo.lock`, `package-lock.json`, `pnpm-lock.yaml`).
+  - **Targeted Supply-Chain Inspection**: Concurrently fetches only updated/added tarballs from `crates.io` and `npmjs.org`, diffing actual source code and running `tree-sitter` AST behavioral analysis (Rust, JS, TS, TSX) exclusively on added/modified nodes.
+  - **CI-Ready Reporting**: Surfaces dangerous capability changes (network clients, env reads, install hooks) as terminal tables, GitHub PR Markdown comments, JSON, or SARIF 2.1.0 via CLI or GitHub Action.
 - **[`dev-scrub`](https://github.com/markankamaransheogarat-sys/dev-scrub)** `[Rust · 100k+ files/s · Zero-Dep]`  
   Surgical developer disk hygiene, artifact cleaner & Git cache vacuum. Parallel subtree pruning, Git recency classification (active/stale/dormant), and safe multi-GB reclamation of `target/`, `node_modules/`, and `.venv/`.
 - **[`cyberdeck-mesh`](https://github.com/markankamaransheogarat-sys/cyberdeck-mesh)** `[Rust · BLE / Acoustic · Zero-Infra]`  
@@ -142,6 +157,7 @@ Run these engines directly in your browser without installation:
 
 | Playground | Stack | Focus |
 | :--- | :--- | :--- |
+| 🕸️ **[MALCRYPTO × ALADDIN](https://markankamaransheogarat-sys.github.io/malcrypto-aladdin/)** | TypeScript · Canvas · Live WS | Cross-market Maltego causal graph, Granger discovery & Aladdin cascade simulator |
 | 🏛️ **[APEX TERMINAL](https://markankamaransheogarat-sys.github.io/apex-terminal/)** | TypeScript · 5 WS · IndexedDB | 14-screen quant execution cockpit, L2 Stoikov micro-price, Deribit Gamma & Aladdin VaR |
 | ⚡ **[MONEY RADAR](https://markankamaransheogarat-sys.github.io/money-radar/)** | TypeScript · Bun · PWA | Local-first daily safe-to-spend & subscription watchdog with Web Audio SFX |
 | 💎 **[PRISM ECHO](https://markankamaransheogarat-sys.github.io/prism-echo/)** | WebGL · Web Audio API | Synesthetic laser refraction, Cauchy dispersion & modal crystal resonance |
@@ -171,11 +187,11 @@ I take fixed-scope engineering contracts and senior/staff roles where the output
 
 | Domain | Deliverables | Verified Proof / Production Repos |
 | :--- | :--- | :--- |
-| **Distributed & AI Platform Infrastructure** | Continuous dynamic batchers (Orca), PagedAttention KV-cache, hybrid RAG systems, token cost firewalls | [`tensor-gateway-rs`](https://github.com/markankamaransheogarat-sys/tensor-gateway-rs) · [`token-sentinel`](https://github.com/markankamaransheogarat-sys/token-sentinel) · [`cortex-agent-rag`](https://github.com/markankamaransheogarat-sys/cortex-agent-rag) |
+| **Distributed & AI Platform Infrastructure** | Continuous dynamic batchers (Orca), PagedAttention KV-cache, hybrid RAG systems, MCP security firewalls & token cost guards | [`mcp-guard`](https://github.com/markankamaransheogarat-sys/mcp-guard) · [`tensor-gateway-rs`](https://github.com/markankamaransheogarat-sys/tensor-gateway-rs) · [`token-sentinel`](https://github.com/markankamaransheogarat-sys/token-sentinel) · [`cortex-agent-rag`](https://github.com/markankamaransheogarat-sys/cortex-agent-rag) |
 | **High-Concurrency Messaging & Offline Sync** | Custom binary wire protocols (RFC specs), Tokio event routers (145k+ msg/s), multiplatform CRDTs | [`synapse-chat-core`](https://github.com/markankamaransheogarat-sys/synapse-chat-core) |
 | **High-Load Columnar Ingestion & Analytics** | ClickHouse materialized views, zero-ORM raw asyncpg, range partitioning, 1.5M+ ord/s ingestion | [`market-columnar-engine`](https://github.com/markankamaransheogarat-sys/market-columnar-engine) · [`tabularis`](https://github.com/TabularisDB/tabularis) |
-| **MEV & High-Frequency Quant Solvers** | Cross-DEX cyclic arbitrage, L2 Stoikov orderbook microstructure, whale tranche clustering, Deribit options gamma, Aladdin VaR | [`apex-terminal`](https://github.com/markankamaransheogarat-sys/apex-terminal) · [`aevum-intent-solver`](https://github.com/markankamaransheogarat-sys/aevum-intent-solver) · [`bounty-sniper-rs`](https://github.com/markankamaransheogarat-sys/bounty-sniper-rs) |
-| **Air-Gapped Mesh & Zero-Trust P2P** | Ultrasonic FSK audio transport, offline BLE mesh routing, encrypted P2P clipboard, developer disk vacuum | [`dev-scrub`](https://github.com/markankamaransheogarat-sys/dev-scrub) · [`cyberdeck-mesh`](https://github.com/markankamaransheogarat-sys/cyberdeck-mesh) · [`ghostclip`](https://github.com/markankamaransheogarat-sys/ghostclip) |
+| **MEV & High-Frequency Quant Solvers** | Cross-DEX cyclic arbitrage, L2 Stoikov orderbook microstructure, causal contagion graphs, Deribit options gamma, Aladdin VaR | [`malcrypto-aladdin`](https://github.com/markankamaransheogarat-sys/malcrypto-aladdin) · [`apex-terminal`](https://github.com/markankamaransheogarat-sys/apex-terminal) · [`aevum-intent-solver`](https://github.com/markankamaransheogarat-sys/aevum-intent-solver) · [`bounty-sniper-rs`](https://github.com/markankamaransheogarat-sys/bounty-sniper-rs) |
+| **Zero-Trust Security, Supply-Chain & P2P** | Behavioral AST dependency diffing (SARIF), ultrasonic FSK audio transport, offline BLE mesh routing, encrypted P2P clipboard, disk vacuum | [`dep-xray`](https://github.com/markankamaransheogarat-sys/dep-xray) · [`dev-scrub`](https://github.com/markankamaransheogarat-sys/dev-scrub) · [`cyberdeck-mesh`](https://github.com/markankamaransheogarat-sys/cyberdeck-mesh) · [`ghostclip`](https://github.com/markankamaransheogarat-sys/ghostclip) |
 | **Systems & DPI Circumvention** | Mid-SNI TCP segmentation, fake SNI injection, eBPF, raw sockets, forensic autopsy | [`net-autopsy`](https://github.com/markankamaransheogarat-sys/net-autopsy) · [`ultradpi`](https://github.com/markankamaransheogarat-sys/ultradpi) · [`ultradpi-android`](https://github.com/markankamaransheogarat-sys/ultradpi-android) |
 | **Autonomous 24/7 AI Media & Forensics** | Multi-wire ingestion pipelines, narrative autopsy terminals, dynamic multi-modal synthesis | [subtext24.com](https://subtext24.com) |
 
