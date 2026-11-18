@@ -223,7 +223,6 @@ I take fixed-scope engineering contracts and senior/staff roles where the output
 | :--- | :--- |
 | **Solana (SOL, USDC)** | `CmqpfPEXkksW7gvDRaMdKFv1vmdwupe8pBkDD8trkKwY` |
 | **EVM (ETH, Base, Arbitrum)** | `0xfcef7bc3053ae9589da2c6b9084902bd9d2aa54a` |
-| **Stellar (XLM, USDC)** | `GA7TXEBMEPQCLHIYCWDN7RKAO5IMRD2UV7O7TZXMEW6VZUMEXNR4XBB5` |
 | **TON** | `UQBu8EMAjJhy_J-j8vTMhohn33tiubo8tnaCz76JQbMwHLtx` |
 | **TRON (USDT TRC-20)** | `TPDC7YHRy72GjRh5sLGgp3tPu4uHfWq5cF` |
 
