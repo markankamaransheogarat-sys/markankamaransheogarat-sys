@@ -33,13 +33,20 @@
 | **[OpsiMate](https://github.com/OpsiMate/OpsiMate)** · 300★ | NOC/DevOps alert & incident manager: **2 merged PRs** (AI settings validation & retention saves) |
 | **[SlopTotal](https://github.com/pablocaeg/sloptotal)** | Open-source AI text detector (23 engines): UTF-8 benchmark IO integrity fix |
 | **[OpenSandbox](https://github.com/opensandbox-group/OpenSandbox)** | High-density secure agent sandboxing: WebSocket lifecycle takeover fixes |
+| **[Leonida](https://github.com/ubiquitarianism/leonida)** | Native PC recompilation runtime (RDNA2→SPIR-V, D3D12→Vulkan): **4 active PRs** + Colab Tesla T4 Vulkan GPU telemetry |
+| **[Kimi Code](https://github.com/MoonshotAI/kimi-code)** | Agentic CLI & desktop workspace: **4 active PRs** (Anthropic tool_use lowering, Windows SSH path, symlink HostFolderBrowser) |
+| **[OpenAI Codex Security](https://github.com/openai/codex-security)** | OpenAI security CLI & TypeScript SDK: **2 active PRs** |
 
 ---
 
 ## 🚀 Flagship Systems & Distributed Platforms
 
 ### 1. High-Performance AI Platform & Inference Infrastructure
-- **[`mcp-guard`](https://github.com/markankamaransheogarat-sys/mcp-guard)** `[Rust · stdio/SSE/HTTP · #![forbid(unsafe_code)] · JSON-RPC 2.0]`  
+- **[`aegis-llm-gateway`](https://github.com/markankamaransheogarat-sys/aegis-llm-gateway)** `[Rust · Tokio · Axum · #![forbid(unsafe_code)] · v0.1.0]` · [Live Product & ROI Calculator](https://markankamaransheogarat-sys.github.io/aegis-llm-gateway/)  
+  Commercial-grade AI Cost & Security Gateway sitting in front of OpenAI, Anthropic, and Ollama (`docker compose up -d`).
+  - **L1/L2 Semantic Cache**: 64-shard `DashMap` SHA-256 exact match + zero-embedding 64-bit SimHash & Top-32 Sparse Cosine (`>= 0.95`), bounded LRU/TTL eviction, and real-time SSE stream teeing/replay.
+  - **Outbound Security WAF & USD Budgets**: Scrubs leaked secrets (`sk-...`, `AKIA...`, `ghp_...`, JWT, PEM) before leaving VPC, blocks prompt-injection / Unicode tag steganography (`403`), enforces per-key daily USD caps (`429`), and supports offline signed Pro/Enterprise license keys + Prometheus `/metrics`.
+- **[`mcp-guard`](https://github.com/markankamaransheogarat-sys/mcp-guard)** `v0.2.0` `[Rust · stdio/SSE/HTTP · #![forbid(unsafe_code)] · JSON-RPC 2.0]`  
   Local security firewall & capability sandbox proxy for Model Context Protocol (MCP) servers (Claude Code, Cursor, Windsurf, Claude Desktop).
   - **Deterministic Policy Engine**: Path-jail with ancestor canonicalization & symlink-escape prevention, default bans on `~/.ssh`/`~/.aws`/`.env`, SSRF protection blocking private/metadata IPs, and SHA-256 `(tool, args)` loop breaker.
   - **Output Sanitizer**: Streaming redaction of secrets (AWS, GitHub, OpenAI, Anthropic, JWT, PEM, high-entropy tokens) and prompt-injection defense (instruction overrides & invisible Unicode tags).
@@ -70,6 +77,12 @@
   Open-source Colab & Gradio studio for zero-shot voice cloning and TTS with Whisper ASR reference transcription, auto-denoising, and Google Drive voice persistence.
 
 ### 2. High-Load Distributed Brokers & Offline-First State Engines
+- **[`go-outbox-dispatcher`](https://github.com/markankamaransheogarat-sys/go-outbox-dispatcher)** `[Go · pgx SKIP LOCKED · Circuit Breaker · Prometheus]`  
+  High-concurrency transactional webhook outbox dispatcher with PostgreSQL `FOR UPDATE SKIP LOCKED`, per-host circuit breakers, exponential backoff, and Prometheus metrics.
+- **[`go-sse-gateway`](https://github.com/markankamaransheogarat-sys/go-sse-gateway)** `[Go · Zero-Alloc · 64-Shard Rate Limiter]`  
+  Zero-alloc Go SSE/HTTP reverse proxy with 64-shard token-bucket rate limiting, atomic circuit breaker, and upstream failover.
+- **[`geo-dmp-engine`](https://github.com/markankamaransheogarat-sys/geo-dmp-engine)** `[Python · FastAPI · Raw asyncpg · PostgreSQL]`  
+  OOH/Indoor geo-audience DMP measurement engine using raw `asyncpg` and PostgreSQL Haversine SQL for sub-second OTS/Reach/Frequency analytics.
 - **[`synapse-chat-core`](https://github.com/markankamaransheogarat-sys/synapse-chat-core)** `[Rust · Tokio · Kotlin Coroutines · RFC 2026-SYN-01]`  
   High-concurrency distributed chat broker & offline-first CRDT state synchronization engine (Wildberries & Windi architecture).
   - **Broker Throughput**: Benchmarked at **145,294 msg/sec** with **6.88 µs** routing latency on pure Tokio channels.
@@ -98,7 +111,7 @@
   - **Zero-Cloud & 100% Private**: Runs entirely in the browser (`localStorage`), zero telemetry, PWA offline installable with 1-click JSON and CSV export.
 - **[`aevum-intent-solver`](https://github.com/markankamaransheogarat-sys/aevum-intent-solver)** `[Rust · Tokio · 1.2M cycles/s]`  
   Sub-microsecond cross-DEX cyclic arbitrage & MEV intent solver engine. Constant-product & concentrated liquidity AMMs (Uniswap v2/v3, Curve), negative log-cycle Bellman-Ford solver, in-memory mempool simulation.
-- **[`bounty-sniper-rs`](https://github.com/markankamaransheogarat-sys/bounty-sniper-rs)** `[Rust · Tokio · 24/7 Engine]`  
+- **[`bounty-sniper-rs`](https://github.com/markankamaransheogarat-sys/bounty-sniper-rs)** `v0.2.0` `[Rust · Tokio · 24/7 Engine]`  
   Sub-second GitHub issue scanner & bounty verification radar. Deduplicates PR race conditions, parses reward escrows, and dispatches real-time Telegram alerts.
 - **[`memetic-radar-rs`](https://github.com/markankamaransheogarat-sys/memetic-radar-rs)** `[Rust · Actix · WebSocket]`  
   Viral contagion social graph radar applying epidemiological SEIR differential equations to real-time DexScreener token sentiment.
@@ -106,7 +119,7 @@
   Automated quant risk-harvesting engines with Bollinger dip-buying guards, live order book feeds, and MCP plugins for Claude.
 
 ### 4. Zero-Trust Security, Tactical Mesh & DPI Circumvention
-- **[`dep-xray`](https://github.com/markankamaransheogarat-sys/dep-xray)** `[Rust · Tree-sitter AST · #![forbid(unsafe_code)] · SARIF 2.1.0]`  
+- **[`dep-xray`](https://github.com/markankamaransheogarat-sys/dep-xray)** `v0.2.0` `[Rust · Tree-sitter AST · #![forbid(unsafe_code)] · SARIF 2.1.0]`  
   Behavioral AST diff analyzer for dependency updates (`Cargo.lock`, `package-lock.json`, `pnpm-lock.yaml`).
   - **Targeted Supply-Chain Inspection**: Concurrently fetches only updated/added tarballs from `crates.io` and `npmjs.org`, diffing actual source code and running `tree-sitter` AST behavioral analysis (Rust, JS, TS, TSX) exclusively on added/modified nodes.
   - **CI-Ready Reporting**: Surfaces dangerous capability changes (network clients, env reads, install hooks) as terminal tables, GitHub PR Markdown comments, JSON, or SARIF 2.1.0 via CLI or GitHub Action.
