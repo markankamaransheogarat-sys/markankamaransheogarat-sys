@@ -1,0 +1,56 @@
+<!doctype html><html><head><meta charset=utf-8><style>
+@page { size: A4; margin: 12mm 14mm; }
+body { font-family: "DejaVu Sans", "Liberation Sans", sans-serif; font-size: 9.2pt; line-height: 1.38; color: #111827; }
+h1 { font-size: 20pt; margin: 0 0 2px 0; color: #0f172a; letter-spacing: 0.4px; }
+h2 { font-size: 11pt; text-transform: uppercase; letter-spacing: 0.8px; color: #0369a1; border-bottom: 1.5px solid #0284c7; padding-bottom: 2px; margin: 12px 0 6px 0; page-break-after: avoid; }
+h3 { font-size: 9.8pt; color: #0f172a; margin: 7px 0 2px 0; page-break-after: avoid; }
+p { margin: 2px 0 5px 0; }
+ul { margin: 2px 0 6px 0; padding-left: 16px; }
+li { margin-bottom: 2.5px; }
+code { background: #f1f5f9; padding: 1px 4px; border-radius: 3px; font-size: 8.5pt; color: #0f172a; }
+hr { border: none; border-top: 1px solid #cbd5e1; margin: 6px 0; }
+a { color: #0369a1; text-decoration: none; }
+</style></head><body><h1>КОНСТАНТИН</h1>
+<p><strong>Staff / Principal Backend &amp; High-Load Systems Architect (Rust / Go / Python / AI Infra)</strong><br />
+<code>markankamaransheogarat@gmail.com</code> · Telegram: <code>@amadeus1827</code> · GitHub: <code>github.com/markankamaransheogarat-sys</code> · Удалённо / Релокация</p>
+<hr />
+<h2>ПРОФИЛЬ</h2>
+<p>Системный и High-Load архитектор с фокусом на <strong>высоконагруженные распределённые бэкенды, low-latency прокси и AI-инфраструктуру</strong> на <strong>Rust (<code>#![forbid(unsafe_code)]</code>), Go, Python (<code>FastAPI</code>/<code>asyncpg</code>) и TypeScript</strong>. Проектирую отказоустойчивые системы с измеримой производительностью, сквозной наблюдаемостью (Prometheus) и строгими гарантиями безопасности. Автор <strong>30+ pull requests</strong> в крупные международные open-source проекты (<code>mozilla/neqo</code>, <code>TabularisDB/tabularis</code>, <code>ubiquitarianism/leonida</code>, <code>MoonshotAI/kimi-code</code>, <code>openai/codex-security</code>).</p>
+<hr />
+<h2>КЛЮЧЕВОЙ СТЕК</h2>
+<ul>
+<li><strong>Языки и рантаймы</strong>: Rust (Tokio, Axum, DashMap, Soroban SDK, Tree-sitter), Go (<code>pgx</code>, <code>net/http</code>, zero-alloc), Python (FastAPI, <code>asyncpg</code>, ClickHouse), TypeScript / Node.js / React.</li>
+<li><strong>Хранилища и брокеры</strong>: PostgreSQL (<code>FOR UPDATE SKIP LOCKED</code>, Haversine SQL), ClickHouse (<code>ReplacingMergeTree</code>, <code>SummingMergeTree</code>), SQLite, WebSockets / SSE.</li>
+<li><strong>Инфраструктура и AppSec</strong>: Docker (distroless multi-stage), GitHub Actions CI/CD, Prometheus, WAF/SSRF/PII защита, анализ цепочек поставок (AST + SARIF 2.1.0).</li>
+</ul>
+<hr />
+<h2>КЛЮЧЕВЫЕ СИСТЕМЫ И ПРОЕКТЫ</h2>
+<h3><strong>1. Высоконагруженные брокеры, БД и гео-аналитика</strong></h3>
+<ul>
+<li><strong><code>synapse-chat-core</code></strong> <em>(Rust, Tokio, CRDT)</em>: Распределённый чат-брокер и offline-first движок синхронизации состояний (Vector Clocks, LWW-Element-Set, PN-Counters) с бинарным протоколом <strong>RFC 2026-SYN-01</strong> — пропускная способность <strong>145,294 msg/s</strong> при задержке маршрутизации <strong>6.88 µs</strong>.</li>
+<li><strong><code>market-columnar-engine</code></strong> <em>(Python, raw asyncpg, ClickHouse)</em>: Колоночный конвейер приёма и аналитики маркетплейс-заказов без ORM на параметризованном SQL + <code>ReplacingMergeTree</code>/<code>SummingMergeTree</code> — скорость загрузки <strong>1,563,986 ord/s</strong>.</li>
+<li><strong><code>go-outbox-dispatcher</code></strong> <em>(Go, pgx, Prometheus)</em>: Транзакционный outbox-диспетчер вебхуков на <code>FOR UPDATE SKIP LOCKED</code> с per-host circuit breaker и экспоненциальным backoff.</li>
+<li><strong><code>go-sse-gateway</code></strong> <em>(Go)</em>: Zero-alloc SSE/HTTP reverse proxy с 64-шардовым token-bucket rate limiter и атомарным failover апстримов.</li>
+<li><strong><code>geo-dmp-engine</code></strong> <em>(Python, FastAPI, asyncpg, PostgreSQL)</em>: Движок гео-аудиторной OOH/Indoor аналитики (OTS, Reach, Frequency) на сыром <code>asyncpg</code> и Haversine SQL (CI с PostgreSQL 16).</li>
+</ul>
+<h3><strong>2. AI-инфраструктура и снижение стоимости LLM API</strong></h3>
+<ul>
+<li><strong><code>aegis-llm-gateway</code> <code>v0.1.0</code></strong> <em>(Rust, Tokio, Axum)</em> · <a href="https://markankamaransheogarat-sys.github.io/aegis-llm-gateway/">Live-витрина и ROI-калькулятор</a>:</li>
+<li>Промышленный шлюз перед OpenAI/Anthropic/Ollama: <strong>L1 SHA-256</strong> + <strong>L2 64-bit SimHash &amp; Sparse Cosine</strong> кэш, экономия 40–70% токен-бюджета, потоковый SSE tee/replay.</li>
+<li>Встроенный <strong>WAF</strong>: авто-редакция утечек секретов (<code>sk-</code>, <code>AKIA</code>, <code>ghp_</code>, JWT, PEM) до выхода из VPC, блокировка prompt-injection (<code>403</code>), дневные USD-лимиты на API-ключ (<code>429</code>), Prometheus <code>/metrics</code> и офлайн-лицензирование <code>Pro</code>/<code>Enterprise</code>.</li>
+<li><strong><code>llm-cache-edge</code></strong> &amp; <strong><code>tensor-gateway-rs</code></strong> <em>(Rust, Tokio)</em>: Sub-ms кэш (<strong>178 ns</strong> L1 / <strong>1.72 µs</strong> L2, <strong>4.64M tok/s</strong>) и inference-шлюз с continuous batching, PagedAttention и Radix prefix caching (<strong>9,400+ tok/s</strong>).</li>
+</ul>
+<h3><strong>3. Информационная безопасность и FinTech / Quant</strong></h3>
+<ul>
+<li><strong><code>mcp-guard</code> <code>v0.2.0</code></strong> <em>(Rust)</em>: Firewall и capability-sandbox для MCP-серверов (<code>stdio</code>/SSE/HTTP): path-jail (защита от symlink escape), SSRF + DNS-rebinding фильтр, защита JSON-RPC batch-запросов, фильтрация <code>tools/list</code>, <code>/_mcp_guard/metrics</code>.</li>
+<li><strong><code>dep-xray</code> <code>v0.2.0</code></strong> <em>(Rust, Tree-sitter AST)</em>: Поведенческий AST-анализатор обновлений зависимостей (<code>Cargo.lock</code>, <code>package-lock.json</code>, <code>pnpm-lock.yaml</code>) с правилами <code>Cargo.toml</code> (<code>DX015</code>/<code>DX016</code>), политикой <code>.dep-xray.toml</code> и выгрузкой SARIF 2.1.0.</li>
+<li><strong><code>malcrypto-aladdin</code></strong> &amp; <strong><code>bounty-sniper-rs</code> <code>v0.2.0</code></strong>: 24/7 граф причинно-следственных связей (Granger causality, Sharpe/Sortino, VaR, GitHub Actions Watchdog) и высокочастотный Rust-сканер баунти.</li>
+</ul>
+<hr />
+<h2>OPEN-SOURCE ВКЛАД</h2>
+<ul>
+<li><strong><code>mozilla/neqo</code></strong> <em>(QUIC/HTTP3 на Rust)</em> и <strong><code>hiero-ledger/hiero-sdk-js</code></strong> <em>(Linux Foundation)</em>: принятые PR в транспортный слой и SDK.</li>
+<li><strong><code>TabularisDB/tabularis</code></strong> <em>(Tauri v2 / Rust / React, 5k★)</em>: <strong>8+ влитых фич</strong> и доработок (включая SSH user override <code>#1660</code>, 13/13 зелёных проверок CI).</li>
+<li><strong><code>ubiquitarianism/leonida</code></strong> <em>(RDNA2→SPIR-V, D3D12→Vulkan)</em>: <strong>4 активных PR</strong> (<code>#908</code>, <code>#909</code>, <code>#910</code>, <code>#995</code>) и GPU-телеметрия на Tesla T4 (<code>198/249</code> тестов).</li>
+<li><strong><code>MoonshotAI/kimi-code</code></strong> (4 PR) и <strong><code>openai/codex-security</code></strong> (2 PR).</li>
+</ul></body></html>
