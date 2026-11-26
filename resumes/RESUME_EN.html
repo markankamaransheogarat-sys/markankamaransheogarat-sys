@@ -5,57 +5,75 @@
     <style>
       @page {
         size: A4;
-        margin: 12mm 14mm;
+        margin: 8.5mm 11mm;
       }
       body {
         font-family: "DejaVu Sans", "Liberation Sans", sans-serif;
-        font-size: 9.2pt;
-        line-height: 1.38;
+        font-size: 8.15pt;
+        line-height: 1.28;
         color: #111827;
+        margin: 0;
+      }
+      .header {
+        border-bottom: 2px solid #0284c7;
+        padding-bottom: 5px;
+        margin-bottom: 6px;
       }
       h1 {
-        font-size: 20pt;
+        font-size: 16pt;
         margin: 0 0 2px 0;
         color: #0f172a;
         letter-spacing: 0.4px;
+        line-height: 1.15;
+      }
+      .role {
+        font-size: 9.2pt;
+        font-weight: 700;
+        color: #0369a1;
+        margin-bottom: 2px;
+      }
+      .contacts {
+        font-size: 8pt;
+        line-height: 1.35;
+        color: #334155;
       }
       h2 {
-        font-size: 11pt;
+        font-size: 9.6pt;
         text-transform: uppercase;
-        letter-spacing: 0.8px;
+        letter-spacing: 0.7px;
         color: #0369a1;
-        border-bottom: 1.5px solid #0284c7;
-        padding-bottom: 2px;
-        margin: 12px 0 6px 0;
+        border-bottom: 1px solid #cbd5e1;
+        padding-bottom: 1.5px;
+        margin: 7px 0 4px 0;
         page-break-after: avoid;
       }
       h3 {
-        font-size: 9.8pt;
+        font-size: 8.7pt;
         color: #0f172a;
-        margin: 7px 0 2px 0;
+        margin: 5px 0 1.5px 0;
         page-break-after: avoid;
       }
+      .meta {
+        font-weight: 400;
+        color: #475569;
+        font-size: 8.1pt;
+      }
       p {
-        margin: 2px 0 5px 0;
+        margin: 1.5px 0 3.5px 0;
       }
       ul {
-        margin: 2px 0 6px 0;
-        padding-left: 16px;
+        margin: 1.5px 0 4px 0;
+        padding-left: 14px;
       }
       li {
-        margin-bottom: 2.5px;
+        margin-bottom: 2px;
       }
       code {
         background: #f1f5f9;
-        padding: 1px 4px;
+        padding: 0.5px 3.5px;
         border-radius: 3px;
-        font-size: 8.5pt;
+        font-size: 7.7pt;
         color: #0f172a;
-      }
-      hr {
-        border: none;
-        border-top: 1px solid #cbd5e1;
-        margin: 6px 0;
       }
       a {
         color: #0369a1;
@@ -64,18 +82,21 @@
     </style>
   </head>
   <body>
-    <h1>KONSTANTIN</h1>
-    <p>
-      <strong
-        >Staff Systems, High-Load Infrastructure &amp; AI Platform
-        Architect</strong
-      ><br />
-      <code>markankamaransheogarat@gmail.com</code> · Telegram:
-      <code>@amadeus1827</code> · GitHub:
-      <code>github.com/markankamaransheogarat-sys</code> · Remote (US / EU /
-      Global)
-    </p>
-    <hr />
+    <div class="header">
+      <h1>KARASEV KONSTANTIN VLADIMIROVICH</h1>
+      <div class="role">
+        Staff Systems, High-Load Infrastructure &amp; AI Platform Architect
+      </div>
+      <div class="contacts">
+        <code>markankamaransheogarat@gmail.com</code> · Telegram:
+        <code>@amadeus1827</code> · GitHub:
+        <a href="https://github.com/markankamaransheogarat-sys"
+          >github.com/markankamaransheogarat-sys</a
+        >
+        · Remote (US / EU / Global)
+      </div>
+    </div>
+
     <h2>SUMMARY</h2>
     <p>
       Staff-level Systems &amp; AI Infrastructure Engineer specializing in
@@ -84,26 +105,26 @@
         Python</strong
       >
       high-throughput backends, LLM cost/security gateways, distributed brokers,
-      and supply-chain security tooling. Proven track record shipping
-      production-grade OSS systems with cross-platform CI/CD releases and
+      and supply-chain security tooling. Proven track record shipping production
+      OSS systems with cross-platform CI/CD releases and
       <strong>30+ pull requests</strong> across Tier-1 repositories
       (<code>mozilla/neqo</code>, <code>TabularisDB/tabularis</code>,
       <code>hiero-ledger/hiero-sdk-js</code>,
       <code>ubiquitarianism/leonida</code>, <code>MoonshotAI/kimi-code</code>,
       <code>openai/codex-security</code>).
     </p>
-    <hr />
+
     <h2>CORE TECHNICAL SKILLS</h2>
     <ul>
       <li>
-        <strong>Languages</strong>: Rust (Tokio, Axum, DashMap, Soroban SDK,
-        Tree-sitter), Go (<code>pgx</code>, net/http, zero-alloc concurrency),
-        Python (FastAPI, raw <code>asyncpg</code>), TypeScript / Node.js /
-        React.
+        <strong>Languages &amp; Runtimes</strong>: Rust (Tokio, Axum, DashMap,
+        Soroban SDK, Tree-sitter), Go (<code>pgx</code>, <code>net/http</code>,
+        zero-alloc concurrency), Python (FastAPI, raw <code>asyncpg</code>),
+        TypeScript / Node.js / React.
       </li>
       <li>
         <strong>Infrastructure &amp; Data</strong>: PostgreSQL (<code
-          >SKIP LOCKED</code
+          >FOR UPDATE SKIP LOCKED</code
         >, Haversine SQL), ClickHouse (<code>ReplacingMergeTree</code>), Docker
         (distroless multi-stage), Prometheus, GitHub Actions CI/CD, Vulkan /
         SPIR-V tooling.
@@ -115,71 +136,83 @@
         analysis (SARIF 2.1.0).
       </li>
     </ul>
-    <hr />
+
     <h2>FLAGSHIP SYSTEMS &amp; PRODUCTS</h2>
+
     <h3>
-      <strong>Aegis AI Gateway (<code>aegis-llm-gateway</code>)</strong> · Rust,
-      Tokio, Axum, DashMap · <code>v0.2.0</code>
-    </h3>
-    <p>
-      <em
-        >Commercial-grade AI Cost &amp; Security Reverse Proxy (OpenAI /
-        Anthropic / Ollama)</em
+      <strong>Aegis AI Gateway (<code>aegis-llm-gateway</code>)</strong>
+      <span class="meta"
+        >· Rust, Tokio, Axum, DashMap · <code>v0.2.0</code> ·
+        <a
+          href="https://markankamaransheogarat-sys.github.io/aegis-llm-gateway/"
+          >Live Product</a
+        ></span
       >
-      · <code>github.com/markankamaransheogarat-sys/aegis-llm-gateway</code> -
-      Engineered a <code>#![forbid(unsafe_code)]</code> drop-in LLM gateway
-      combining an <strong>L1 SHA-256 exact cache</strong> and
-      <strong>L2 64-bit SimHash + Top-32 Sparse Cosine</strong> semantic cache
-      (<code>&gt;= 0.95</code> threshold) with bounded LRU/TTL eviction and
-      real-time SSE teeing/replay. - Implemented an
-      <strong>outbound security firewall &amp; billing control plane</strong>:
-      scrubs leaked credentials (<code>sk-</code>, <code>AKIA</code>,
-      <code>ghp_</code>, JWT, PEM) before prompts leave the VPC, blocks prompt
-      injections (<code>403</code>), enforces per-key RPM rate limits &amp;
-      daily USD budgets (<code>429</code>), serves live <code>/admin</code> +
-      <code>/metrics</code>, and auto-provisions signed Pro/Enterprise licenses
-      via Stripe, YooKassa, and CryptoBot webhooks.
-    </p>
+    </h3>
+    <ul>
+      <li>
+        Engineered a <code>#![forbid(unsafe_code)]</code> drop-in
+        OpenAI/Anthropic/Ollama proxy combining an
+        <strong>L1 SHA-256 exact cache</strong> and
+        <strong>L2 64-bit SimHash + Top-32 Sparse Cosine</strong> semantic cache
+        (<code>&gt;= 0.95</code> threshold) with bounded LRU/TTL eviction and
+        SSE tee/replay.
+      </li>
+      <li>
+        Built an
+        <strong>outbound DLP firewall &amp; billing control plane</strong>:
+        scrubs leaked secrets (<code>sk-</code>, <code>AKIA</code>,
+        <code>ghp_</code>, JWT, PEM), blocks prompt injections
+        (<code>403</code>), enforces per-key RPM limits &amp; daily USD caps
+        (<code>429</code>), serves live <code>/admin</code> +
+        <code>/metrics</code>, and auto-issues signed Pro/Enterprise keys via
+        Stripe, YooKassa, and CryptoBot webhooks.
+      </li>
+    </ul>
+
     <h3>
-      <strong>MCP Guard (<code>mcp-guard</code>)</strong> · Rust, Tokio, Axum,
-      Globset · <code>v0.2.0</code>
-    </h3>
-    <p>
-      <em
-        >Local Security Firewall &amp; Capability Sandbox for Model Context
-        Protocol (MCP) Servers</em
+      <strong>MCP Guard (<code>mcp-guard</code>)</strong>
+      <span class="meta"
+        >· Rust, Tokio, Axum, Globset · <code>v0.2.0</code> ·
+        <code>github.com/markankamaransheogarat-sys/mcp-guard</code></span
       >
-      · <code>github.com/markankamaransheogarat-sys/mcp-guard</code> - Built a
-      <code>stdio</code> + SSE/HTTP reverse proxy enforcing
-      ancestor-canonicalized path-jails (anti-symlink escape), SSRF &amp;
-      DNS-rebinding protection, JSON-RPC batch request WAF,
-      <code>tools/list</code> schema filtering, and streaming secret/injection
-      sanitization (<code>19/19</code> tests, Linux/macOS releases).
-    </p>
+    </h3>
+    <ul>
+      <li>
+        Built a <code>stdio</code> + SSE/HTTP security firewall for Model
+        Context Protocol (MCP) servers enforcing ancestor-canonicalized
+        path-jails (anti-symlink escape), SSRF &amp; DNS-rebinding defense,
+        JSON-RPC batch WAF, <code>tools/list</code> filtering, and streaming
+        secret sanitization (<code>19/19</code> tests, Linux/macOS releases).
+      </li>
+    </ul>
+
     <h3>
-      <strong>Dep-Xray (<code>dep-xray</code>)</strong> · Rust, Tree-sitter AST,
-      Reqwest · <code>v0.2.0</code>
+      <strong>Dep-Xray (<code>dep-xray</code>)</strong>
+      <span class="meta"
+        >· Rust, Tree-sitter AST, Reqwest · <code>v0.2.0</code> ·
+        <code>github.com/markankamaransheogarat-sys/dep-xray</code></span
+      >
     </h3>
-    <p>
-      <em
-        >Behavioral AST Supply-Chain Diff Analyzer (<code>Cargo.lock</code>,
-        <code>package-lock.json</code>, <code>pnpm-lock.yaml</code>)</em
-      >
-      · <code>github.com/markankamaransheogarat-sys/dep-xray</code> -
-      Concurrently fetches updated registry tarballs and runs
-      <code>tree-sitter</code> AST behavioral diffing (Rust/JS/TS) plus
-      <code>Cargo.toml</code> manifest checks (<code>DX015</code>/<code
-        >DX016</code
-      >
-      custom <code>build.rs</code> / <code>proc-macro</code>), emitting SARIF
-      2.1.0, PR Markdown, and <code>.dep-xray.toml</code> baseline suppressions.
-    </p>
+    <ul>
+      <li>
+        Concurrently fetches updated registry tarballs (<code>Cargo.lock</code>,
+        <code>package-lock.json</code>, <code>pnpm-lock.yaml</code>) and runs
+        <code>tree-sitter</code> AST behavioral diffing plus
+        <code>Cargo.toml</code> manifest checks (<code>DX015</code>/<code
+          >DX016</code
+        >
+        <code>build.rs</code> / <code>proc-macro</code>), emitting SARIF 2.1.0,
+        PR Markdown, and <code>.dep-xray.toml</code> policies.
+      </li>
+    </ul>
+
     <h3>
       <strong
-        >LLM Cache Edge &amp; Tensor Gateway (<code>llm-cache-edge</code>,
-        <code>tensor-gateway-rs</code>)</strong
+        >LLM Cache Edge &amp; Tensor Gateway (<code>llm-cache-edge</code>
+        <code>v0.1.0</code>, <code>tensor-gateway-rs</code>)</strong
       >
-      · Rust, Tokio
+      <span class="meta">· Rust, Tokio</span>
     </h3>
     <ul>
       <li>
@@ -188,37 +221,41 @@
           >1.72 µs</strong
         >
         @ 1k) semantic proxy at <strong>4.64M tokens/s</strong> with Criterion
-        microbenchmarks.
+        benchmarks.
       </li>
       <li>
         <strong><code>tensor-gateway-rs</code></strong
-        >: Orca-style continuous batching, PagedAttention 16-token block
-        allocator with CoW sharing, and Radix prefix caching (<code
-          >9,400+ tok/s</code
-        >, <code>P50 TTFT: 2.24ms</code>).
+        >: Orca-style continuous batching, PagedAttention 16-token CoW block
+        allocator, and Radix prefix caching (<code>9,400+ tok/s</code>,
+        <code>P50 TTFT: 2.24ms</code>).
       </li>
     </ul>
+
     <h3>
-      <strong
-        >Go High-Concurrency Infra (<code>go-outbox-dispatcher</code>,
-        <code>go-sse-gateway</code>)</strong
-      >
-      · Go, PostgreSQL
+      <strong>Go High-Concurrency Infra &amp; Geo/Quant Systems</strong>
+      <span class="meta">· Go, Rust, Python, PostgreSQL, ClickHouse</span>
     </h3>
     <ul>
       <li>
-        <strong><code>go-outbox-dispatcher</code></strong
-        >: Transactional webhook outbox worker using <code>pgx</code>
-        <code>FOR UPDATE SKIP LOCKED</code>, per-host circuit breakers,
-        exponential backoff, and Prometheus metrics.
+        <strong
+          ><code>go-outbox-dispatcher</code> &amp;
+          <code>go-sse-gateway</code></strong
+        >
+        (Go): Transactional outbox worker using <code>pgx</code>
+        <code>FOR UPDATE SKIP LOCKED</code> + per-host circuit breakers;
+        zero-alloc SSE reverse proxy with 64-shard token-bucket limiting and
+        atomic upstream failover.
       </li>
       <li>
-        <strong><code>go-sse-gateway</code></strong
-        >: Zero-alloc SSE/HTTP reverse proxy with 64-shard token-bucket rate
-        limiting and atomic upstream failover.
+        <strong
+          ><code>synapse-chat-core</code> &amp;
+          <code>market-columnar-engine</code></strong
+        >: CRDT broker (RFC 2026-SYN-01, <strong>145k msg/s</strong>,
+        <code>6.88 µs</code>) and raw <code>asyncpg</code> + ClickHouse pipeline
+        (<strong>1.56M ord/s</strong>).
       </li>
     </ul>
-    <hr />
+
     <h2>UPSTREAM OPEN-SOURCE CONTRIBUTIONS</h2>
     <ul>
       <li>
@@ -229,21 +266,18 @@
       <li>
         <strong><code>TabularisDB/tabularis</code></strong> (Tauri v2 / Rust /
         React SQL workspace, 5k★): <strong>8+ merged features</strong> + SSH
-        per-connection user override (<code>#1660</code>, 13/13 CI checks
-        green).
+        per-connection &amp; MCP user override (<code>#1660</code>).
       </li>
       <li>
-        <strong><code>ubiquitarianism/leonida</code></strong> (Xbox→PC
-        RDNA2/D3D12→Vulkan recompilation runtime):
-        <strong>4 active PRs</strong> (<code>#908</code>, <code>#909</code>,
-        <code>#910</code>, <code>#995</code> build-time supply-chain opt-in) +
-        headless Tesla T4 Vulkan GPU test suite telemetry (<code>198/249</code>
-        passed).
+        <strong><code>ubiquitarianism/leonida</code></strong> (RDNA2→Vulkan
+        runtime): <strong>4 active PRs</strong> (<code>#908</code>,
+        <code>#909</code>, <code>#910</code>, <code>#995</code> approved) +
+        Tesla T4 Vulkan GPU test harness (<code>198/249</code> passed).
       </li>
       <li>
-        <strong><code>MoonshotAI/kimi-code</code></strong> (4 active PRs) &amp;
-        <strong><code>openai/codex-security</code></strong> (2 active PRs):
-        Agentic CLI/SDK correctness, Windows SSH path resolution, and Anthropic
+        <strong><code>MoonshotAI/kimi-code</code></strong> (4 PRs) &amp;
+        <strong><code>openai/codex-security</code></strong> (2 PRs): Agentic
+        CLI/SDK correctness, symlink browsing, MAX_PATH findings, and Anthropic
         tool-use lowering.
       </li>
     </ul>

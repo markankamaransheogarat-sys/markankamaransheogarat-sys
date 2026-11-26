@@ -1,4 +1,4 @@
-# KONSTANTIN
+# KARASEV KONSTANTIN VLADIMIROVICH
 **Staff Systems, High-Load Infrastructure & AI Platform Architect**  
 `markankamaransheogarat@gmail.com` · Telegram: `@amadeus1827` · GitHub: `github.com/markankamaransheogarat-sys` · Remote (US / EU / Global)
 

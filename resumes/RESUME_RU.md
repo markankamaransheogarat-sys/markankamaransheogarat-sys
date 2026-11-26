@@ -1,4 +1,4 @@
-# КОНСТАНТИН
+# КАРАСЁВ КОНСТАНТИН ВЛАДИМИРОВИЧ (KARASEV KONSTANTIN VLADIMIROVICH)
 **Staff / Principal Backend & High-Load Systems Architect (Rust / Go / Python / AI Infra)**  
 `markankamaransheogarat@gmail.com` · Telegram: `@amadeus1827` · GitHub: `github.com/markankamaransheogarat-sys` · Удалённо / Релокация
 
