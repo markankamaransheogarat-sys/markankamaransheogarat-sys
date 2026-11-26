@@ -26,10 +26,10 @@
 - **`geo-dmp-engine`** *(Python, FastAPI, asyncpg, PostgreSQL)*: Движок гео-аудиторной OOH/Indoor аналитики (OTS, Reach, Frequency) на сыром `asyncpg` и Haversine SQL (CI с PostgreSQL 16).
 
 ### **2. AI-инфраструктура и снижение стоимости LLM API**
-- **`aegis-llm-gateway` `v0.1.0`** *(Rust, Tokio, Axum)* · [Live-витрина и ROI-калькулятор](https://markankamaransheogarat-sys.github.io/aegis-llm-gateway/):
-  - Промышленный шлюз перед OpenAI/Anthropic/Ollama: **L1 SHA-256** + **L2 64-bit SimHash & Sparse Cosine** кэш, экономия 40–70% токен-бюджета, потоковый SSE tee/replay.
-  - Встроенный **WAF**: авто-редакция утечек секретов (`sk-`, `AKIA`, `ghp_`, JWT, PEM) до выхода из VPC, блокировка prompt-injection (`403`), дневные USD-лимиты на API-ключ (`429`), Prometheus `/metrics` и офлайн-лицензирование `Pro`/`Enterprise`.
-- **`llm-cache-edge`** & **`tensor-gateway-rs`** *(Rust, Tokio)*: Sub-ms кэш (**178 ns** L1 / **1.72 µs** L2, **4.64M tok/s**) и inference-шлюз с continuous batching, PagedAttention и Radix prefix caching (**9,400+ tok/s**).
+- **`aegis-llm-gateway` `v0.2.0`** *(Rust, Tokio, Axum)* · [Live-витрина и ROI-калькулятор](https://markankamaransheogarat-sys.github.io/aegis-llm-gateway/):
+  - Промышленный шлюз перед OpenAI/Anthropic/GigaChat/Ollama: **L1 SHA-256** + **L2 64-bit SimHash & Sparse Cosine** кэш, экономия 40–70% токен-бюджета, потоковый SSE tee/replay.
+  - Встроенный **WAF и control plane**: авто-редакция утечек секретов (`sk-`, `AKIA`, `ghp_`, JWT, PEM) до выхода из VPC, блокировка prompt-injection (`403`), per-key RPM rate limits + дневные USD-лимиты (`429`), live-панель `/admin`, Prometheus `/metrics` и автовыдача лицензий через Stripe / ЮKassa / CryptoBot.
+- **`llm-cache-edge` `v0.1.0`** & **`tensor-gateway-rs`** *(Rust, Tokio)*: Sub-ms кэш (**178 ns** L1 / **1.72 µs** L2, **4.64M tok/s**) и inference-шлюз с continuous batching, PagedAttention и Radix prefix caching (**9,400+ tok/s**).
 
 ### **3. Информационная безопасность и FinTech / Quant**
 - **`mcp-guard` `v0.2.0`** *(Rust)*: Firewall и capability-sandbox для MCP-серверов (`stdio`/SSE/HTTP): path-jail (защита от symlink escape), SSRF + DNS-rebinding фильтр, защита JSON-RPC batch-запросов, фильтрация `tools/list`, `/_mcp_guard/metrics`.

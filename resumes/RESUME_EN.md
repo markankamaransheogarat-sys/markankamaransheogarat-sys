@@ -18,10 +18,10 @@ Staff-level Systems & AI Infrastructure Engineer specializing in **Rust (`#![for
 
 ## FLAGSHIP SYSTEMS & PRODUCTS
 
-### **Aegis AI Gateway (`aegis-llm-gateway`)** · Rust, Tokio, Axum, DashMap · `v0.1.0`
+### **Aegis AI Gateway (`aegis-llm-gateway`)** · Rust, Tokio, Axum, DashMap · `v0.2.0`
 *Commercial-grade AI Cost & Security Reverse Proxy (OpenAI / Anthropic / Ollama)* · `github.com/markankamaransheogarat-sys/aegis-llm-gateway`
 - Engineered a `#![forbid(unsafe_code)]` drop-in LLM gateway combining an **L1 SHA-256 exact cache** and **L2 64-bit SimHash + Top-32 Sparse Cosine** semantic cache (`>= 0.95` threshold) with bounded LRU/TTL eviction and real-time SSE teeing/replay.
-- Implemented an **outbound security firewall**: scrubs leaked credentials (`sk-`, `AKIA`, `ghp_`, JWT, PEM) before prompts leave the VPC, blocks prompt injections & Unicode tag steganography (`403`), enforces per-API-key daily USD budgets (`429`), and exports Prometheus `/metrics` + offline signed Pro/Enterprise licenses.
+- Implemented an **outbound security firewall & billing control plane**: scrubs leaked credentials (`sk-`, `AKIA`, `ghp_`, JWT, PEM) before prompts leave the VPC, blocks prompt injections (`403`), enforces per-key RPM rate limits & daily USD budgets (`429`), serves live `/admin` + `/metrics`, and auto-provisions signed Pro/Enterprise licenses via Stripe, YooKassa, and CryptoBot webhooks.
 
 ### **MCP Guard (`mcp-guard`)** · Rust, Tokio, Axum, Globset · `v0.2.0`
 *Local Security Firewall & Capability Sandbox for Model Context Protocol (MCP) Servers* · `github.com/markankamaransheogarat-sys/mcp-guard`
@@ -32,7 +32,7 @@ Staff-level Systems & AI Infrastructure Engineer specializing in **Rust (`#![for
 - Concurrently fetches updated registry tarballs and runs `tree-sitter` AST behavioral diffing (Rust/JS/TS) plus `Cargo.toml` manifest checks (`DX015`/`DX016` custom `build.rs` / `proc-macro`), emitting SARIF 2.1.0, PR Markdown, and `.dep-xray.toml` baseline suppressions.
 
 ### **LLM Cache Edge & Tensor Gateway (`llm-cache-edge`, `tensor-gateway-rs`)** · Rust, Tokio
-- **`llm-cache-edge`**: Sub-millisecond L1 (**178 ns**) / L2 SimHash (**1.72 µs** @ 1k) semantic proxy at **4.64M tokens/s** with Criterion microbenchmarks.
+- **`llm-cache-edge` `v0.1.0`**: Sub-millisecond L1 (**178 ns**) / L2 SimHash (**1.72 µs** @ 1k) semantic proxy at **4.64M tokens/s** with Criterion microbenchmarks.
 - **`tensor-gateway-rs`**: Orca-style continuous batching, PagedAttention 16-token block allocator with CoW sharing, and Radix prefix caching (`9,400+ tok/s`, `P50 TTFT: 2.24ms`).
 
 ### **Go High-Concurrency Infra (`go-outbox-dispatcher`, `go-sse-gateway`)** · Go, PostgreSQL

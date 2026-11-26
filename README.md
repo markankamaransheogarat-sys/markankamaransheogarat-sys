@@ -42,16 +42,16 @@
 ## 🚀 Flagship Systems & Distributed Platforms
 
 ### 1. High-Performance AI Platform & Inference Infrastructure
-- **[`aegis-llm-gateway`](https://github.com/markankamaransheogarat-sys/aegis-llm-gateway)** `[Rust · Tokio · Axum · #![forbid(unsafe_code)] · v0.1.0]` · [Live Product & ROI Calculator](https://markankamaransheogarat-sys.github.io/aegis-llm-gateway/)  
-  Commercial-grade AI Cost & Security Gateway sitting in front of OpenAI, Anthropic, and Ollama (`docker compose up -d`).
+- **[`aegis-llm-gateway`](https://github.com/markankamaransheogarat-sys/aegis-llm-gateway)** `[Rust · Tokio · Axum · #![forbid(unsafe_code)] · v0.2.0]` · [Live Product & ROI Calculator](https://markankamaransheogarat-sys.github.io/aegis-llm-gateway/)  
+  Commercial-grade AI Cost & Security Gateway sitting in front of OpenAI, Anthropic, GigaChat, YandexGPT, and Ollama (`docker compose up -d`).
   - **L1/L2 Semantic Cache**: 64-shard `DashMap` SHA-256 exact match + zero-embedding 64-bit SimHash & Top-32 Sparse Cosine (`>= 0.95`), bounded LRU/TTL eviction, and real-time SSE stream teeing/replay.
-  - **Outbound Security WAF & USD Budgets**: Scrubs leaked secrets (`sk-...`, `AKIA...`, `ghp_...`, JWT, PEM) before leaving VPC, blocks prompt-injection / Unicode tag steganography (`403`), enforces per-key daily USD caps (`429`), and supports offline signed Pro/Enterprise license keys + Prometheus `/metrics`.
+  - **Outbound Security WAF, RPM & Billing**: Scrubs leaked secrets (`sk-...`, `AKIA...`, `ghp_...`, JWT, PEM) before leaving VPC, blocks prompt-injection / Unicode tag steganography (`403`), enforces per-key RPM rate limits & daily USD caps (`429`), serves a live `/admin` UI + Prometheus `/metrics`, and auto-issues signed offline license keys via Stripe, YooKassa, and CryptoBot webhooks.
 - **[`mcp-guard`](https://github.com/markankamaransheogarat-sys/mcp-guard)** `v0.2.0` `[Rust · stdio/SSE/HTTP · #![forbid(unsafe_code)] · JSON-RPC 2.0]`  
   Local security firewall & capability sandbox proxy for Model Context Protocol (MCP) servers (Claude Code, Cursor, Windsurf, Claude Desktop).
   - **Deterministic Policy Engine**: Path-jail with ancestor canonicalization & symlink-escape prevention, default bans on `~/.ssh`/`~/.aws`/`.env`, SSRF protection blocking private/metadata IPs, and SHA-256 `(tool, args)` loop breaker.
   - **Output Sanitizer**: Streaming redaction of secrets (AWS, GitHub, OpenAI, Anthropic, JWT, PEM, high-entropy tokens) and prompt-injection defense (instruction overrides & invisible Unicode tags).
   - **Zero-Unsafe & Auditable**: Crate-wide `#![forbid(unsafe_code)]`, zero `stdout` pollution in `stdio` proxy mode, and structured JSONL audit logging.
-- **[`llm-cache-edge`](https://github.com/markankamaransheogarat-sys/llm-cache-edge)** `[Rust · Tokio · 178ns L1 · 1.7µs L2 · SSE Tap]`  
+- **[`llm-cache-edge`](https://github.com/markankamaransheogarat-sys/llm-cache-edge)** `v0.1.0` `[Rust · Tokio · 178ns L1 · 1.7µs L2 · SSE Tap]`  
   Sub-millisecond local semantic vector cache and reverse proxy for OpenAI, Ollama, Anthropic & vLLM.
   - **Two-Tier Cache Hierarchy**: L1 exact SHA-256 match in **178 ns** and L2 64-bit SimHash semantic scan in **1.72 µs** (1k) / **17.0 µs** (10k), operating at **4.64M tokens/s**.
   - **Dynamic SSE Streaming Tap**: Live real-time stream passthrough while concurrently assembling completion buffers, with token-by-token cached stream replay.
