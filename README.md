@@ -77,10 +77,15 @@
   Open-source Colab & Gradio studio for zero-shot voice cloning and TTS with Whisper ASR reference transcription, auto-denoising, and Google Drive voice persistence.
 
 ### 2. High-Load Distributed Brokers & Offline-First State Engines
-- **[`go-outbox-dispatcher`](https://github.com/markankamaransheogarat-sys/go-outbox-dispatcher)** `[Go · pgx SKIP LOCKED · Circuit Breaker · Prometheus]`  
-  High-concurrency transactional webhook outbox dispatcher with PostgreSQL `FOR UPDATE SKIP LOCKED`, per-host circuit breakers, exponential backoff, and Prometheus metrics.
-- **[`go-sse-gateway`](https://github.com/markankamaransheogarat-sys/go-sse-gateway)** `[Go · Zero-Alloc · 64-Shard Rate Limiter]`  
-  Zero-alloc Go SSE/HTTP reverse proxy with 64-shard token-bucket rate limiting, atomic circuit breaker, and upstream failover.
+- **[`go-outbox-dispatcher`](https://github.com/markankamaransheogarat-sys/go-outbox-dispatcher)** `v0.1.0` `[Go · pgx SKIP LOCKED · Circuit Breaker · Prometheus · Distroless]`  
+  High-concurrency transactional webhook outbox dispatcher with PostgreSQL `FOR UPDATE SKIP LOCKED`, per-host circuit breakers, exponential backoff, Prometheus metrics, and multi-arch Linux/macOS binaries.
+- **[`go-sse-gateway`](https://github.com/markankamaransheogarat-sys/go-sse-gateway)** `v0.1.0` `[Go · Zero-Alloc · 64-Shard Rate Limiter · Distroless]`  
+  Zero-alloc Go SSE/HTTP reverse proxy with 64-shard token-bucket rate limiting, atomic circuit breaker, upstream failover, and multi-arch Linux/macOS binaries.
+- **Rails 7.2 High-Load & FinTech/AI Suite** `v0.1.0` `[Ruby 3.3 · Grape API · Dry-rb · PostgreSQL 16 · RSpec · Brakeman]`:
+  - **[`paygate-rails-acquiring`](https://github.com/markankamaransheogarat-sys/paygate-rails-acquiring)** `v0.1.0` — Multi-PSP cascade acquiring, double-entry ledger, and `SKIP LOCKED` webhook outbox.
+  - **[`sentinel-llm-rails`](https://github.com/markankamaransheogarat-sys/sentinel-llm-rails)** `v0.1.0` — LLM prompt-injection & SSRF firewall with atomic PostgreSQL token quota reservation.
+  - **[`sqlpulse-rails-analytics`](https://github.com/markankamaransheogarat-sys/sqlpulse-rails-analytics)** `v0.1.0` — Partitioned PostgreSQL event analytics (`UNNEST` upsert, window anomaly & cohort queries).
+  - **[`dispatch-geo-rails`](https://github.com/markankamaransheogarat-sys/dispatch-geo-rails)** `v0.1.0` — Geospatial freight corridor matching (raw Haversine SQL, Redis + Sidekiq, deadlock-safe locking).
 - **[`geo-dmp-engine`](https://github.com/markankamaransheogarat-sys/geo-dmp-engine)** `[Python · FastAPI · Raw asyncpg · PostgreSQL]`  
   OOH/Indoor geo-audience DMP measurement engine using raw `asyncpg` and PostgreSQL Haversine SQL for sub-second OTS/Reach/Frequency analytics.
 - **[`synapse-chat-core`](https://github.com/markankamaransheogarat-sys/synapse-chat-core)** `[Rust · Tokio · Kotlin Coroutines · RFC 2026-SYN-01]`  
